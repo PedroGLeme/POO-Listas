@@ -9,12 +9,11 @@ int main()
     cin >> inteiro; // inteiro para encontrar os numeros inteiros ate o seu dobro
 
     // loop de operacao de soma e print de valor
-    while(aux != ((2*inteiro)-1)){
+    while(aux != ((2*inteiro))){
         cout << aux <<", ";
         aux++;
     }
     // print do ultimo valor para desconsiderar print de virgula
-    aux++;
     cout << aux;
     return 0;
 }
