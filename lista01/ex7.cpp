@@ -5,18 +5,21 @@ using namespace std;
 // Função que calcula o enésimo termo da sequência recursiva
 int seq(int n, int k, int *ini) {
 
-    int soma= 0;
     int i;
-    for (i= n-k; i<n; i++) {
-        soma= soma+ (ini[i]* ini[i]);
-    }
-    ini[n-1]= soma; // nao é retornado soma direto pois k pode ser maior que n
+    int soma=0;
 
-    return ini[n-1];
+    if(n<k){
+        return ini[n];
+    }
+    else{
+        for(i=n-k; i<n; i++){
+            soma += (seq(i,k,ini)*seq(i,k,ini)) ;
+        }
+    }
+    return soma;
 }
 
 int main() {
-
     // recebe os inputs necessarios
 
     int n;
@@ -26,14 +29,15 @@ int main() {
     cin>> k;
 
     int *ini= new int[n]; // aloca o espaco do vetor
+    int i;
 
     // input dos n termos do vetor
-    int i;
     for (i= 0; i< n; i++) {
         cin>> ini[i];
     }
+
     // chamada da funcao sequencia
-    int res= seq(n, k, ini);
+    int res = seq(n, k, ini);
     cout<< res << endl;
 
     // Libera a memória alocada para o vetor
