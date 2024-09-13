@@ -1,6 +1,6 @@
 #include <iostream>
-#include <cmath>      
-#include <iomanip>
+#include <math.h>      // Para usar a função sqrt
+#include <iomanip>    // Para manipular a quantidade de casas decimais
 
 using namespace std;
 
