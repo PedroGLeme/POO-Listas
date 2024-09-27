@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    int* numeros = new int[1000001]; // lista de numeros inseridos, caso numero ja existe, nao insere
-    int* verdadeiro = new int[1000001]; // variavel indica se foram ou nao removidos os numeros pelo resto da divisao por 2
+    int* numeros = new int[101]; // lista de numeros inseridos, caso numero ja existe, nao insere
+    int* verdadeiro = new int[101]; // variavel indica se foram ou nao removidos os numeros pelo resto da divisao por 2
     int aux; // auxiliar que percorre lista
     int tamanho_vetor=0;
     int numero_inserido; // variavel intermediaria para verificacao com lista principal antes de inserir
