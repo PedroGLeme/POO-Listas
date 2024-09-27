@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip> // Para controlar a precis�o da sa�da
+#include <iomanip>  // Para controlar a precisão da saída
 
 using namespace std;
 
@@ -9,34 +9,35 @@ int main() {
 
     int valor, Pago;
     double d_valor, d_pago;
-    // Entrada dos valor do produto e do dinheiro pago
-    cin >> d_valor;                    // recebe o valor da conta
-    valor = (int)(100 * d_valor);
+    
+    // Entrada dos valores do produto e do dinheiro pago
+    cin >> d_valor;  // Recebe o valor da conta
+    valor = (int)((100 * d_valor) + 0.5);  // Multiplica por 100 e ajusta para garantir precisão
 
-    cin >> d_pago;                    // recebe o valor pago
-    Pago = (int)(100*d_pago);
+    cin >> d_pago;  // Recebe o valor pago
+    Pago = (int)((100 * d_pago) + 0.5);  // Multiplica por 100 e ajusta
 
     // Calcula o troco
-    double troco = (d_pago - d_valor);
+    double troco = d_pago - d_valor;
 
-    // Converte o troco em centavos para facilitar o c�lculo
+    // Converte o troco em centavos para facilitar o cálculo
     int trocoCentavos = Pago - valor;
-
+    
     cout << fixed << setprecision(2) << "Troco: R$ " << troco << endl;
 
-    int contador=0;
-    // Calcula o n�mero de notas
+    int contador = 0;
+
+    // Calcula o número de notas/moedas
     for (int i = 0; i < 13; i++) {
-        while(1){
-            if((trocoCentavos-notas[i])<0){ // caso subtra��o do troco menor que zero, vai para proxima menor nota
+        while (1) {
+            if ((trocoCentavos - notas[i]) < 0) {  // Se não dá para usar essa nota, passa para a próxima
                 break;
             }
-            trocoCentavos = trocoCentavos - notas[i]; // subtra��o que sinaliza, possibilidade de troco com tal nota
-            contador++; // numero de notas necessarias para o troco
+            trocoCentavos = trocoCentavos - notas[i];  // Subtrai o valor da nota do troco
+            contador++;  // Conta quantas notas/moedas são necessárias
         }
-        fflush(stdin);
-        cout << contador << " de R$ " << fixed << setprecision(2)<< float(notas[i])/100 << endl; // impressao dos resultados
-        contador = 0;
+        cout << contador << " de R$ " << fixed << setprecision(2) << float(notas[i]) / 100 << endl;  // Imprime o resultado
+        contador = 0;  // Reseta o contador para a próxima denominação
     }
 
     return 0;
