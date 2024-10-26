@@ -35,7 +35,7 @@ class Fracao{
         friend Fracao operator*(const Fracao& frac1, const Fracao& frac2);
         friend Fracao operator/(const Fracao& frac1, const Fracao& frac2);
 
-        operator double(){return (double((_numerador)/_denominador));}
+        operator double(){return (double(double(_numerador)/double(_denominador)));}
 
         friend ostream& operator<<(std::ostream &out, const Fracao &a);
 };
