@@ -18,30 +18,28 @@ class Vetor{
     friend Vetor operator-(const Vetor& vetor1, const Vetor& vetor2){return (vetor1 + Vetor(-vetor2._x, -vetor2._y));}
     friend int operator*(const Vetor& vetor1, const Vetor& vetor2){return ( (vetor1._x*vetor2._x) + (vetor1._y*vetor2._y) );}
     friend int operator^(const Vetor& vetor1, const Vetor& vetor2){return ( (vetor1._x*vetor2._y) - (vetor1._y*vetor2._x) );}
-    friend double operator<(const Vetor& vetor1, const Vetor& vetor2){ return ((acos( (double)(vetor1*vetor2) / vetor1.abs() * vetor2.abs()))*(180/M_PI)); }// cos(theta) = (vetor1 * vetor2) / ||vetor1|| ||vetor2|| 
+    friend double operator<(const Vetor& vetor1, const Vetor& vetor2){ return ((acos( (double)(vetor1*vetor2) / (vetor1.abs() * vetor2.abs()) )*(180/M_PI))); }// cos(theta) = (vetor1 * vetor2) / ||vetor1|| ||vetor2|| 
     
     friend ostream& operator<<(std::ostream &out, const Vetor &a);
 };
 
 int main(){
     Vetor v;
-    
     int a,b;
     double c;
-
-    cout << v << endl;
+    std::cout << v << std::endl;
     v = v+Vetor(1, 2);
-    cout << v << endl;
+    std::cout << v << std::endl;
     v = v+Vetor(1, 2);
-    cout << v << endl;
+    std::cout << v << std::endl;
     v = v-Vetor(1, 6);
-    cout << v << endl;
+    std::cout << v << std::endl;
     a = v*Vetor(3, 2);
-    cout << v << endl;
+    std::cout << a << std::endl;
     b = v^Vetor(-4501, 9002);
-    cout << v << endl;
+    std::cout << b << std::endl;
     c = v.abs();
-    cout << c << endl;
+    std::cout << c << std::endl;
 
     return 0;
 }

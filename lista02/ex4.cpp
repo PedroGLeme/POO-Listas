@@ -19,17 +19,15 @@ class Polinomio2{
 
 int main(){
     double *v;
-    Polinomio2 p1(1);
-    v = p1.raizes();
-    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
-    std::cout << '\n' << p1(2) << '\n';
-    
-    Polinomio2 p2(1,1);
-    v = p2.raizes();
-    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
-    std::cout << '\n' << p2(2) << '\n';
-    return 0;
-    return 0;
+    Polinomio2 p1(1, 1, 1);
+    v = p1.raizes(); for(int i=0; i<=v[0]; i++) std::cout << v[i] << " " ;
+    std::cout << '\n' << p1(2) << '\n' ;
+    Polinomio2 p2(1, 2, 1);
+    v = p2.raizes(); for(int i=0; i<=v[0]; i++) std::cout << v[i] << " " ;
+    std::cout << '\n' << p2(2) << '\n' ;
+    Polinomio2 p3(1, -3, 2);
+    v = p3.raizes(); for(int i=0; i<=v[0]; i++) std::cout << v[i] << " " ;
+    std::cout << '\n' << p3(2) << '\n' ;
 }
 
 Polinomio2::Polinomio2(int a, int b, int c){
