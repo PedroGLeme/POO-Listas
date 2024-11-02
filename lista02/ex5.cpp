@@ -23,7 +23,7 @@ string Arquivo::proxima_linha()
 {
     string linha;
 
-    if(_conteudo.eof()){ // verifica se chegou no fim do arquivo
+    if(!(_conteudo.eof())){ // verifica se chegou no fim do arquivo
         getline(_conteudo, linha); // armazena uma linha do arquivo em linha
     }
     else{ // caso tenha chegado no fim do arquivo
