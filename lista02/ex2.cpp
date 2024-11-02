@@ -2,23 +2,6 @@
 
 using namespace std;
 
-// testa ate encontrar maior valor onde % seja igual a 0, portanto, o mdc procurado
-long long mdc(long long num, long long denom){
-    
-    if (num < denom){ // verificando para poder realizar a operacao de resto sem que de 0
-        if (num == 0){ // caso nao seja mais possivel realizar operacao de resto
-            return denom;
-        }  
-        return mdc( num, denom % num); // continua realizando operacao de resto do maior numero pelo menor
-    }
-    else{
-        if (denom == 0){ // caso nao seja mais possivel realizar operacao de resto
-            return num; 
-        }
-        return mdc(denom, num % denom); // continua realizando operacao de resto do maior numero pelo menor
-    }
-}
-
 // definicao da classe de acordo com as especificacoes do exercicio
 class Fracao{
     private:
@@ -37,28 +20,36 @@ class Fracao{
 
         operator double(){return (double(double(_numerador)/double(_denominador)));}
 
-        friend ostream& operator<<(std::ostream &out, const Fracao &a);
+        friend ostream& operator<<(ostream &out, const Fracao &a);
 };
 
 // correcao da entrada original com LL para que seja lido como long long int
 int main(){
-    Fracao f; // inicializa como 0/1
-    
-    std::cout << f << " " << double(f) << '\n' ;
-    f = f+Fracao(1LL, 2);
-    std::cout << f << " " << double(f) << '\n' ;
-    f = f+Fracao(1LL, 2);
-    std::cout << f << " " << double(f) << '\n' ;
-    f = f*Fracao(3LL, 2);
-    std::cout << f << " " << double(f) << '\n' ;
-    f = f/Fracao(3LL, 4);
-    std::cout << f << " " << double(f) << '\n' ;
-    f = f-Fracao(1LL, 6);
-    std::cout << f << " " << double(f) << '\n' ;
-    f = f*Fracao(0LL, 99999999999999);
-    std::cout << f << " " << double(f) << '\n' ;
-
+    Fracao f(-82LL, 34LL);
+    f = f / Fracao(7LL, 80LL);
+    f = f - Fracao(61LL, 5LL);
+    f = f * Fracao(-18LL, 5LL);
+    f = f - Fracao(-86LL, 55LL);
+    f = f * Fracao(85LL, 64LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-97LL, 50LL);
+    f = f * Fracao(73LL, 45LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-15LL, 51LL);
+    f = f - Fracao(-84LL, 64LL);
+    f = f / Fracao(22LL, 93LL);
     return 0;
+}
+
+// testa ate encontrar maior valor onde % seja igual a 0, portanto, o mdc procurado
+int mdc(long long num, long long denom){
+    
+    // caso o retorno do modulo seja 1, mdc equivale a 1
+    if(num == 1 || denom == 1){return 1;}
+    // testa para verificar se ou a ou b equivalem a zero, indicando que o maior divisor comum foi encontrado
+    else if (denom == 0) {return num;}
+    else if( num==0){return denom;}
+    else{return mdc(denom, num % denom);}
 }
 
 void Fracao::reduz(){
@@ -75,6 +66,7 @@ void Fracao::reduz(){
 Fracao::Fracao(long long int numerador, long long int denominador){
     _numerador = numerador;
     _denominador = denominador;
+    reduz();
 }
 
 Fracao::Fracao(double x, double eps){
