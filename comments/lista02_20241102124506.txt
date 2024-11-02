@@ -1,0 +1,3395 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-11-02 09:46:05.751009-03:00
+PRAZO MÁXIMO: 2024-11-06 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Se nao entender esse erro, peça ajuda ao professor:
+tester.py, 291: ZeroDivisionError - float division by zero
+Traceback completo:
+  File "tester.py", line 291, in <module>
+  File "gen.py", line 283, in score
+Teste 6 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    Televisao tv(false, 16);
+    tv.canal_cima();
+    tv.liga();
+    tv.canal_baixo();
+    tv.canal_cima();
+    tv.liga();
+    tv.desliga();
+    tv.liga();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    tv.desliga();
+    return 0;
+}
+deveria ser
+
+mas deu
+
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+#include<iostream>
+int main() {
+    Fracao f(1.5769230769230769, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(61LL, 10LL);
+    f = f * Fracao(-13LL, 16LL);
+    f = f + Fracao(-17LL, 7LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(58LL, 35LL);
+    f = f * Fracao(26LL, 43LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 1 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(1.5769230769230769, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(61LL, 10LL);
+    f = f * Fracao(-13LL, 16LL);
+    f = f + Fracao(-17LL, 7LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(58LL, 35LL);
+    f = f * Fracao(26LL, 43LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(0.8714285714285714, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-40LL, 14LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(82LL, 52LL);
+    f = f + Fracao(94LL, 31LL);
+    f = f / Fracao(77LL, 94LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 2 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(0.8714285714285714, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-40LL, 14LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(82LL, 52LL);
+    f = f + Fracao(94LL, 31LL);
+    f = f / Fracao(77LL, 94LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(0.675, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-96LL, 45LL);
+    f = f + Fracao(13LL, 50LL);
+    f = f - Fracao(-22LL, 38LL);
+    f = f + Fracao(-70LL, 74LL);
+    f = f / Fracao(-18LL, 86LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 3 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(0.675, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-96LL, 45LL);
+    f = f + Fracao(13LL, 50LL);
+    f = f - Fracao(-22LL, 38LL);
+    f = f + Fracao(-70LL, 74LL);
+    f = f / Fracao(-18LL, 86LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 4: correto! +0.050
+#include<iostream>
+int main() {
+    Fracao f(1.4, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-63LL, 13LL);
+    f = f / Fracao(95LL, 83LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(73LL, 39LL);
+    f = f - Fracao(-27LL, 14LL);
+    f = f / Fracao(-63LL, 4LL);
+    return 0;
+}
+Teste 5 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(1.4, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-63LL, 13LL);
+    f = f / Fracao(95LL, 83LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(73LL, 39LL);
+    f = f - Fracao(-27LL, 14LL);
+    f = f / Fracao(-63LL, 4LL);
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(-0.7272727272727273, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(28LL, 30LL);
+    f = f * Fracao(37LL, 15LL);
+    f = f / Fracao(-57LL, 33LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-88LL, 98LL);
+    f = f / Fracao(-91LL, 86LL);
+    f = f - Fracao(88LL, 14LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 6 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(-0.7272727272727273, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(28LL, 30LL);
+    f = f * Fracao(37LL, 15LL);
+    f = f / Fracao(-57LL, 33LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-88LL, 98LL);
+    f = f / Fracao(-91LL, 86LL);
+    f = f - Fracao(88LL, 14LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 7: correto! +0.050
+#include<iostream>
+int main() {
+    Fracao f(73LL, 31LL);
+    f = f + Fracao(-94LL, 22LL);
+    f = f * Fracao(96LL, 18LL);
+    f = f + Fracao(87LL, 17LL);
+    f = f - Fracao(33LL, 100LL);
+    f = f / Fracao(-1LL, 54LL);
+    f = f - Fracao(2LL, 48LL);
+    f = f * Fracao(32LL, 38LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(37LL, 59LL);
+    f = f * Fracao(35LL, 73LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-43LL, 99LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(84LL, 76LL);
+    f = f * Fracao(38LL, 90LL);
+    f = f + Fracao(22LL, 14LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(48LL, 99LL);
+    return 0;
+}
+Teste 8 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(73LL, 31LL);
+    f = f + Fracao(-94LL, 22LL);
+    f = f * Fracao(96LL, 18LL);
+    f = f + Fracao(87LL, 17LL);
+    f = f - Fracao(33LL, 100LL);
+    f = f / Fracao(-1LL, 54LL);
+    f = f - Fracao(2LL, 48LL);
+    f = f * Fracao(32LL, 38LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(37LL, 59LL);
+    f = f * Fracao(35LL, 73LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-43LL, 99LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(84LL, 76LL);
+    f = f * Fracao(38LL, 90LL);
+    f = f + Fracao(22LL, 14LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(48LL, 99LL);
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(57LL, 8LL);
+    f = f - Fracao(66LL, 46LL);
+    f = f * Fracao(-8LL, 6LL);
+    f = f / Fracao(52LL, 41LL);
+    f = f * Fracao(-5LL, 9LL);
+    f = f - Fracao(-74LL, 35LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-75LL, 19LL);
+    f = f - Fracao(-64LL, 33LL);
+    f = f + Fracao(-71LL, 83LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(85LL, 73LL);
+    f = f * Fracao(11LL, 40LL);
+    f = f / Fracao(-62LL, 56LL);
+    f = f + Fracao(74LL, 25LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-17LL, 92LL);
+    f = f / Fracao(100LL, 82LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(42LL, 40LL);
+    return 0;
+}
+Teste 9 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(57LL, 8LL);
+    f = f - Fracao(66LL, 46LL);
+    f = f * Fracao(-8LL, 6LL);
+    f = f / Fracao(52LL, 41LL);
+    f = f * Fracao(-5LL, 9LL);
+    f = f - Fracao(-74LL, 35LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-75LL, 19LL);
+    f = f - Fracao(-64LL, 33LL);
+    f = f + Fracao(-71LL, 83LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(85LL, 73LL);
+    f = f * Fracao(11LL, 40LL);
+    f = f / Fracao(-62LL, 56LL);
+    f = f + Fracao(74LL, 25LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-17LL, 92LL);
+    f = f / Fracao(100LL, 82LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(42LL, 40LL);
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(0.7323943661971831, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(61LL, 81LL);
+    f = f * Fracao(-17LL, 11LL);
+    f = f - Fracao(-25LL, 84LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 10 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(0.7323943661971831, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(61LL, 81LL);
+    f = f * Fracao(-17LL, 11LL);
+    f = f - Fracao(-25LL, 84LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(1.75, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(45LL, 8LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-22LL, 27LL);
+    f = f / Fracao(-15LL, 63LL);
+    f = f - Fracao(93LL, 12LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-29LL, 41LL);
+    f = f * Fracao(-21LL, 28LL);
+    f = f + Fracao(-19LL, 49LL);
+    return 0;
+}
+Teste 11 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(1.75, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(45LL, 8LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-22LL, 27LL);
+    f = f / Fracao(-15LL, 63LL);
+    f = f - Fracao(93LL, 12LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-29LL, 41LL);
+    f = f * Fracao(-21LL, 28LL);
+    f = f + Fracao(-19LL, 49LL);
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(56LL, 37LL);
+    f = f / Fracao(92LL, 34LL);
+    f = f * Fracao(-33LL, 97LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-54LL, 41LL);
+    f = f / Fracao(-13LL, 60LL);
+    f = f + Fracao(-57LL, 77LL);
+    f = f * Fracao(76LL, 77LL);
+    f = f - Fracao(-55LL, 28LL);
+    f = f + Fracao(-78LL, 61LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(74LL, 15LL);
+    f = f * Fracao(-43LL, 37LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+Teste 12 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(56LL, 37LL);
+    f = f / Fracao(92LL, 34LL);
+    f = f * Fracao(-33LL, 97LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-54LL, 41LL);
+    f = f / Fracao(-13LL, 60LL);
+    f = f + Fracao(-57LL, 77LL);
+    f = f * Fracao(76LL, 77LL);
+    f = f - Fracao(-55LL, 28LL);
+    f = f + Fracao(-78LL, 61LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(74LL, 15LL);
+    f = f * Fracao(-43LL, 37LL);
+    std::cout << f << " " << double(f) << std::endl;
+    return 0;
+}
+#include<iostream>
+int main() {
+    Fracao f(66LL, 66LL);
+    f = f * Fracao(-68LL, 58LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-52LL, 53LL);
+    f = f + Fracao(56LL, 6LL);
+    f = f - Fracao(20LL, 27LL);
+    f = f / Fracao(-87LL, 59LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(93LL, 8LL);
+    f = f / Fracao(100LL, 100LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(72LL, 75LL);
+    f = f * Fracao(-50LL, 3LL);
+    f = f + Fracao(30LL, 48LL);
+    f = f - Fracao(-21LL, 48LL);
+    return 0;
+}
+Teste 13 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(66LL, 66LL);
+    f = f * Fracao(-68LL, 58LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(-52LL, 53LL);
+    f = f + Fracao(56LL, 6LL);
+    f = f - Fracao(20LL, 27LL);
+    f = f / Fracao(-87LL, 59LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(93LL, 8LL);
+    f = f / Fracao(100LL, 100LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(72LL, 75LL);
+    f = f * Fracao(-50LL, 3LL);
+    f = f + Fracao(30LL, 48LL);
+    f = f - Fracao(-21LL, 48LL);
+    return 0;
+}
+Teste 14: correto! +0.050
+#include<iostream>
+int main() {
+    Fracao f(0.2708333333333333, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(80LL, 48LL);
+    f = f + Fracao(-84LL, 72LL);
+    f = f / Fracao(3LL, 65LL);
+    f = f * Fracao(80LL, 79LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(35LL, 2LL);
+    f = f * Fracao(36LL, 3LL);
+    f = f / Fracao(-41LL, 10LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-90LL, 31LL);
+    return 0;
+}
+Teste 15 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(0.2708333333333333, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(80LL, 48LL);
+    f = f + Fracao(-84LL, 72LL);
+    f = f / Fracao(3LL, 65LL);
+    f = f * Fracao(80LL, 79LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(35LL, 2LL);
+    f = f * Fracao(36LL, 3LL);
+    f = f / Fracao(-41LL, 10LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(-90LL, 31LL);
+    return 0;
+}
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+#include<iostream>
+int main() {
+    Fracao f(-1.8888888888888888, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-3LL, 78LL);
+    f = f / Fracao(-68LL, 26LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(0LL, 42LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-97LL, 19LL);
+    f = f / Fracao(19LL, 81LL);
+    f = f * Fracao(-98LL, 23LL);
+    return 0;
+}
+Teste 18 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(-1.8888888888888888, 1e-10);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f - Fracao(-3LL, 78LL);
+    f = f / Fracao(-68LL, 26LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f + Fracao(0LL, 42LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-97LL, 19LL);
+    f = f / Fracao(19LL, 81LL);
+    f = f * Fracao(-98LL, 23LL);
+    return 0;
+}
+Teste 19: correto! +0.050
+#include<iostream>
+int main() {
+    Fracao f(86LL, 65LL);
+    f = f / Fracao(5LL, 92LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-76LL, 2LL);
+    f = f - Fracao(-46LL, 36LL);
+    f = f + Fracao(56LL, 90LL);
+    f = f / Fracao(75LL, 37LL);
+    f = f * Fracao(-71LL, 52LL);
+    f = f / Fracao(-68LL, 32LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(64LL, 29LL);
+    f = f - Fracao(64LL, 22LL);
+    f = f + Fracao(-45LL, 38LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-44LL, 30LL);
+    f = f - Fracao(-19LL, 93LL);
+    f = f / Fracao(28LL, 27LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-65LL, 25LL);
+    f = f + Fracao(-2LL, 45LL);
+    return 0;
+}
+Teste 20 deu errado!
+
+Tempo limite (5 s) excedido
+#include<iostream>
+int main() {
+    Fracao f(86LL, 65LL);
+    f = f / Fracao(5LL, 92LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-76LL, 2LL);
+    f = f - Fracao(-46LL, 36LL);
+    f = f + Fracao(56LL, 90LL);
+    f = f / Fracao(75LL, 37LL);
+    f = f * Fracao(-71LL, 52LL);
+    f = f / Fracao(-68LL, 32LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f / Fracao(64LL, 29LL);
+    f = f - Fracao(64LL, 22LL);
+    f = f + Fracao(-45LL, 38LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-44LL, 30LL);
+    f = f - Fracao(-19LL, 93LL);
+    f = f / Fracao(28LL, 27LL);
+    std::cout << f << " " << double(f) << std::endl;
+    f = f * Fracao(-65LL, 25LL);
+    f = f + Fracao(-2LL, 45LL);
+    return 0;
+}
+Nota exercicio 2: 0.3
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1 deu errado! +0.038
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-10, -32);
+    std::cout << (v < Vetor(8,23)) << std::endl;
+    v = v - Vetor(18, -82);
+    std::cout << (v * Vetor(-13,2)) << std::endl;
+    v = v + Vetor(-52, 77);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(11,66)) << std::endl;
+    v = v - Vetor(48, -9);
+    v = v + Vetor(-39, -77);
+    std::cout << (v ^ Vetor(-46,75)) << std::endl;
+    std::cout << (v < Vetor(80,92)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-96,-40)) << std::endl;
+    v = v + Vetor(-87, 7);
+    std::cout << (v * Vetor(-59,-32)) << std::endl;
+    v = v - Vetor(36, 17);
+    std::cout << (v ^ Vetor(-95,-90)) << std::endl;
+    std::cout << (v < Vetor(-38,-59)) << std::endl;
+    v = v - Vetor(81, 68);
+    v = v + Vetor(35, 31);
+    std::cout << v << std::endl;
+    v = v + Vetor(-99, 74);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(88,98)) << std::endl;
+    std::cout << (v * Vetor(65,99)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-49, 63);
+    std::cout << (v * Vetor(-57,38)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-38,53)) << std::endl;
+    std::cout << (v * Vetor(-18,36)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+deveria ser
+178.1750166104505
+464
+150.0966355385756
+41.670020180884684
+-9811
+111.55110788998037
+(-167,59)
+13672
+12874
+30755
+66.80614795822343
+(-336,12)
+(-435,86)
+-50198
+-19761
+(-435,86)
+22876
+386.6846260197061
+50.95022537880091
+7776
+386.6846260197061
+
+mas deu
+nan
+464
+150.097
+nan
+-9811
+nan
+(-167,59)
+13672
+12874
+30755
+nan
+(-336,12)
+(-435,86)
+-50198
+-19761
+(-435,86)
+22876
+386.685
+nan
+7776
+386.685
+
+Teste 2 deu errado! +0.032
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(45, 73);
+    v = v + Vetor(-11, -68);
+    std::cout << (v < Vetor(18,93)) << std::endl;
+    std::cout << (v * Vetor(-87,33)) << std::endl;
+    v = v - Vetor(86, 34);
+    v = v + Vetor(-97, -19);
+    std::cout << (v ^ Vetor(24,-91)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(43,-86)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(71,-83)) << std::endl;
+    v = v - Vetor(41, -41);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(85,12)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(61, 79);
+    std::cout << (v < Vetor(-14,-99)) << std::endl;
+    return 0;
+}
+deveria ser
+70.68005123256907
+-2793
+14711
+156.54072952429985
+-2279
+(-149,-48)
+112.68817390935943
+(-190,-7)
+174.0742321375985
+(-190,-7)
+111.11855167790328
+
+mas deu
+nan
+-2793
+14711
+156.541
+-2279
+(-149,-48)
+nan
+(-190,-7)
+nan
+(-190,-7)
+nan
+
+Teste 3 deu errado! +0.043
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-41, -90);
+    v = v + Vetor(-32, 17);
+    std::cout << (v * Vetor(-38,75)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(6,41)) << std::endl;
+    v = v - Vetor(-10, -52);
+    std::cout << v << std::endl;
+    v = v + Vetor(-99, -13);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-72,-28)) << std::endl;
+    std::cout << (v ^ Vetor(-51,-80)) << std::endl;
+    std::cout << (v * Vetor(-54,97)) << std::endl;
+    std::cout << (v < Vetor(-56,12)) << std::endl;
+    v = v - Vetor(-35, 77);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-78,-76)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(42,49)) << std::endl;
+    std::cout << (v ^ Vetor(91,10)) << std::endl;
+    v = v + Vetor(-77, -26);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(88,39)) << std::endl;
+    v = v + Vetor(2, 67);
+    std::cout << (v * Vetor(-1,-80)) << std::endl;
+    std::cout << (v ^ Vetor(-76,-25)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-94, 15);
+    std::cout << v << std::endl;
+    v = v - Vetor(23, 85);
+    std::cout << (v * Vetor(-61,-20)) << std::endl;
+    v = v + Vetor(100, 26);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-93,74)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(29, -31);
+    v = v + Vetor(0, -58);
+    std::cout << (v * Vetor(81,37)) << std::endl;
+    v = v - Vetor(34, 9);
+    v = v + Vetor(14, 90);
+    std::cout << (v ^ Vetor(-28,-50)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(75, 76);
+    std::cout << v << std::endl;
+    v = v - Vetor(92, -92);
+    std::cout << (v * Vetor(87,-12)) << std::endl;
+    std::cout << (v < Vetor(5,-97)) << std::endl;
+    std::cout << (v ^ Vetor(-52,-2)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(39,87)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-92,-58)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(26, -36);
+    std::cout << (v * Vetor(-88,-80)) << std::endl;
+    v = v + Vetor(61, -20);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(36,62)) << std::endl;
+    v = v - Vetor(-42, -74);
+    std::cout << v << std::endl;
+    return 0;
+}
+deveria ser
+-2701
+103.23759005323593
+(-73,-73)
+-3431
+(-63,-21)
+165.5294535724685
+12616
+11226
+5450
+23.947761244756116
+168.67127793433
+3.101970887158661
+(-127,-111)
+171.75526455495714
+8831
+(-204,-137)
+-23295
+5802
+-270
+213.78493866500511
+(-296,-55)
+22259
+(-219,-114)
+66.00836709657148
+(-219,-114)
+-25305
+11720
+274.63430230034993
+(-343,-136)
+-37317
+87.17498825327361
+-1418
+(-435,-44)
+-20793
+437.219624445198
+(-435,-44)
+42572
+437.219624445198
+(-435,-44)
+437.219624445198
+41208
+400.9788024322483
+124.14555849278473
+(-358,46)
+
+mas deu
+-2701
+103.238
+(-73,-73)
+-3431
+(-63,-21)
+165.529
+12616
+11226
+5450
+nan
+168.671
+nan
+(-127,-111)
+nan
+8831
+(-204,-137)
+-23295
+5802
+-270
+213.785
+(-296,-55)
+22259
+(-219,-114)
+nan
+(-219,-114)
+-25305
+11720
+274.634
+(-343,-136)
+-37317
+nan
+-1418
+(-435,-44)
+-20793
+437.22
+(-435,-44)
+42572
+437.22
+(-435,-44)
+437.22
+41208
+400.979
+nan
+(-358,46)
+
+Teste 4 deu errado! +0.039
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-70, 10);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(73,-8)) << std::endl;
+    std::cout << (v ^ Vetor(23,-26)) << std::endl;
+    v = v + Vetor(6, 94);
+    v = v - Vetor(9, -39);
+    std::cout << (v ^ Vetor(-8,-24)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(17, -42);
+    std::cout << (v * Vetor(-29,73)) << std::endl;
+    v = v + Vetor(31, 18);
+    std::cout << v << std::endl;
+    v = v - Vetor(50, 52);
+    v = v + Vetor(-58, -6);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(98,-70)) << std::endl;
+    std::cout << (v < Vetor(88,74)) << std::endl;
+    v = v + Vetor(-25, 95);
+    std::cout << (v < Vetor(-78,-79)) << std::endl;
+    v = v + Vetor(80, 80);
+    std::cout << (v < Vetor(-38,62)) << std::endl;
+    std::cout << (v * Vetor(39,-53)) << std::endl;
+    v = v - Vetor(28, 30);
+    std::cout << (v * Vetor(84,-44)) << std::endl;
+    std::cout << (v ^ Vetor(57,-17)) << std::endl;
+    v = v + Vetor(-74, -76);
+    std::cout << v << std::endl;
+    v = v + Vetor(-18, 17);
+    v = v - Vetor(59, 53);
+    v = v + Vetor(-27, -77);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-20,73)) << std::endl;
+    v = v - Vetor(-69, 48);
+    std::cout << (v < Vetor(-68,56)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-92,-62)) << std::endl;
+    v = v - Vetor(-19, -7);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-39,-86)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-79, -56);
+    v = v + Vetor(76, 85);
+    std::cout << (v < Vetor(97,-77)) << std::endl;
+    std::cout << (v * Vetor(-92,13)) << std::endl;
+    v = v + Vetor(-52, 74);
+    std::cout << (v * Vetor(63,68)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(40, -96);
+    std::cout << (v * Vetor(-80,-56)) << std::endl;
+    v = v - Vetor(-36, 46);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(83,-14)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(25,-4)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-32,100)) << std::endl;
+    std::cout << (v < Vetor(-45,-70)) << std::endl;
+    v = v - Vetor(-31, 2);
+    v = v + Vetor(-92, -56);
+    v = v - Vetor(74, 25);
+    v = v + Vetor(82, 47);
+    std::cout << (v < Vetor(-43,-88)) << std::endl;
+    v = v - Vetor(-83, -19);
+    std::cout << (v ^ Vetor(-34,19)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(39,43)) << std::endl;
+    std::cout << (v < Vetor(-11,-1)) << std::endl;
+    std::cout << (v * Vetor(41,9)) << std::endl;
+    v = v - Vetor(-34, 85);
+    std::cout << (v * Vetor(74,16)) << std::endl;
+    std::cout << (v < Vetor(33,100)) << std::endl;
+    std::cout << (v ^ Vetor(-71,51)) << std::endl;
+    v = v - Vetor(2, 42);
+    v = v + Vetor(89, 74);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-84,20)) << std::endl;
+    std::cout << (v < Vetor(-62,-55)) << std::endl;
+    std::cout << (v * Vetor(-14,2)) << std::endl;
+    std::cout << (v ^ Vetor(39,81)) << std::endl;
+    v = v + Vetor(100, -31);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-85,-27)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-9, 73);
+    v = v - Vetor(-47, -33);
+    v = v + Vetor(43, -78);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-68,1)) << std::endl;
+    v = v + Vetor(4, -90);
+    std::cout << (v ^ Vetor(-18,30)) << std::endl;
+    std::cout << (v < Vetor(-80,64)) << std::endl;
+    std::cout << (v * Vetor(93,-76)) << std::endl;
+    v = v - Vetor(-3, -89);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(35,-95)) << std::endl;
+    v = v + Vetor(46, -35);
+    return 0;
+}
+deveria ser
+70.71067811865476
+-5190
+1590
+2896
+(-73,143)
+8997
+(-25,119)
+(-133,61)
+3332
+115.30081881751235
+90.0
+13.215108369201403
+-15550
+-17968
+-9940
+(-180,130)
+(-284,17)
+71.25290051126892
+47.677166039912514
+217.2233873228203
+25.771837844688164
+197.46392075515973
+15920
+(-196,-24)
+147.75491006618927
+5293
+7129
+(-93,191)
+-1080
+(-17,49)
+51.86520991955976
+-2097
+(-17,49)
+118.22392012672782
+(-17,49)
+-132
+128.1311305219869
+74.47896771898056
+1335
+(13,32)
+-689
+117.30387725148647
+821
+2630
+120.1707404202564
+-1366
+135.63554106501732
+(134,-21)
+-11676
+129.51712706115092
+-1918
+11673
+(234,-52)
+-18486
+239.70815588961506
+(234,-52)
+(315,-24)
+315.91296269700615
+-21444
+7518
+161.00539304358992
+38331
+322.96903876377996
+65.33561656993727
+
+mas deu
+70.7107
+-5190
+1590
+2896
+(-73,143)
+8997
+(-25,119)
+(-133,61)
+3332
+nan
+90
+nan
+-15550
+-17968
+-9940
+(-180,130)
+(-284,17)
+nan
+nan
+217.223
+nan
+197.464
+15920
+(-196,-24)
+nan
+5293
+7129
+(-93,191)
+-1080
+(-17,49)
+51.8652
+-2097
+(-17,49)
+nan
+(-17,49)
+-132
+nan
+nan
+1335
+(13,32)
+-689
+nan
+821
+2630
+nan
+-1366
+135.636
+(134,-21)
+-11676
+nan
+-1918
+11673
+(234,-52)
+-18486
+239.708
+(234,-52)
+(315,-24)
+315.913
+-21444
+7518
+nan
+38331
+322.969
+nan
+
+Teste 5 deu errado! +0.042
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-57, -15);
+    v = v - Vetor(72, 40);
+    v = v + Vetor(-92, -64);
+    std::cout << (v < Vetor(-96,51)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-60, 45);
+    std::cout << (v ^ Vetor(65,-6)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(14,87)) << std::endl;
+    std::cout << (v ^ Vetor(55,-99)) << std::endl;
+    v = v - Vetor(52, 63);
+    std::cout << (v < Vetor(-61,-23)) << std::endl;
+    v = v + Vetor(-42, 16);
+    std::cout << (v * Vetor(85,4)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-64, 17);
+    v = v - Vetor(95, 44);
+    std::cout << (v ^ Vetor(-50,-75)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(60, -76);
+    v = v + Vetor(54, -32);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(46, 61);
+    std::cout << (v < Vetor(-26,-30)) << std::endl;
+    v = v - Vetor(89, -42);
+    std::cout << (v < Vetor(-61,11)) << std::endl;
+    std::cout << (v * Vetor(-35,-81)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-91,9)) << std::endl;
+    v = v - Vetor(48, 51);
+    std::cout << (v ^ Vetor(-49,82)) << std::endl;
+    v = v + Vetor(-93, -64);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-77,29)) << std::endl;
+    v = v - Vetor(73, 68);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-66,99)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(85, -83);
+    v = v + Vetor(88, -44);
+    std::cout << (v * Vetor(24,74)) << std::endl;
+    std::cout << (v ^ Vetor(-26,-73)) << std::endl;
+    v = v + Vetor(-36, 96);
+    std::cout << (v * Vetor(-73,-40)) << std::endl;
+    v = v + Vetor(-98, 29);
+    std::cout << (v * Vetor(-20,60)) << std::endl;
+    v = v - Vetor(-23, 43);
+    std::cout << (v ^ Vetor(-60,-66)) << std::endl;
+    std::cout << (v * Vetor(3,78)) << std::endl;
+    v = v + Vetor(-16, -9);
+    std::cout << (v * Vetor(-67,-58)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-43,-15)) << std::endl;
+    std::cout << (v < Vetor(-23,-71)) << std::endl;
+    std::cout << (v * Vetor(-100,43)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-96,3)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(72,-6)) << std::endl;
+    v = v - Vetor(7, -16);
+    std::cout << v << std::endl;
+    v = v + Vetor(47, 78);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(55,73)) << std::endl;
+    std::cout << (v * Vetor(86,-40)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(78,-22)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-48,18)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-65,-78)) << std::endl;
+    v = v + Vetor(91, 73);
+    std::cout << (v < Vetor(-38,45)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-99,19)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-73, -81);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-73,27)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-75,10)) << std::endl;
+    v = v - Vetor(-4, 83);
+    std::cout << (v ^ Vetor(-26,-71)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-17,-20)) << std::endl;
+    v = v - Vetor(56, -23);
+    v = v + Vetor(2, -52);
+    return 0;
+}
+deveria ser
+56.280230154486524
+251.0019920239678
+11626
+229.8194943863553
+-16522
+24959
+26.163522624325378
+-22519
+(-255,-211)
+19150
+477.53533900644464
+(-414,-238)
+462.64024900563936
+29.509468701465735
+21.34159215216187
+23576
+(-463,-91)
+16.767670892260995
+-48860
+638.1629885852046
+-33378
+(-677,-274)
+-85107
+730.3458085044372
+-33566
+43092
+57390
+9560
+42630
+-14289
+63063
+(-801,-162)
+36873
+60.61691574165945
+73134
+(-801,-162)
+13.223591873672763
+(-801,-162)
+16470
+(-808,-146)
+(-761,-68)
+-51813
+-62726
+(-761,-68)
+764.0320673898445
+22046
+764.0320673898445
+-16962
+764.0320673898445
+54769
+49.39319357125924
+(-670,5)
+-12235
+670.0186564566691
+(-670,5)
+603.1624988342694
+12.100297719052012
+(-597,86)
+480
+42181
+593.0075884843296
+49.9253215586912
+
+mas deu
+nan
+251.002
+11626
+229.819
+-16522
+24959
+nan
+-22519
+(-255,-211)
+19150
+477.535
+(-414,-238)
+462.64
+nan
+nan
+23576
+(-463,-91)
+nan
+-48860
+638.163
+-33378
+(-677,-274)
+-85107
+730.346
+-33566
+43092
+57390
+9560
+42630
+-14289
+63063
+(-801,-162)
+36873
+nan
+73134
+(-801,-162)
+nan
+(-801,-162)
+16470
+(-808,-146)
+(-761,-68)
+-51813
+-62726
+(-761,-68)
+764.032
+22046
+764.032
+-16962
+764.032
+54769
+nan
+(-670,5)
+-12235
+670.019
+(-670,5)
+603.162
+nan
+(-597,86)
+480
+42181
+593.008
+nan
+
+Teste 6 deu errado! +0.043
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(87, 13);
+    v = v + Vetor(25, -99);
+    v = v - Vetor(59, -1);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-16,52)) << std::endl;
+    std::cout << (v < Vetor(2,-89)) << std::endl;
+    v = v - Vetor(-86, -29);
+    std::cout << (v * Vetor(-33,-45)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(60, 63);
+    v = v + Vetor(-67, -32);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-95, 25);
+    std::cout << (v < Vetor(-30,-93)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(99,87)) << std::endl;
+    v = v + Vetor(-55, 79);
+    std::cout << (v * Vetor(-88,49)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(66,42)) << std::endl;
+    std::cout << (v * Vetor(-81,35)) << std::endl;
+    std::cout << (v < Vetor(-6,12)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(38,49)) << std::endl;
+    v = v + Vetor(-72, 41);
+    std::cout << (v ^ Vetor(-4,-85)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-87,-43)) << std::endl;
+    v = v - Vetor(97, -72);
+    std::cout << (v * Vetor(-70,-28)) << std::endl;
+    std::cout << (v ^ Vetor(-9,50)) << std::endl;
+    std::cout << (v * Vetor(-68,-27)) << std::endl;
+    std::cout << (v ^ Vetor(-27,-18)) << std::endl;
+    v = v + Vetor(100, 26);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(30,-40)) << std::endl;
+    std::cout << (v * Vetor(59,-80)) << std::endl;
+    v = v + Vetor(23, 0);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(71,99)) << std::endl;
+    v = v + Vetor(-69, 53);
+    std::cout << (v * Vetor(-17,51)) << std::endl;
+    std::cout << (v ^ Vetor(-30,55)) << std::endl;
+    v = v - Vetor(-40, -21);
+    std::cout << (v ^ Vetor(30,66)) << std::endl;
+    v = v + Vetor(26, -50);
+    std::cout << (v ^ Vetor(46,36)) << std::endl;
+    v = v - Vetor(-39, 83);
+    std::cout << v << std::endl;
+    v = v - Vetor(43, 10);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(47, -63);
+    std::cout << (v * Vetor(-37,-58)) << std::endl;
+    v = v + Vetor(-69, 99);
+    std::cout << (v * Vetor(-88,-72)) << std::endl;
+    v = v + Vetor(-83, -51);
+    v = v - Vetor(-42, 66);
+    std::cout << (v * Vetor(-38,12)) << std::endl;
+    v = v - Vetor(-72, -87);
+    std::cout << (v * Vetor(-19,53)) << std::endl;
+    std::cout << (v ^ Vetor(16,-61)) << std::endl;
+    v = v + Vetor(100, -26);
+    std::cout << (v * Vetor(-68,-36)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-4,-66)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(27,-48)) << std::endl;
+    v = v + Vetor(47, -80);
+    std::cout << (v < Vetor(-2,-18)) << std::endl;
+    v = v + Vetor(-19, 57);
+    std::cout << (v * Vetor(11,-16)) << std::endl;
+    v = v + Vetor(-27, -81);
+    v = v - Vetor(-41, 13);
+    std::cout << (v ^ Vetor(-58,30)) << std::endl;
+    std::cout << (v < Vetor(50,29)) << std::endl;
+    return 0;
+}
+deveria ser
+100.16985574512923
+-5268
+30.65742383467836
+-2067
+(139,-56)
+(12,-151)
+151.47607071745688
+49.176396437721564
+205.9732992404598
+26733
+-9329
+110.05907504608605
+(52,-97)
+94.27621322838634
+-7607
+178.37007211461545
+110.05907504608605
+-2777
+1476
+(-20,-56)
+4148
+7742
+-5706
+7524
+2538
+45.31004303683677
+-580
+-4363
+42.42640687119285
+-2388
+5916
+-615
+-4998
+-2928
+(42,-17)
+(-1,-27)
+27.018512172212592
+3518
+1376
+1136
+-1265
+-152
+-5652
+(108,-47)
+69.95026758522489
+117.78370006074695
+-3915
+57.0105490898038
+2616
+-5012
+77.66663129815419
+
+mas deu
+100.17
+-5268
+nan
+-2067
+(139,-56)
+(12,-151)
+151.476
+nan
+205.973
+26733
+-9329
+110.059
+(52,-97)
+nan
+-7607
+nan
+110.059
+-2777
+1476
+(-20,-56)
+4148
+7742
+-5706
+7524
+2538
+45.31
+-580
+-4363
+42.4264
+-2388
+5916
+-615
+-4998
+-2928
+(42,-17)
+(-1,-27)
+27.0185
+3518
+1376
+1136
+-1265
+-152
+-5652
+(108,-47)
+nan
+117.784
+-3915
+nan
+2616
+-5012
+nan
+
+Teste 7 deu errado! +0.042
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-78, -36);
+    std::cout << (v ^ Vetor(29,49)) << std::endl;
+    v = v - Vetor(51, -57);
+    std::cout << (v * Vetor(32,-1)) << std::endl;
+    std::cout << (v < Vetor(18,-67)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(38, -74);
+    std::cout << v << std::endl;
+    v = v - Vetor(17, 40);
+    v = v + Vetor(96, 81);
+    v = v - Vetor(87, -30);
+    std::cout << (v < Vetor(17,-94)) << std::endl;
+    v = v + Vetor(-46, -39);
+    std::cout << (v ^ Vetor(-56,30)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(37,58)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(2,-39)) << std::endl;
+    std::cout << (v < Vetor(23,-54)) << std::endl;
+    std::cout << (v * Vetor(46,-19)) << std::endl;
+    v = v + Vetor(-21, 82);
+    std::cout << (v * Vetor(-22,75)) << std::endl;
+    std::cout << (v ^ Vetor(-10,-57)) << std::endl;
+    std::cout << (v * Vetor(45,-90)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-27,-18)) << std::endl;
+    v = v - Vetor(67, -40);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(81,95)) << std::endl;
+    std::cout << (v * Vetor(-81,15)) << std::endl;
+    std::cout << (v ^ Vetor(-34,-74)) << std::endl;
+    std::cout << (v < Vetor(55,-84)) << std::endl;
+    std::cout << (v * Vetor(45,67)) << std::endl;
+    std::cout << (v ^ Vetor(-49,-79)) << std::endl;
+    v = v + Vetor(-47, -4);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-27,-82)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(85,15)) << std::endl;
+    v = v + Vetor(22, -60);
+    std::cout << (v < Vetor(76,-50)) << std::endl;
+    std::cout << (v * Vetor(-93,27)) << std::endl;
+    v = v + Vetor(29, 15);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(93,91)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(35, 86);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-67,56)) << std::endl;
+    std::cout << (v * Vetor(-94,7)) << std::endl;
+    std::cout << (v ^ Vetor(66,-24)) << std::endl;
+    v = v + Vetor(95, 66);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(84,-33)) << std::endl;
+    std::cout << (v < Vetor(28,50)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(100,92)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(90,4)) << std::endl;
+    std::cout << (v * Vetor(13,-24)) << std::endl;
+    return 0;
+}
+deveria ser
+-2778
+-4149
+114.2839286491455
+130.6981254647518
+(-167,95)
+143.73934440799067
+482
+254.8921340488953
+-811
+(-221,127)
+254.8921340488953
+8365
+142.95469906124669
+-12579
+20999
+15884
+-29700
+(-242,209)
+2772
+(-309,249)
+396.8400181433319
+(-309,249)
+-49524
+28764
+31332
+162.07799554447521
+2778
+36612
+432.15853572502766
+-10478
+432.15853572502766
+(-356,245)
+-26165
+175.64101994184617
+36057
+(-305,200)
+-46355
+364.72592449673766
+(-305,200)
+364.72592449673766
+(-340,114)
+358.60284438358826
+21.353582963301626
+32758
+636
+(-245,180)
+-26520
+82.94432921397176
+304.0148022712052
+101.08144690781359
+304.0148022712052
+(-245,180)
+304.0148022712052
+(-245,180)
+141.15069849761167
+-7505
+
+mas deu
+-2778
+-4149
+nan
+130.698
+(-167,95)
+nan
+482
+254.892
+-811
+(-221,127)
+254.892
+8365
+nan
+-12579
+20999
+15884
+-29700
+(-242,209)
+2772
+(-309,249)
+396.84
+(-309,249)
+-49524
+28764
+31332
+nan
+2778
+36612
+432.159
+-10478
+432.159
+(-356,245)
+-26165
+nan
+36057
+(-305,200)
+-46355
+364.726
+(-305,200)
+364.726
+(-340,114)
+358.603
+nan
+32758
+636
+(-245,180)
+-26520
+nan
+304.015
+nan
+304.015
+(-245,180)
+304.015
+(-245,180)
+nan
+-7505
+
+Teste 8: correto! +0.050
+Teste 9 deu errado! +0.035
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(41, -68);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-20,2)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-21, 35);
+    std::cout << (v < Vetor(23,-30)) << std::endl;
+    v = v - Vetor(16, -6);
+    std::cout << (v < Vetor(-94,-17)) << std::endl;
+    std::cout << (v ^ Vetor(-18,-49)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-56, -43);
+    std::cout << (v < Vetor(77,44)) << std::endl;
+    v = v + Vetor(49, -7);
+    v = v - Vetor(25, 21);
+    std::cout << (v < Vetor(89,-23)) << std::endl;
+    v = v + Vetor(-66, -3);
+    std::cout << (v < Vetor(-80,40)) << std::endl;
+    std::cout << (v ^ Vetor(14,-34)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-74,40)) << std::endl;
+    v = v - Vetor(70, -37);
+    v = v + Vetor(-53, 20);
+    std::cout << (v < Vetor(65,-55)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(15, 93);
+    std::cout << v << std::endl;
+    v = v - Vetor(-13, -65);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(91,-20)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-73,-42)) << std::endl;
+    std::cout << (v < Vetor(62,68)) << std::endl;
+    std::cout << (v ^ Vetor(-92,-84)) << std::endl;
+    std::cout << (v * Vetor(37,66)) << std::endl;
+    v = v + Vetor(-39, -98);
+    std::cout << (v < Vetor(2,-88)) << std::endl;
+    std::cout << (v ^ Vetor(-57,-13)) << std::endl;
+    v = v - Vetor(-39, -6);
+    std::cout << v << std::endl;
+    v = v - Vetor(-87, 60);
+    std::cout << (v ^ Vetor(64,-71)) << std::endl;
+    v = v + Vetor(-47, 80);
+    std::cout << v << std::endl;
+    v = v + Vetor(7, 49);
+    std::cout << (v < Vetor(24,54)) << std::endl;
+    std::cout << (v * Vetor(26,89)) << std::endl;
+    v = v + Vetor(34, 74);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-2, -70);
+    std::cout << v << std::endl;
+    v = v - Vetor(-86, -45);
+    std::cout << v << std::endl;
+    v = v + Vetor(89, 22);
+    v = v - Vetor(-39, 97);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(53,-45)) << std::endl;
+    std::cout << (v ^ Vetor(-86,45)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-60,91)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(50,62)) << std::endl;
+    std::cout << (v ^ Vetor(94,-17)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(24, -33);
+    std::cout << (v ^ Vetor(68,37)) << std::endl;
+    v = v - Vetor(-98, -40);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(5,-57)) << std::endl;
+    std::cout << (v < Vetor(-78,-53)) << std::endl;
+    std::cout << (v ^ Vetor(24,-32)) << std::endl;
+    v = v - Vetor(90, -69);
+    std::cout << (v < Vetor(98,75)) << std::endl;
+    v = v + Vetor(-2, -90);
+    std::cout << v << std::endl;
+    v = v - Vetor(-36, -36);
+    std::cout << (v * Vetor(23,37)) << std::endl;
+    v = v - Vetor(32, -61);
+    std::cout << (v < Vetor(-27,6)) << std::endl;
+    std::cout << v << std::endl;
+    return 0;
+}
+deveria ser
+79.40403012442127
+126.79809846097965
+(41,-68)
+79.40403012442127
+6.257776797015018
+88.17577027066325
+-682
+(4,-27)
+27.294688127912362
+14.813464118804648
+6.359660239728538
+166.7594800848128
+-402
+(18,-15)
+168.58744832911782
+161.56505117707798
+113.08846094982458
+(-120,-51)
+(-107,14)
+175.05889197899006
+(-107,14)
+5516
+124.9031558931868
+10276
+-3035
+61.388306681044
+-2890
+(-107,-78)
+10252
+(-67,-58)
+122.49325458452631
+-2361
+(-26,65)
+70.00714249274856
+(-24,135)
+(62,180)
+(190,105)
+5345
+17580
+(190,105)
+94.47206263273364
+(190,105)
+22.18907773103181
+-13100
+217.0829334609241
+-3242
+(264,178)
+-15938
+179.79391469053587
+-12720
+17.410035897054104
+(172,157)
+11925
+112.18979886191588
+(176,254)
+
+mas deu
+79.404
+nan
+(41,-68)
+79.404
+nan
+nan
+-682
+(4,-27)
+27.2947
+nan
+nan
+nan
+-402
+(18,-15)
+nan
+nan
+113.088
+(-120,-51)
+(-107,14)
+nan
+(-107,14)
+5516
+nan
+10276
+-3035
+nan
+-2890
+(-107,-78)
+10252
+(-67,-58)
+nan
+-2361
+(-26,65)
+70.0071
+(-24,135)
+(62,180)
+(190,105)
+5345
+17580
+(190,105)
+nan
+(190,105)
+nan
+-13100
+217.083
+-3242
+(264,178)
+-15938
+nan
+-12720
+nan
+(172,157)
+11925
+nan
+(176,254)
+
+Teste 10 deu errado! +0.044
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(48, -100);
+    std::cout << (v * Vetor(-86,28)) << std::endl;
+    v = v - Vetor(40, 72);
+    std::cout << (v ^ Vetor(-18,80)) << std::endl;
+    std::cout << (v * Vetor(49,-7)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-81, -7);
+    std::cout << (v ^ Vetor(-91,-10)) << std::endl;
+    std::cout << (v < Vetor(8,1)) << std::endl;
+    std::cout << (v ^ Vetor(46,-67)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(88,69)) << std::endl;
+    v = v + Vetor(95, 8);
+    v = v - Vetor(4, 100);
+    std::cout << (v * Vetor(43,61)) << std::endl;
+    v = v + Vetor(-78, -65);
+    std::cout << (v * Vetor(-100,87)) << std::endl;
+    std::cout << (v ^ Vetor(77,-45)) << std::endl;
+    v = v + Vetor(49, -27);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-67,-5)) << std::endl;
+    v = v - Vetor(-18, -67);
+    std::cout << (v * Vetor(15,35)) << std::endl;
+    return 0;
+}
+deveria ser
+-6928
+-2456
+1596
+172.18594600024707
+(8,-172)
+-15559
+119.31169424234979
+13125
+(-73,-179)
+150.2863497241707
+-15757
+-23232
+28572
+363.16662842282193
+-24266
+-10255
+
+mas deu
+-6928
+-2456
+1596
+172.186
+(8,-172)
+-15559
+nan
+13125
+(-73,-179)
+nan
+-15757
+-23232
+28572
+363.167
+-24266
+-10255
+
+Teste 11: correto! +0.050
+Teste 12 deu errado! +0.038
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(82, -61);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-76,22)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(89,-15)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(47,-2)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-19, -20);
+    std::cout << (v ^ Vetor(-44,7)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(4,-85)) << std::endl;
+    v = v - Vetor(-42, -25);
+    std::cout << (v ^ Vetor(25,-6)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(11,47)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(74,-14)) << std::endl;
+    std::cout << (v * Vetor(-87,-26)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-42,50)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(88,-73)) << std::endl;
+    std::cout << (v < Vetor(14,91)) << std::endl;
+    v = v + Vetor(77, 42);
+    v = v - Vetor(37, -40);
+    std::cout << (v * Vetor(-12,-60)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(99,-54)) << std::endl;
+    v = v - Vetor(33, 40);
+    v = v + Vetor(-68, 19);
+    v = v - Vetor(-46, 33);
+    std::cout << (v < Vetor(-76,-40)) << std::endl;
+    v = v + Vetor(-58, -68);
+    std::cout << v << std::endl;
+    v = v + Vetor(54, 20);
+    std::cout << (v < Vetor(-51,-11)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-81,-72)) << std::endl;
+    v = v + Vetor(90, -37);
+    std::cout << v << std::endl;
+    v = v + Vetor(-51, 76);
+    std::cout << (v < Vetor(45,-4)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(33, 10);
+    std::cout << (v * Vetor(-6,58)) << std::endl;
+    v = v - Vetor(-61, 63);
+    std::cout << (v < Vetor(-36,-79)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(98, -22);
+    std::cout << (v * Vetor(81,-97)) << std::endl;
+    std::cout << (v < Vetor(-45,-79)) << std::endl;
+    std::cout << (v * Vetor(-7,81)) << std::endl;
+    std::cout << (v ^ Vetor(33,22)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-100, 76);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-1,-100)) << std::endl;
+    v = v + Vetor(75, -31);
+    std::cout << (v ^ Vetor(-90,-2)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(5,69)) << std::endl;
+    std::cout << (v ^ Vetor(-30,86)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-13,-89)) << std::endl;
+    v = v + Vetor(-61, -75);
+    std::cout << (v ^ Vetor(19,-90)) << std::endl;
+    std::cout << (v < Vetor(-19,100)) << std::endl;
+    return 0;
+}
+deveria ser
+102.20078277586722
+-7574
+102.20078277586722
+27.07896317490587
+(82,-61)
+34.20900091781018
+(82,-61)
+-1097
+(101,-41)
+3889
+-458
+143.8923208513922
+83.21161051618557
+(143,-16)
+-818
+-12025
+(143,-16)
+143.8923208513922
+-6806
+143.8923208513922
+-9031
+87.63800167695724
+-6156
+(183,66)
+194.5379140424817
+-16416
+157.59728444179518
+(70,-56)
+151.6393355343856
+129.1200991325518
+-11844
+(214,-73)
+6.134012363536439
+(163,3)
+-422
+103.48906627247888
+261.81863951980193
+35739
+108.20167813208023
+-8317
+10186
+362.22782885913114
+478.4652547468834
+-45648
+-17170
+559.411297705007
+104.51704546806474
+40210
+(530,-179)
+79.64860795835519
+-37384
+129.19696002245092
+
+mas deu
+102.201
+-7574
+102.201
+nan
+(82,-61)
+nan
+(82,-61)
+-1097
+(101,-41)
+3889
+-458
+143.892
+nan
+(143,-16)
+-818
+-12025
+(143,-16)
+143.892
+-6806
+143.892
+-9031
+nan
+-6156
+(183,66)
+194.538
+-16416
+nan
+(70,-56)
+nan
+129.12
+-11844
+(214,-73)
+nan
+(163,3)
+-422
+nan
+261.819
+35739
+nan
+-8317
+10186
+362.228
+478.465
+-45648
+-17170
+559.411
+nan
+40210
+(530,-179)
+nan
+-37384
+nan
+
+Teste 13 deu errado! +0.039
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(75, -57);
+    v = v - Vetor(-69, 82);
+    std::cout << (v ^ Vetor(41,44)) << std::endl;
+    std::cout << (v * Vetor(-51,-4)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(59, -97);
+    v = v - Vetor(21, -35);
+    std::cout << (v < Vetor(-52,-46)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(98,18)) << std::endl;
+    v = v - Vetor(-51, 47);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(6, 97);
+    std::cout << (v < Vetor(-95,39)) << std::endl;
+    std::cout << (v * Vetor(-29,3)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(49,-69)) << std::endl;
+    std::cout << (v < Vetor(-51,32)) << std::endl;
+    v = v + Vetor(1, -22);
+    return 0;
+}
+deveria ser
+12035
+-6788
+(144,-139)
+90.66351049599974
+271.15493725912495
+22974
+(233,-248)
+340.2837051637942
+(233,-248)
+145.66319782087126
+-7618
+(227,-345)
+1242
+155.45001338301404
+
+mas deu
+12035
+-6788
+(144,-139)
+nan
+271.155
+22974
+(233,-248)
+340.284
+(233,-248)
+nan
+-7618
+(227,-345)
+1242
+nan
+
+Teste 14 deu errado! +0.041
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-65, 83);
+    std::cout << (v < Vetor(68,8)) << std::endl;
+    std::cout << (v ^ Vetor(-35,-37)) << std::endl;
+    v = v - Vetor(-18, 18);
+    std::cout << (v < Vetor(-55,93)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(71,84)) << std::endl;
+    std::cout << (v < Vetor(21,9)) << std::endl;
+    std::cout << (v * Vetor(76,55)) << std::endl;
+    std::cout << (v ^ Vetor(32,-18)) << std::endl;
+    v = v - Vetor(-48, -3);
+    v = v + Vetor(-67, -20);
+    std::cout << (v ^ Vetor(-79,-10)) << std::endl;
+    std::cout << (v * Vetor(-49,-58)) << std::endl;
+    std::cout << (v ^ Vetor(-57,-73)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-40,-86)) << std::endl;
+    std::cout << (v < Vetor(10,82)) << std::endl;
+    v = v - Vetor(-97, -43);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(99,36)) << std::endl;
+    std::cout << (v * Vetor(-1,80)) << std::endl;
+    v = v - Vetor(-4, -25);
+    v = v + Vetor(-60, 94);
+    std::cout << (v * Vetor(56,-28)) << std::endl;
+    std::cout << (v < Vetor(21,-87)) << std::endl;
+    std::cout << (v * Vetor(-39,-8)) << std::endl;
+    v = v - Vetor(7, 9);
+    std::cout << (v ^ Vetor(-40,10)) << std::endl;
+    std::cout << (v < Vetor(87,69)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(10,-44)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-80, -85);
+    v = v - Vetor(19, 55);
+    std::cout << (v * Vetor(-54,-58)) << std::endl;
+    std::cout << (v ^ Vetor(86,-68)) << std::endl;
+    std::cout << (v * Vetor(63,13)) << std::endl;
+    v = v - Vetor(38, 69);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-41,-66)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(53,-49)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-86,-94)) << std::endl;
+    v = v + Vetor(-94, 37);
+    v = v - Vetor(70, 52);
+    v = v + Vetor(-18, 63);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-14,-33)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-98, -26);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(51,-14)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(22,72)) << std::endl;
+    v = v + Vetor(54, -42);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(59,-45)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(95,-71)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-11,94)) << std::endl;
+    v = v - Vetor(-33, -41);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(37,-95)) << std::endl;
+    std::cout << (v ^ Vetor(-72,17)) << std::endl;
+    v = v + Vetor(-97, -79);
+    std::cout << (v * Vetor(85,54)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-56,94)) << std::endl;
+    std::cout << (v ^ Vetor(37,-50)) << std::endl;
+    std::cout << (v < Vetor(88,-35)) << std::endl;
+    std::cout << (v * Vetor(-73,25)) << std::endl;
+    std::cout << (v ^ Vetor(79,-55)) << std::endl;
+    v = v + Vetor(33, -61);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-88, 54);
+    std::cout << (v * Vetor(-63,-86)) << std::endl;
+    v = v - Vetor(-2, -66);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(1, 73);
+    v = v - Vetor(-54, 28);
+    std::cout << (v * Vetor(23,-97)) << std::endl;
+    v = v + Vetor(-22, -9);
+    return 0;
+}
+deveria ser
+121.35581429097353
+5310
+5.269844824512379
+80.2122185206219
+2123
+102.67123300407313
+3
+-1234
+4452
+450
+7554
+(-66,48)
+7596
+60.925584083070305
+(31,91)
+-7893
+7249
+-7280
+173.21854018927735
+-705
+7720
+60.62774591676878
+203.5313243704762
+-9164
+(-32,201)
+3536
+3662
+-7460
+169.1892431568863
+10826
+169.1892431568863
+8705
+(-169,-8)
+15198
+(-351,40)
+3594
+353.27184999657135
+(-449,14)
+449.21820978228385
+(-449,14)
+5572
+(-449,14)
+105.20489653712772
+(-395,-28)
+138.61211359228307
+395.9911615175268
+139.17203179457707
+(-395,-28)
+1713
+362.2333502039811
+-14629
+-5218
+-42579
+463.7208211844709
+67.39837647149496
+25392
+150.12841203756278
+31857
+30459
+444.52783939816413
+36860
+355.1351855279902
+(-336,-115)
+327
+
+mas deu
+nan
+5310
+nan
+80.2122
+2123
+nan
+3
+-1234
+4452
+450
+7554
+(-66,48)
+7596
+nan
+(31,91)
+-7893
+7249
+-7280
+nan
+-705
+7720
+nan
+203.531
+-9164
+(-32,201)
+3536
+3662
+-7460
+169.189
+10826
+169.189
+8705
+(-169,-8)
+15198
+(-351,40)
+3594
+353.272
+(-449,14)
+449.218
+(-449,14)
+5572
+(-449,14)
+nan
+(-395,-28)
+nan
+395.991
+nan
+(-395,-28)
+1713
+362.233
+-14629
+-5218
+-42579
+463.721
+nan
+25392
+nan
+31857
+30459
+444.528
+36860
+355.135
+(-336,-115)
+327
+
+Teste 15 deu errado! +0.039
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(17, -47);
+    std::cout << (v < Vetor(97,38)) << std::endl;
+    std::cout << (v * Vetor(19,-60)) << std::endl;
+    v = v + Vetor(-4, 75);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-64,-25)) << std::endl;
+    std::cout << (v ^ Vetor(9,5)) << std::endl;
+    std::cout << (v < Vetor(-79,-81)) << std::endl;
+    v = v - Vetor(-51, 73);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-19,29)) << std::endl;
+    v = v + Vetor(6, -4);
+    std::cout << (v < Vetor(68,-4)) << std::endl;
+    v = v + Vetor(-12, -46);
+    std::cout << (v * Vetor(41,-87)) << std::endl;
+    v = v + Vetor(-38, 18);
+    v = v - Vetor(59, 23);
+    std::cout << (v ^ Vetor(96,-82)) << std::endl;
+    std::cout << (v < Vetor(92,-79)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(50, -49);
+    std::cout << v << std::endl;
+    v = v - Vetor(-1, -52);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-61,94)) << std::endl;
+    v = v + Vetor(12, 76);
+    std::cout << (v ^ Vetor(60,15)) << std::endl;
+    v = v - Vetor(-83, 91);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(34,57)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(50,7)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-65,-98)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-22, 98);
+    std::cout << v << std::endl;
+    v = v - Vetor(-35, -29);
+    std::cout << (v ^ Vetor(-67,-22)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(15,92)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(48,61)) << std::endl;
+    v = v + Vetor(-11, -91);
+    std::cout << (v < Vetor(15,-42)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-81, -60);
+    std::cout << (v ^ Vetor(77,60)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-39,-32)) << std::endl;
+    v = v + Vetor(-31, -59);
+    std::cout << (v * Vetor(95,53)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-5, -77);
+    std::cout << (v * Vetor(39,-93)) << std::endl;
+    std::cout << (v < Vetor(-95,-40)) << std::endl;
+    std::cout << (v * Vetor(77,-93)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-29,-83)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-71,7)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(33,-58)) << std::endl;
+    std::cout << (v < Vetor(-9,-92)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-34,-58)) << std::endl;
+    std::cout << (v ^ Vetor(-49,-18)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-41,84)) << std::endl;
+    v = v + Vetor(16, 81);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(13, -97);
+    std::cout << (v * Vetor(-73,-17)) << std::endl;
+    v = v - Vetor(39, 67);
+    std::cout << (v < Vetor(-98,-100)) << std::endl;
+    std::cout << (v * Vetor(-23,83)) << std::endl;
+    std::cout << (v ^ Vetor(-1,-91)) << std::endl;
+    v = v + Vetor(-22, -95);
+    v = v - Vetor(-74, -29);
+    v = v + Vetor(16, -2);
+    v = v - Vetor(10, 68);
+    return 0;
+}
+deveria ser
+91.50772523812601
+3143
+30.870698080866262
+-1532
+-187
+160.62092875356558
+(64,-45)
+158.34372225240156
+31.625559535128886
+10643
+12798
+70.65324052538844
+(-39,-100)
+(11,-149)
+(12,-97)
+-9850
+1620
+(107,-112)
+-2746
+(107,-112)
+154.8967397978408
+4566
+154.8967397978408
+77.24704061941522
+154.8967397978408
+(107,-112)
+(85,-14)
+-1635
+120.93386622447825
+10815
+120.93386622447825
+44.67629847507978
+35.4601280877384
+132.87964479181903
+(109,-76)
+12152
+(28,-136)
+62.2643167565757
+-10620
+(-3,-195)
+195.0230755577401
+11052
+68.13736775316163
+11128
+(2,-118)
+-3588
+(2,-118)
+118.01694793545543
+-8364
+(2,-118)
+6910
+6.558265895283466
+118.01694793545543
+31.350147942447506
+-5818
+118.01694793545543
+(2,-118)
+118.01694793545543
+154.95423899030538
+41.14608122288197
+-1385
+33.94509156666734
+201
+3087
+
+mas deu
+nan
+3143
+30.8707
+-1532
+-187
+nan
+(64,-45)
+nan
+nan
+10643
+12798
+nan
+(-39,-100)
+(11,-149)
+(12,-97)
+-9850
+1620
+(107,-112)
+-2746
+(107,-112)
+154.897
+4566
+154.897
+nan
+154.897
+(107,-112)
+(85,-14)
+-1635
+120.934
+10815
+120.934
+nan
+nan
+132.88
+(109,-76)
+12152
+(28,-136)
+nan
+-10620
+(-3,-195)
+195.023
+11052
+nan
+11128
+(2,-118)
+-3588
+(2,-118)
+118.017
+-8364
+(2,-118)
+6910
+nan
+118.017
+nan
+-5818
+118.017
+(2,-118)
+118.017
+nan
+41.1461
+-1385
+nan
+201
+3087
+
+Teste 16 deu errado! +0.040
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-42, -13);
+    std::cout << (v ^ Vetor(23,-14)) << std::endl;
+    std::cout << (v * Vetor(78,25)) << std::endl;
+    v = v - Vetor(84, 49);
+    v = v + Vetor(-69, 76);
+    v = v - Vetor(91, 84);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-93,-24)) << std::endl;
+    std::cout << (v < Vetor(-3,-80)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-100, 10);
+    std::cout << (v ^ Vetor(-73,-17)) << std::endl;
+    std::cout << (v * Vetor(50,-25)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(0,-8)) << std::endl;
+    v = v + Vetor(31, -52);
+    v = v - Vetor(-91, 40);
+    std::cout << (v < Vetor(12,-28)) << std::endl;
+    v = v - Vetor(17, -53);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(1,4)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(62, 73);
+    v = v - Vetor(-83, -83);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-90, -23);
+    std::cout << (v < Vetor(-42,-58)) << std::endl;
+    std::cout << (v * Vetor(49,74)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-22,30)) << std::endl;
+    return 0;
+}
+deveria ser
+887
+-3601
+(-286,-70)
+354
+74.09934398517845
+294.441844852256
+2182
+-17800
+390.6353798620908
+(-386,-60)
+3088
+83.2670786731404
+297.9295218671691
+123.44427544362382
+297.9295218671691
+147.46185947559457
+62.64583516423521
+-8558
+228.54321254414887
+5992
+
+mas deu
+887
+-3601
+(-286,-70)
+354
+nan
+294.442
+2182
+-17800
+390.635
+(-386,-60)
+3088
+nan
+297.93
+nan
+297.93
+147.462
+nan
+-8558
+228.543
+5992
+
+Teste 17 deu errado! +0.040
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(6, 83);
+    std::cout << (v < Vetor(-7,-3)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-72,36)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-22,69)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-55, 21);
+    std::cout << (v < Vetor(67,54)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(33, -23);
+    std::cout << (v < Vetor(-87,-41)) << std::endl;
+    std::cout << (v * Vetor(69,51)) << std::endl;
+    std::cout << (v < Vetor(-24,63)) << std::endl;
+    v = v - Vetor(47, -52);
+    std::cout << (v ^ Vetor(54,-64)) << std::endl;
+    v = v - Vetor(-62, -13);
+    std::cout << v << std::endl;
+    v = v + Vetor(28, -60);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-18,-51)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(95,24)) << std::endl;
+    std::cout << (v * Vetor(91,-36)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(55,25)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(25,-99)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-18,-60)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-29, -57);
+    std::cout << (v * Vetor(-56,13)) << std::endl;
+    std::cout << (v ^ Vetor(-26,35)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-63,-82)) << std::endl;
+    std::cout << (v * Vetor(-96,34)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(11,-63)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(73,-1)) << std::endl;
+    std::cout << (v < Vetor(-18,-44)) << std::endl;
+    std::cout << (v ^ Vetor(-72,26)) << std::endl;
+    std::cout << (v < Vetor(-67,17)) << std::endl;
+    std::cout << (v ^ Vetor(77,92)) << std::endl;
+    v = v - Vetor(30, -80);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-31, 93);
+    v = v + Vetor(85, 7);
+    std::cout << (v ^ Vetor(-58,-16)) << std::endl;
+    v = v - Vetor(50, -88);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(31,86)) << std::endl;
+    v = v + Vetor(24, 83);
+    v = v - Vetor(-43, 48);
+    v = v + Vetor(43, 34);
+    v = v - Vetor(-45, -39);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(25,70)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-81,5)) << std::endl;
+    std::cout << (v < Vetor(-9,-60)) << std::endl;
+    std::cout << (v * Vetor(56,89)) << std::endl;
+    std::cout << (v ^ Vetor(34,44)) << std::endl;
+    std::cout << (v < Vetor(22,-12)) << std::endl;
+    std::cout << (v * Vetor(11,-18)) << std::endl;
+    std::cout << (v ^ Vetor(-11,-69)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-67, 17);
+    std::cout << (v * Vetor(51,62)) << std::endl;
+    return 0;
+}
+deveria ser
+117.33326188738462
+(6,83)
+67.56962019665843
+(6,83)
+5595
+83.21658488546619
+76.35987196510789
+114.96521212958292
+104.05899308139361
+3027
+9.68061979776366
+-3150
+(-1,146)
+90.13878188659973
+171
+90.13878188659973
+-7522
+-639
+(27,86)
+3635
+90.13878188659973
+148.3977994822002
+90.13878188659973
+-5646
+90.13878188659973
+489
+684
+(-2,29)
+1991
+1178
+(-2,29)
+-193
+(-2,29)
+-175
+153.80579011375008
+2036
+71.81753330520137
+-2417
+113.6001760562016
+-10
+116.09048195265622
+10600
+289.2784126062641
+21.140818940238084
+(189,219)
+18684
+147.73612261165673
+30075
+870
+77.8158166676738
+-1863
+-10632
+(189,219)
+25580
+
+mas deu
+nan
+(6,83)
+nan
+(6,83)
+5595
+83.2166
+nan
+114.965
+nan
+3027
+nan
+-3150
+(-1,146)
+90.1388
+171
+90.1388
+-7522
+-639
+(27,86)
+3635
+90.1388
+nan
+90.1388
+-5646
+90.1388
+489
+684
+(-2,29)
+1991
+1178
+(-2,29)
+-193
+(-2,29)
+-175
+nan
+2036
+nan
+-2417
+113.6
+-10
+116.09
+10600
+289.278
+nan
+(189,219)
+18684
+nan
+30075
+870
+nan
+-1863
+-10632
+(189,219)
+25580
+
+Teste 18 deu errado! +0.039
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(58, -27);
+    std::cout << (v ^ Vetor(-13,-87)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(3, 20);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-99,-10)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-32, 55);
+    std::cout << (v * Vetor(21,-76)) << std::endl;
+    std::cout << (v < Vetor(-54,11)) << std::endl;
+    v = v - Vetor(-25, -73);
+    v = v + Vetor(89, -87);
+    v = v - Vetor(-62, -97);
+    std::cout << (v * Vetor(3,1)) << std::endl;
+    v = v + Vetor(-65, -94);
+    v = v - Vetor(-46, 10);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-6, 82);
+    std::cout << (v < Vetor(89,39)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(93, -70);
+    std::cout << v << std::endl;
+    v = v + Vetor(82, -91);
+    std::cout << (v * Vetor(89,-47)) << std::endl;
+    std::cout << (v < Vetor(-3,-43)) << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-92, 39);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-82,-10)) << std::endl;
+    v = v + Vetor(13, 50);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-38, 77);
+    std::cout << (v ^ Vetor(-55,-1)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-5,-20)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(91,-66)) << std::endl;
+    v = v - Vetor(46, 18);
+    std::cout << (v * Vetor(60,-82)) << std::endl;
+    v = v + Vetor(5, 89);
+    v = v - Vetor(73, 15);
+    std::cout << (v < Vetor(42,74)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(-91, 89);
+    v = v - Vetor(-80, 94);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(30, 27);
+    std::cout << (v < Vetor(61,98)) << std::endl;
+    v = v - Vetor(19, -76);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-65,-94)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-25,56)) << std::endl;
+    v = v + Vetor(-10, -62);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(91,-52)) << std::endl;
+    v = v - Vetor(77, 37);
+    v = v + Vetor(-76, -84);
+    std::cout << (v < Vetor(87,-44)) << std::endl;
+    v = v + Vetor(-27, -6);
+    v = v - Vetor(-75, -78);
+    v = v + Vetor(-99, -62);
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    v = v + Vetor(59, -13);
+    std::cout << (v * Vetor(-67,-82)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(17,-10)) << std::endl;
+    v = v - Vetor(-6, 3);
+    std::cout << (v < Vetor(9,-32)) << std::endl;
+    return 0;
+}
+deveria ser
+-5397
+63.97655820689325
+72.34638899074369
+-4975
+72.34638899074369
+-125
+149.30716078970224
+688
+(180,-13)
+180.46883387443938
+2.0322538716761196
+187.18172987767795
+(174,69)
+(267,-1)
+35385
+79.22311005207554
+(349,-92)
+262.4080791439166
+161.3945384777397
+(270,-3)
+270.0166661522951
+3838
+(232,74)
+-2640
+(232,74)
+243.51591323771842
+16228
+6568
+12.6519455215385
+175.56765077883796
+(118,130)
+164.54178800535746
+10.128679820315659
+(118,228)
+-29102
+256.7255343747482
+51.42089637740344
+(108,166)
+-20722
+161.8278740103145
+110.63905277974861
+(-96,55)
+-965
+55.97320787662612
+161.84406021534255
+157.22843958067273
+
+mas deu
+-5397
+63.9766
+72.3464
+-4975
+72.3464
+-125
+nan
+688
+(180,-13)
+180.469
+nan
+187.182
+(174,69)
+(267,-1)
+35385
+nan
+(349,-92)
+262.408
+nan
+(270,-3)
+270.017
+3838
+(232,74)
+-2640
+(232,74)
+243.516
+16228
+6568
+nan
+175.568
+(118,130)
+164.542
+nan
+(118,228)
+-29102
+256.726
+nan
+(108,166)
+-20722
+nan
+110.639
+(-96,55)
+-965
+55.9732
+nan
+nan
+
+Teste 19 deu errado! +0.037
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(32, 49);
+    std::cout << (v < Vetor(-47,-78)) << std::endl;
+    std::cout << (v * Vetor(-70,21)) << std::endl;
+    v = v + Vetor(-6, -48);
+    v = v - Vetor(-2, 53);
+    std::cout << (v * Vetor(1,45)) << std::endl;
+    std::cout << (v ^ Vetor(-93,-17)) << std::endl;
+    std::cout << (v * Vetor(91,-71)) << std::endl;
+    std::cout << (v < Vetor(-98,39)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(94, -66);
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-5, 1);
+    std::cout << (v ^ Vetor(-44,-63)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-100, -43);
+    std::cout << (v < Vetor(-94,58)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(33,-33)) << std::endl;
+    v = v - Vetor(96, -100);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(96,-81)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+deveria ser
+177.92466222859034
+-1211
+-2312
+-5312
+6240
+140.00129250532385
+(28,-52)
+67.468511173732
+5133
+72.56721022610694
+84.88958243896876
+64.8459713474939
+108.43494882292202
+171.618763542918
+-9741
+171.618763542918
+
+mas deu
+nan
+-1211
+-2312
+-5312
+6240
+nan
+(28,-52)
+67.4685
+5133
+72.5672
+nan
+64.846
+nan
+171.619
+-9741
+171.619
+
+Teste 20 deu errado! +0.040
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(44, 76);
+    std::cout << (v < Vetor(2,89)) << std::endl;
+    std::cout << (v * Vetor(4,-34)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(82,1)) << std::endl;
+    v = v - Vetor(-11, 23);
+    std::cout << (v * Vetor(89,-33)) << std::endl;
+    v = v - Vetor(-67, -63);
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(80,19)) << std::endl;
+    v = v + Vetor(41, -21);
+    std::cout << v << std::endl;
+    v = v - Vetor(36, -57);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-77, 83);
+    std::cout << (v < Vetor(-90,43)) << std::endl;
+    std::cout << (v * Vetor(-1,34)) << std::endl;
+    v = v - Vetor(6, -29);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-62,-43)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-23,-83)) << std::endl;
+    std::cout << (v ^ Vetor(26,-65)) << std::endl;
+    std::cout << (v * Vetor(27,12)) << std::endl;
+    std::cout << (v < Vetor(-14,-38)) << std::endl;
+    std::cout << (v * Vetor(-65,80)) << std::endl;
+    v = v + Vetor(-68, 66);
+    std::cout << (v ^ Vetor(91,-32)) << std::endl;
+    v = v - Vetor(-31, -56);
+    v = v + Vetor(-17, -16);
+    v = v - Vetor(21, 51);
+    std::cout << (v * Vetor(-30,28)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-33, 96);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-58, -20);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-37,71)) << std::endl;
+    v = v - Vetor(-73, -28);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(97,-49)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-43,58)) << std::endl;
+    v = v - Vetor(96, -92);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(22,-60)) << std::endl;
+    v = v + Vetor(-4, -74);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(14,8)) << std::endl;
+    v = v - Vetor(77, 34);
+    std::cout << (v ^ Vetor(-76,-49)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(-49, 14);
+    std::cout << (v < Vetor(-23,-34)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-75,-73)) << std::endl;
+    v = v - Vetor(50, 66);
+    std::cout << (v * Vetor(87,87)) << std::endl;
+    std::cout << (v < Vetor(-5,53)) << std::endl;
+    v = v - Vetor(16, 91);
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(-23,56)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-28,31)) << std::endl;
+    std::cout << v << std::endl;
+    v = v - Vetor(57, 80);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-26,15)) << std::endl;
+    std::cout << (v < Vetor(-2,-43)) << std::endl;
+    return 0;
+}
+deveria ser
+28.78125388033742
+-2408
+(44,76)
+59.23272279515408
+3146
+(122,116)
+168.34488409215172
+30.195656024299662
+(163,95)
+198.07321878537743
+135.77521410415252
+2142
+220.92532675091826
+-16490
+(198,98)
+-12688
+-15418
+6522
+136.55794515694788
+-5030
+-19084
+594
+196.31097778779463
+264.7659343646761
+(148,269)
+13623
+(221,297)
+-39638
+370.20264720825537
+73.20569371255954
+(125,389)
+-20590
+337.4403651017465
+4214
+19200
+(44,281)
+165.1267782253693
+282.7330896800019
+13236
+21228
+17.46460034316694
+(27,110)
+36.119523275380125
+(27,110)
+113.26517558367179
+3917
+(27,110)
+(-30,30)
+330
+132.33699923393286
+
+mas deu
+nan
+-2408
+(44,76)
+nan
+3146
+(122,116)
+168.345
+nan
+(163,95)
+198.073
+nan
+2142
+220.925
+-16490
+(198,98)
+-12688
+-15418
+6522
+nan
+-5030
+-19084
+594
+196.311
+264.766
+(148,269)
+13623
+(221,297)
+-39638
+370.203
+nan
+(125,389)
+-20590
+337.44
+4214
+19200
+(44,281)
+nan
+282.733
+13236
+21228
+nan
+(27,110)
+nan
+(27,110)
+113.265
+3917
+(27,110)
+(-30,30)
+330
+nan
+
+Nota exercicio 3: 0.1
+Procurando exercício 4...
+Exercício 4...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+#include<iostream>
+int main() {
+    double *v;
+    Polinomio2 p1(1);
+    v = p1.raizes();
+    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
+    std::cout << '\n' << p1(2) << '\n';
+    
+    Polinomio2 p2(1,1);
+    v = p2.raizes();
+    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
+    std::cout << '\n' << p2(2) << '\n';
+    return 0;
+}
+
+ERRO: Erro de Compilação
+Nota exercicio 4: 0.0
+Nota exercicio 4: 0.0
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Nota total: 1.40
+{"scores": {"ex1": 1.0, "ex2": 0.3, "ex3": 0.1, "ex4": 0.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0}}
