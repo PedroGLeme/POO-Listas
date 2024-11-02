@@ -11,21 +11,24 @@ class Polinomio2{
         int _c; //coeficiente do termo de 0 grau
     public:
         Polinomio2(int a, int b, int c);
+        Polinomio2(int b, int c);
+        Polinomio2(int c);
         double operator()(double x){ return ( (_a*x*x) + (_b*x) + (_c)); }
         double *raizes();
 };
 
 int main(){
     double *v;
-    Polinomio2 p1(1, 1, 1);
-    v = p1.raizes(); for(int i=0; i<=v[0]; i++) std::cout << v[i] << " " ;
-    std::cout << '\n' << p1(2) << '\n' ;
-    Polinomio2 p2(1, 2, 1);
-    v = p2.raizes(); for(int i=0; i<=v[0]; i++) std::cout << v[i] << " " ;
-    std::cout << '\n' << p2(2) << '\n' ;
-    Polinomio2 p3(1, -3, 2);
-    v = p3.raizes(); for(int i=0; i<=v[0]; i++) std::cout << v[i] << " " ;
-    std::cout << '\n' << p3(2) << '\n' ;
+    Polinomio2 p1(1);
+    v = p1.raizes();
+    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
+    std::cout << '\n' << p1(2) << '\n';
+    
+    Polinomio2 p2(1,1);
+    v = p2.raizes();
+    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
+    std::cout << '\n' << p2(2) << '\n';
+    return 0;
     return 0;
 }
 
@@ -38,6 +41,18 @@ Polinomio2::Polinomio2(int a, int b, int c){
         _a = a;
         _b = b;
         _c = c;
+}
+
+Polinomio2::Polinomio2(int b, int c){
+    _a = 1;
+    _b = rand();
+    _c = rand();
+}
+
+Polinomio2::Polinomio2(int c){
+    _a = 1;
+    _b = rand();
+    _c = rand();
 }
 
 // essa funcao funciona somente para polinomios de 2o grau // a!=0
