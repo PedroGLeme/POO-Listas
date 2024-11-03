@@ -42,6 +42,7 @@ int main(){
 }
 
 // testa ate encontrar maior valor onde % seja igual a 0, portanto, o mdc procurado
+// inspiracao para o desenvolvimento do algoritimo de euclides para MDC https://www.freecodecamp.org/portuguese/news/algoritmo-de-euclides-mdc-maximo-divisor-comum-explicado-com-exemplos-em-varias-linguagens/
 int mdc(long long num, long long denom){
     
     // caso o retorno do modulo seja 1, mdc equivale a 1
