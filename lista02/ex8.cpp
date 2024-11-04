@@ -7,8 +7,8 @@ using namespace std;
 class C {
     private:
         double _imag;
+        double _real;
     public:
-        double _real; // sera herdado pela classe R
         C(double imag=0, double real=0){ _imag = imag; _real=real;}
 
         // inspiracao para o uso de virtual https://www.youtube.com/watch?v=-hbfZXF5jKc
@@ -25,6 +25,8 @@ class C {
 };
 
 class R: public C{
+    private:
+        double _real;
     public:
         R(double real=0){_real=real;}
         virtual ostream& print(ostream &out);
@@ -33,19 +35,23 @@ class R: public C{
 class Q: public R{
     private:
         int _denominador;
-    public:
         int _numerador;
+    public:
         Q(int num=0, int denom=1){_numerador=num ; _denominador=denom;}
         virtual ostream& print(ostream &out);
 };
 
 class Z: public Q{
+    private:
+        int _numerador;
     public:
         Z(int num=0){_numerador=num;}
         virtual ostream& print(ostream &out);
 };
 
 class N: public Z{
+    private:
+        unsigned int _numerador;
     public:
         N(unsigned int num=0){_numerador=num;}
         ostream& print(ostream &out);
