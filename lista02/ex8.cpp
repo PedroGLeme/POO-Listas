@@ -7,7 +7,8 @@ using namespace std;
 class C {
     private:
         double _imag;
-        double _real;
+        double _real; // sera herdado pela classe R
+
     public:
         C(double imag=0, double real=0){ _imag = imag; _real=real;}
 
@@ -22,13 +23,15 @@ class C {
         friend ostream& operator<<(ostream &out, C &num) {
             return num.print(out);
         }
+
+        // ira pegar a variavel real em private dos complexos
+        double retorna_real(){return _real;}
+        void altera_real(double real=0){ _real = real;}
 };
 
 class R: public C{
-    private:
-        double _real;
     public:
-        R(double real=0){_real=real;}
+        R(double real=0){altera_real(real);}
         virtual ostream& print(ostream &out);
 };
 
@@ -39,21 +42,20 @@ class Q: public R{
     public:
         Q(int num=0, int denom=1){_numerador=num ; _denominador=denom;}
         virtual ostream& print(ostream &out);
+
+        int retorna_numerador(){return _numerador;}
+        void altera_numerador(int numerador=0){_numerador = numerador;}
 };
 
 class Z: public Q{
-    private:
-        int _numerador;
     public:
-        Z(int num=0){_numerador=num;}
+        Z(int num=0){altera_numerador(num);}
         virtual ostream& print(ostream &out);
 };
 
 class N: public Z{
-    private:
-        unsigned int _numerador;
     public:
-        N(unsigned int num=0){_numerador=num;}
+        N(unsigned int num=0){altera_numerador(num);}
         ostream& print(ostream &out);
 };
 
@@ -75,7 +77,7 @@ int main() {
 }
 
 ostream &R::print(ostream &out){
-    out << _real;
+    out << retorna_real();
     return out;
 }
 
@@ -85,16 +87,17 @@ ostream &Q::print(ostream &out){
 }
 
 ostream &Z::print(ostream &out){
-    if(_numerador>=0){
-        out << "+"<<_numerador;
+    int num = retorna_numerador();
+    if(num >=0){
+        out << "+"<<num ;
     }
     else{
-        out << "-"<< abs(_numerador);
+        out << "-"<< abs(num );
     }
     return out;
 }
 
 ostream &N::print(ostream &out){
-    out <<_numerador;
+    out <<retorna_numerador();
     return out;
 }
