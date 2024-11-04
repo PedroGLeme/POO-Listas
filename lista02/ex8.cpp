@@ -9,7 +9,7 @@ class C {
         double _real; // sera herdado pela classe R
 
     public:
-        C(double imag=0, double real=0){ _imag = imag; _real=real;}
+        C(double real=0, double imag=0){ _real = real; _imag= imag;}
 
         // inspiracao para o uso de virtual https://www.youtube.com/watch?v=-hbfZXF5jKc
         // sobrecarga do print
