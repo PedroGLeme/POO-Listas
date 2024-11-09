@@ -30,7 +30,7 @@ class BigInt{
         BigInt(string numero);
         ~BigInt(){delete[] _partes;}
         BigInt(); //Esse construtor deve criar um BigInt com o valor 0.
-        BigInt(int num, bool eh_num);
+        BigInt(int num, bool eh_num=true);
 
         // Construtor de movimento
         BigInt(BigInt&& b);
