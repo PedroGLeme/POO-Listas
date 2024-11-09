@@ -111,7 +111,7 @@ class BigInt{
     std::cout << c << std::endl;
     std::cout << a*2 << std::endl;
     std::cout << c*2 << std::endl;
-    std::cout << a*2-c*2 << std::endl;
+    std::cout << -a*2+c*2 << std::endl;
     return 0;
 }
 
@@ -476,51 +476,58 @@ BigInt operator+(const BigInt &a, const BigInt &b){
             }
         }  
         else{  // a - b
-            if( b._npartes >= a._npartes){ // quando a >= b
-                retorno_bigint._partes = new int[a._npartes + 1]; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
+            if( b._npartes >= a._npartes){ /// talvez esteja errado
+                retorno_bigint._partes = new int[b._npartes + 1] {}; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
             
                 // indice que inicia no fim do vetor para bom funcionamento do codigo
                 int a_index;
                 int b_index;
 
                 // Subtrai a partir do último dígito para facilitar a execucao do codigo
-                for(int i = 0; i < a._npartes; i++){
+                for(int i = 0; i < b._npartes; i++){
                     a_index = a._npartes - 1 - i; 
                     b_index = b._npartes - 1 - i; 
 
-                    // nao precisa ser considerado a subtracai de b pois ela nao existe
-                    if(i >= b._npartes){ resultado_soma = - ( a._partes[a_index]) + carry; }  /// talvez nao tenha o igual aq
-                    else{ resultado_soma = b._partes[b_index] - ( a._partes[a_index] ) + carry; }
+                    cout<< "B: "<< b._partes[b_index]<< " ";
+                    cout<< "A: "<< a._partes[a_index]<< " ";
+                    // nao precisa ser considerado a subtracai de a pois ela nao existe
+                    if(i >= a._npartes){ resultado_soma = -(b._partes[b_index]) + carry; }  /// talvez nao tenha o igual aq
+                    else{ resultado_soma = - ( b._partes[b_index] ) + a._partes[a_index] + carry; }
 
                     /// pensar em como fazer carry da subtracao
-                    if(resultado_soma <0){ // carry tem que carregar valor negativo e tem-se que subtrair do valor que o carry vai retirar
+                    if(resultado_soma <0 && b_index!=0){ // carry tem que carregar valor negativo e tem-se que subtrair do valor que o carry vai retirar
                         resultado_soma = 1000000000 + resultado_soma; // subtrai do valor que sera retirado do proximo _partes 
                         carry = -1; // carry subtrai na proxima operacao
                     }
+                    else if(b_index==0 && resultado_soma<0){
+                        retorno_bigint=false;
+                    }
                     else{
-                        carry=0;
+                        carry =0;
                     }
 
-                    retorno_bigint._partes[ a_index +1] = resultado_soma;
+                    retorno_bigint._partes[ b_index+1] = abs(resultado_soma);
+                    cout<<"DEBBUG a - b:" << preenche_zeros(to_string(resultado_soma))<< endl;
+                    
                 }
 
                 // Se temos carry negativo ou partes de a maior que a de be, entao, faz o complemento da resposta obtida
-                if((carry == -1) || (a._npartes>b._npartes)) {
-                    retorno_bigint._positivo = true;
+                if((carry == -1) || (b._npartes>a._npartes)) {
+                    retorno_bigint._positivo = false;
                     
                     // faz operacao do complemento
-                    for(int i = 0; i < a._npartes; i++){
+                    for(int i = 0; i < b._npartes; i++){
                         retorno_bigint._partes[i] = 999999999 - retorno_bigint._partes[i];
                     }
                     
-                    retorno_bigint._partes[a._npartes - 1] += 1; /// entender do pq disso dar certo
+                    retorno_bigint._partes[b._npartes - 1] += 1; /// entender do pq disso dar certo
+                    
                 } 
                 else{
-                    retorno_bigint._positivo = false;
+                    retorno_bigint._positivo = true;
                 }
 
-                cout<< "TO AQ";
-                retorno_bigint._npartes= a._npartes;
+                retorno_bigint._npartes= b._npartes;
             }
             else{ // quando a > b
                 retorno_bigint._partes = new int[a._npartes + 1]; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
