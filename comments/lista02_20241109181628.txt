@@ -1,0 +1,4354 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-11-09 15:17:24.568707-03:00
+PRAZO MÁXIMO: 2024-11-13 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp"  > comp.log 2>&1
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp"  > comp.log 2>&1
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp"  > comp.log 2>&1
+Teste 1 deu errado! +0.043
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(-1, 3);
+    std::cout << v << std::endl;
+    v = v + Vetor(1,2);
+    std::cout << v << std::endl;
+    v = v + Vetor(1,2);
+    std::cout << v << std::endl;
+    v = v - Vetor(1,6);
+    std::cout << v << std::endl;
+    std::cout << v * Vetor(3, 2) << std::endl; 
+    std::cout << (v ^ Vetor(-4501,9002)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    return 0;
+}
+
+deveria ser
+(-1,3)
+(0,5)
+(1,7)
+(0,1)
+2
+4501
+1.0
+mas deu
+(-1,3)
+(0,5)
+(1,7)
+(0,1)
+2
+4501
+1
+
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9 deu errado! +0.049
+O resultado para
+#include<iostream>
+int main() {
+    Vetor v(95, 87);
+    v = v + Vetor(2, 89);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(50,74)) << std::endl;
+    std::cout << (v * Vetor(38,65)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(-68,-11)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-26,78)) << std::endl;
+    std::cout << (v < Vetor(-6,-75)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-84,-12)) << std::endl;
+    v = v - Vetor(59, 27);
+    std::cout << v << std::endl;
+    v = v + Vetor(-99, 47);
+    std::cout << (v < Vetor(-53,89)) << std::endl;
+    v = v - Vetor(-99, 91);
+    std::cout << (v ^ Vetor(59,54)) << std::endl;
+    std::cout << (v * Vetor(-34,46)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(-8, 16);
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(82,-73)) << std::endl;
+    std::cout << (v ^ Vetor(77,-14)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v < Vetor(47,49)) << std::endl;
+    std::cout << (v ^ Vetor(75,-72)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(42,-99)) << std::endl;
+    std::cout << (v < Vetor(78,66)) << std::endl;
+    std::cout << (v ^ Vetor(-88,-17)) << std::endl;
+    v = v - Vetor(-78, 46);
+    std::cout << (v * Vetor(66,-52)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(-39,-47)) << std::endl;
+    std::cout << (v < Vetor(-49,-63)) << std::endl;
+    v = v - Vetor(38, 27);
+    v = v + Vetor(76, 99);
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(-9,-22)) << std::endl;
+    v = v - Vetor(-8, 58);
+    std::cout << (v ^ Vetor(-29,-15)) << std::endl;
+    v = v + Vetor(-81, -68);
+    v = v - Vetor(-85, -78);
+    std::cout << (v * Vetor(91,87)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v < Vetor(8,76)) << std::endl;
+    v = v - Vetor(-41, -85);
+    v = v + Vetor(94, -84);
+    std::cout << (v ^ Vetor(-69,36)) << std::endl;
+    std::cout << (v * Vetor(3,-87)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << (v * Vetor(-6,-62)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    v = v + Vetor(-62, -45);
+    std::cout << v.abs() << std::endl;
+    v = v - Vetor(79, -62);
+    std::cout << (v ^ Vetor(-93,-76)) << std::endl;
+    v = v - Vetor(40, 22);
+    std::cout << (v ^ Vetor(7,55)) << std::endl;
+    std::cout << (v * Vetor(65,70)) << std::endl;
+    v = v - Vetor(-54, 77);
+    std::cout << (v < Vetor(-66,90)) << std::endl;
+    v = v + Vetor(-85, -5);
+    v = v - Vetor(-13, 72);
+    v = v + Vetor(-18, -92);
+    std::cout << (v < Vetor(8,33)) << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v ^ Vetor(98,-91)) << std::endl;
+    v = v + Vetor(-6, -27);
+    std::cout << v.abs() << std::endl;
+    std::cout << (v ^ Vetor(-33,-36)) << std::endl;
+    std::cout << v.abs() << std::endl;
+    std::cout << v << std::endl;
+    std::cout << (v * Vetor(75,65)) << std::endl;
+    std::cout << v << std::endl;
+    return 0;
+}
+deveria ser
+200.9601950635996
+-1622
+15126
+200.9601950635996
+128.04959342616556
+200.9601950635996
+(97,176)
+12142
+155.71316391109406
+200.9601950635996
+13620
+(38,149)
+13.486615072897662
+-4143
+3538
+111.66467659918243
+(46,89)
+-2725
+-7497
+(46,89)
+16.4741510838503
+-9987
+100.18482919085105
+-6879
+22.43128219855851
+7050
+5948
+(124,43)
+-6857
+147.00020967188533
+(162,115)
+-2529
+-897
+21663
+186.45374761586316
+62.93142072340582
+15816
+-4989
+316.39374203672236
+-6070
+316.39374203672236
+248.06853891616325
+-4863
+6599
+12730
+130.65254309244034
+139.68285420655593
+(92,-183)
+9562
+226.92730113408567
+-10026
+226.92730113408567
+(86,-210)
+-7200
+(86,-210)
+
+mas deu
+200.96
+-1622
+15126
+200.96
+128.05
+200.96
+(97,176)
+12142
+155.713
+200.96
+13620
+(38,149)
+13.4866
+-4143
+3538
+111.665
+(46,89)
+-2725
+-7497
+(46,89)
+16.4742
+-9987
+100.185
+-6879
+22.4313
+7050
+5948
+(124,43)
+-6857
+147
+(162,115)
+-2529
+-897
+21663
+186.454
+62.9314
+15816
+-4989
+316.394
+-6070
+316.394
+248.069
+-4863
+6599
+12730
+130.653
+139.683
+(92,-183)
+9562
+226.927
+-10026
+226.927
+(86,-210)
+-7200
+(86,-210)
+
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 1.0
+Procurando exercício 4...
+Exercício 4...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp"  > comp.log 2>&1
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13 deu errado!
+O resultado para
+#include<iostream>
+int main() {
+    double *v;
+    Polinomio2 p1(1);
+    v = p1.raizes();
+    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
+    std::cout << '\n' << p1(2) << '\n';
+    
+    Polinomio2 p2(1,1);
+    v = p2.raizes();
+    for(int i=0; i<=v[0]; i++) std::cout << v[i] << " ";
+    std::cout << '\n' << p2(2) << '\n';
+    return 0;
+}
+
+deveria ser
+1 0
+4
+2 -1 0
+6
+mas deu
+0 
+4.45551e+09
+2 -8.40862e+08 -8.40831e+08 
+5.07802e+09
+
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.051
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp"  > comp.log 2>&1
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp"  > comp.log 2>&1
+#include<iostream>
+int main() {
+    BigInt a("999999999999999999999999999");
+    std::cout << a << std::endl;
+    BigInt b(1);
+    std::cout << b << std::endl;
+    BigInt c = a+b;
+    std::cout << c << std::endl;
+    std::cout << a*2 << std::endl;
+    std::cout << c*2 << std::endl;
+    std::cout << a*2-c*2 << std::endl;
+    return 0;
+}
+main -> repudiandae
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:773:15: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     BigInt b(1);
+      |               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:19: error: no match for ‘operator*’ (operand types are ‘BigInt’ and ‘int’)
+  777 |     std::cout << a*2 << std::endl;
+      |                  ~^~
+      |                  | |
+      |                  | int
+      |                  BigInt
+ex6.cpp:584:8: note: candidate: ‘BigInt operator*(const BigInt&, const BigInt&)’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |        ^~~~~~~~
+ex6.cpp:584:49: note:   no known conversion for argument 2 from ‘int’ to ‘const BigInt&’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |                                   ~~~~~~~~~~~~~~^
+ex6.cpp:778:19: error: no match for ‘operator*’ (operand types are ‘BigInt’ and ‘int’)
+  778 |     std::cout << c*2 << std::endl;
+      |                  ~^~
+      |                  | |
+      |                  | int
+      |                  BigInt
+ex6.cpp:584:8: note: candidate: ‘BigInt operator*(const BigInt&, const BigInt&)’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |        ^~~~~~~~
+ex6.cpp:584:49: note:   no known conversion for argument 2 from ‘int’ to ‘const BigInt&’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |                                   ~~~~~~~~~~~~~~^
+ex6.cpp:779:19: error: no match for ‘operator*’ (operand types are ‘BigInt’ and ‘int’)
+  779 |     std::cout << a*2-c*2 << std::endl;
+      |                  ~^~
+      |                  | |
+      |                  | int
+      |                  BigInt
+ex6.cpp:584:8: note: candidate: ‘BigInt operator*(const BigInt&, const BigInt&)’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |        ^~~~~~~~
+ex6.cpp:584:49: note:   no known conversion for argument 2 from ‘int’ to ‘const BigInt&’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |                                   ~~~~~~~~~~~~~~^
+ex6.cpp:779:23: error: no match for ‘operator*’ (operand types are ‘BigInt’ and ‘int’)
+  779 |     std::cout << a*2-c*2 << std::endl;
+      |                      ~^~
+      |                      | |
+      |                      | int
+      |                      BigInt
+ex6.cpp:584:8: note: candidate: ‘BigInt operator*(const BigInt&, const BigInt&)’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |        ^~~~~~~~
+ex6.cpp:584:49: note:   no known conversion for argument 2 from ‘int’ to ‘const BigInt&’
+  584 | BigInt operator*(const BigInt &a, const BigInt &b){
+      |                                   ~~~~~~~~~~~~~~^
+
+#include<iostream>
+int main() {
+    BigInt a(-18731588);
+    a = a * BigInt(-691166559);
+    a = a / (-575736388);
+    a = a ^ BigInt(22);
+    a = a * BigInt(-1410971480);
+    a = a - BigInt(-1078850866);
+    a = a / (-50729800);
+    a = a ^ BigInt(14);
+    std::cout << a << std::endl;
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(873114224);
+    std::cout << a << std::endl;
+    a = a / (848855017);
+    return 0;
+}
+main -> quasi
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:23: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-18731588);
+      |                       ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a * BigInt(-691166559);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a ^ BigInt(22);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a * BigInt(-1410971480);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a - BigInt(-1078850866);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a ^ BigInt(14);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a * BigInt(873114224);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(20476976);
+    a = a - BigInt(1133973669);
+    a = a / (-686100452);
+    a = a * BigInt(37379920);
+    a = a + BigInt(-97640407);
+    std::cout << a << std::endl;
+    a = a - BigInt(-193539596);
+    std::cout << a << std::endl;
+    a = a + BigInt(467972149);
+    a = a - BigInt(-915274161);
+    std::cout << a.abs() << std::endl;
+    a = a ^ BigInt(13);
+    a = a / (736276287);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(-474537332);
+    a = a ^ BigInt(22);
+    a = a - BigInt(384836293);
+    return 0;
+}
+main -> velit
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(20476976);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a - BigInt(1133973669);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:28: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a * BigInt(37379920);
+      |                            ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a + BigInt(-97640407);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a - BigInt(-193539596);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:779:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  779 |     a = a + BigInt(467972149);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a - BigInt(-915274161);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:782:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  782 |     a = a ^ BigInt(13);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:785:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  785 |     a = a - BigInt(-474537332);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:786:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  786 |     a = a ^ BigInt(22);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:787:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  787 |     a = a - BigInt(384836293);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(20272780);
+    a = a - BigInt(1568533920);
+    a = a ^ BigInt(12);
+    a = a * BigInt(-1563526862);
+    std::cout << a << std::endl;
+    a = a + BigInt(-1916318184);
+    a = a ^ BigInt(30);
+    a = a + BigInt(-901200069);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(29);
+    return 0;
+}
+main -> aspernatur
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(20272780);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a - BigInt(1568533920);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a ^ BigInt(12);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a * BigInt(-1563526862);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a + BigInt(-1916318184);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a ^ BigInt(30);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a + BigInt(-901200069);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a ^ BigInt(29);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-4142039);
+    a = a * BigInt(-1519747173);
+    std::cout << a.abs() << std::endl;
+    a = a / (1137856569);
+    std::cout << a << std::endl;
+    a = a / (1912569775);
+    std::cout << a.abs() << std::endl;
+    a = a / (-1755163869);
+    std::cout << a << std::endl;
+    a = a / (831222489);
+    a = a * BigInt(123189745);
+    std::cout << a << std::endl;
+    a = a - BigInt(1697247118);
+    a = a / (2111858061);
+    a = a + BigInt(-242556367);
+    a = a ^ BigInt(26);
+    a = a + BigInt(-462712803);
+    return 0;
+}
+main -> alias
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-4142039);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a * BigInt(-1519747173);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a * BigInt(123189745);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:783:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  783 |     a = a - BigInt(1697247118);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:785:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  785 |     a = a + BigInt(-242556367);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:786:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  786 |     a = a ^ BigInt(26);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:787:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  787 |     a = a + BigInt(-462712803);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-4443828);
+    std::cout << a.abs() << std::endl;
+    a = a + BigInt(-768396845);
+    std::cout << a << std::endl;
+    a = a * BigInt(-1444954598);
+    std::cout << a.abs() << std::endl;
+    a = a / (-1266339161);
+    a = a ^ BigInt(30);
+    a = a - BigInt(-753286672);
+    a = a * BigInt(1959550719);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(21);
+    return 0;
+}
+main -> ad
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-4443828);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a + BigInt(-768396845);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a * BigInt(-1444954598);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a ^ BigInt(30);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:779:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  779 |     a = a - BigInt(-753286672);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a * BigInt(1959550719);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:782:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  782 |     a = a ^ BigInt(21);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-13017248);
+    std::cout << a.abs() << std::endl;
+    a = a + BigInt(1499321268);
+    std::cout << a.abs() << std::endl;
+    a = a ^ BigInt(29);
+    a = a / (501389828);
+    a = a ^ BigInt(12);
+    a = a - BigInt(1418555069);
+    a = a + BigInt(-1756343790);
+    std::cout << a.abs() << std::endl;
+    a = a / (195315446);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(28);
+    return 0;
+}
+main -> nam
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:23: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-13017248);
+      |                       ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a + BigInt(1499321268);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a ^ BigInt(29);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a ^ BigInt(12);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a - BigInt(1418555069);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:779:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  779 |     a = a + BigInt(-1756343790);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:783:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  783 |     a = a ^ BigInt(28);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-19052953);
+    a = a / (698405698);
+    a = a + BigInt(-1679640414);
+    std::cout << a.abs() << std::endl;
+    std::cout << a << std::endl;
+    a = a ^ BigInt(15);
+    a = a + BigInt(-1548192138);
+    a = a * BigInt(397274916);
+    a = a / (-2040989161);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(22);
+    a = a / (-749967874);
+    std::cout << a << std::endl;
+    return 0;
+}
+main -> asperiores
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:23: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-19052953);
+      |                       ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a + BigInt(-1679640414);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a ^ BigInt(15);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a + BigInt(-1548192138);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a * BigInt(397274916);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a ^ BigInt(22);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(3704309);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(-782082684);
+    a = a / (-2130667370);
+    a = a + BigInt(-1521988973);
+    a = a ^ BigInt(29);
+    std::cout << a << std::endl;
+    std::cout << a.abs() << std::endl;
+    std::cout << a << std::endl;
+    a = a ^ BigInt(26);
+    return 0;
+}
+main -> quibusdam
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:21: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(3704309);
+      |                     ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a * BigInt(-782082684);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a + BigInt(-1521988973);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a ^ BigInt(29);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a ^ BigInt(26);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(11414080);
+    a = a ^ BigInt(12);
+    std::cout << a << std::endl;
+    a = a + BigInt(2105774941);
+    a = a ^ BigInt(13);
+    std::cout << a << std::endl;
+    a = a / (-1561678668);
+    a = a - BigInt(2139840498);
+    std::cout << a << std::endl;
+    a = a - BigInt(1875446394);
+    a = a * BigInt(320514867);
+    std::cout << a.abs() << std::endl;
+    return 0;
+}
+main -> et
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(11414080);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a ^ BigInt(12);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a + BigInt(2105774941);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a ^ BigInt(13);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a - BigInt(2139840498);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a - BigInt(1875446394);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a * BigInt(320514867);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(7538521);
+    a = a ^ BigInt(25);
+    a = a - BigInt(976901427);
+    std::cout << a.abs() << std::endl;
+    a = a / (314917560);
+    a = a + BigInt(1053443581);
+    std::cout << a << std::endl;
+    a = a * BigInt(362020937);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(232473276);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(480278186);
+    std::cout << a << std::endl;
+    a = a - BigInt(107388952);
+    std::cout << a << std::endl;
+    a = a / (369714756);
+    a = a + BigInt(1668580948);
+    a = a * BigInt(-682759661);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(26);
+    return 0;
+}
+main -> in
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:21: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(7538521);
+      |                     ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a ^ BigInt(25);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a - BigInt(976901427);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a + BigInt(1053443581);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a * BigInt(362020937);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a * BigInt(232473276);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:782:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  782 |     a = a * BigInt(480278186);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:784:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  784 |     a = a - BigInt(107388952);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:787:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  787 |     a = a + BigInt(1668580948);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:788:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  788 |     a = a * BigInt(-682759661);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:790:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  790 |     a = a ^ BigInt(26);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-20431984);
+    a = a * BigInt(-1404116430);
+    std::cout << a << std::endl;
+    a = a - BigInt(-241708241);
+    a = a / (-294693792);
+    a = a ^ BigInt(14);
+    a = a * BigInt(1584966188);
+    a = a / (1074719902);
+    a = a + BigInt(1773320569);
+    a = a / (1616610032);
+    a = a * BigInt(-1873087296);
+    std::cout << a << std::endl;
+    a = a - BigInt(818846931);
+    return 0;
+}
+main -> quia
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:23: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-20431984);
+      |                       ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a * BigInt(-1404116430);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a - BigInt(-241708241);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a ^ BigInt(14);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a * BigInt(1584966188);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:779:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  779 |     a = a + BigInt(1773320569);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a * BigInt(-1873087296);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:783:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  783 |     a = a - BigInt(818846931);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-15278949);
+    a = a ^ BigInt(25);
+    std::cout << a << std::endl;
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(2026619535);
+    a = a + BigInt(-1244147385);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(-1628471399);
+    a = a * BigInt(1756845734);
+    a = a / (-247691924);
+    a = a - BigInt(-256317706);
+    a = a / (-386330879);
+    std::cout << a << std::endl;
+    a = a + BigInt(1065461983);
+    a = a - BigInt(67599156);
+    a = a + BigInt(-565801378);
+    a = a - BigInt(714897682);
+    return 0;
+}
+main -> earum
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:23: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-15278949);
+      |                       ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a ^ BigInt(25);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a * BigInt(2026619535);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a + BigInt(-1244147385);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a - BigInt(-1628471399);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:779:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  779 |     a = a * BigInt(1756845734);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a - BigInt(-256317706);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:784:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  784 |     a = a + BigInt(1065461983);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:785:28: error: no matching function for call to ‘BigInt::BigInt(int)’
+  785 |     a = a - BigInt(67599156);
+      |                            ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:786:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  786 |     a = a + BigInt(-565801378);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:787:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  787 |     a = a - BigInt(714897682);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-6342110);
+    a = a / (-425797874);
+    std::cout << a << std::endl;
+    a = a + BigInt(-230931973);
+    a = a * BigInt(-1021768762);
+    a = a ^ BigInt(28);
+    std::cout << a << std::endl;
+    a = a + BigInt(1564367730);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(28);
+    return 0;
+}
+main -> veritatis
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-6342110);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a + BigInt(-230931973);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a * BigInt(-1021768762);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a ^ BigInt(28);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a + BigInt(1564367730);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a ^ BigInt(28);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-9060543);
+    a = a / (-1261232543);
+    std::cout << a.abs() << std::endl;
+    std::cout << a << std::endl;
+    a = a + BigInt(-571138959);
+    a = a * BigInt(1618512375);
+    a = a / (-343605731);
+    a = a - BigInt(98479173);
+    a = a / (429849828);
+    std::cout << a.abs() << std::endl;
+    a = a / (1673544493);
+    a = a + BigInt(-920134451);
+    a = a / (354301024);
+    a = a ^ BigInt(16);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(2066702317);
+    a = a + BigInt(-1488656644);
+    a = a * BigInt(-2093500059);
+    return 0;
+}
+main -> quam
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-9060543);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a + BigInt(-571138959);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a * BigInt(1618512375);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:28: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a - BigInt(98479173);
+      |                            ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:782:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  782 |     a = a + BigInt(-920134451);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:784:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  784 |     a = a ^ BigInt(16);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:786:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  786 |     a = a * BigInt(2066702317);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:787:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  787 |     a = a + BigInt(-1488656644);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:788:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  788 |     a = a * BigInt(-2093500059);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-6888775);
+    a = a ^ BigInt(25);
+    a = a - BigInt(2696462);
+    std::cout << a << std::endl;
+    a = a * BigInt(-171365384);
+    a = a - BigInt(-589656256);
+    a = a * BigInt(2101976317);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(29);
+    return 0;
+}
+main -> cum
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-6888775);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a ^ BigInt(25);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:27: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a - BigInt(2696462);
+      |                           ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a * BigInt(-171365384);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a - BigInt(-589656256);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a * BigInt(2101976317);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:779:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  779 |     a = a ^ BigInt(29);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(3586818);
+    std::cout << a.abs() << std::endl;
+    a = a / (-36864625);
+    std::cout << a.abs() << std::endl;
+    a = a ^ BigInt(28);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(557004698);
+    std::cout << a.abs() << std::endl;
+    std::cout << a << std::endl;
+    a = a / (-1226431949);
+    a = a ^ BigInt(30);
+    std::cout << a << std::endl;
+    a = a + BigInt(-805071122);
+    a = a - BigInt(-1584151600);
+    std::cout << a << std::endl;
+    a = a + BigInt(-375144211);
+    a = a * BigInt(548705162);
+    std::cout << a.abs() << std::endl;
+    std::cout << a << std::endl;
+    return 0;
+}
+main -> perferendis
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:21: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(3586818);
+      |                     ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a ^ BigInt(28);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a * BigInt(557004698);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a ^ BigInt(30);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:783:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  783 |     a = a + BigInt(-805071122);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:784:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  784 |     a = a - BigInt(-1584151600);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:786:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  786 |     a = a + BigInt(-375144211);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:787:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  787 |     a = a * BigInt(548705162);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(9177616);
+    a = a ^ BigInt(11);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(23);
+    a = a * BigInt(311327977);
+    a = a - BigInt(422196908);
+    std::cout << a << std::endl;
+    a = a + BigInt(469040922);
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(1093140462);
+    a = a - BigInt(-405397497);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(29);
+    return 0;
+}
+main -> quidem
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:21: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(9177616);
+      |                     ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a ^ BigInt(11);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a ^ BigInt(23);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:775:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  775 |     a = a * BigInt(311327977);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a - BigInt(422196908);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a + BigInt(469040922);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a * BigInt(1093140462);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a - BigInt(-405397497);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:783:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  783 |     a = a ^ BigInt(29);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(-840990);
+    a = a * BigInt(-587523870);
+    a = a ^ BigInt(17);
+    a = a * BigInt(947690920);
+    std::cout << a.abs() << std::endl;
+    a = a + BigInt(-1448288011);
+    std::cout << a.abs() << std::endl;
+    a = a ^ BigInt(13);
+    std::cout << a << std::endl;
+    std::cout << a << std::endl;
+    a = a ^ BigInt(28);
+    return 0;
+}
+main -> hic
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:21: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(-840990);
+      |                     ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a * BigInt(-587523870);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:773:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  773 |     a = a ^ BigInt(17);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:774:29: error: no matching function for call to ‘BigInt::BigInt(int)’
+  774 |     a = a * BigInt(947690920);
+      |                             ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a + BigInt(-1448288011);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:778:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  778 |     a = a ^ BigInt(13);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a ^ BigInt(28);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+#include<iostream>
+int main() {
+    BigInt a(20938134);
+    a = a ^ BigInt(22);
+    a = a / (-408012436);
+    std::cout << a << std::endl;
+    a = a / (-491078863);
+    a = a * BigInt(-1404455397);
+    a = a ^ BigInt(27);
+    std::cout << a << std::endl;
+    std::cout << a.abs() << std::endl;
+    a = a * BigInt(1131121185);
+    a = a + BigInt(2006970257);
+    a = a - BigInt(-944170122);
+    std::cout << a.abs() << std::endl;
+    std::cout << a << std::endl;
+    a = a ^ BigInt(14);
+    return 0;
+}
+main -> et
+ERRO: Erro de compilação: 256
+ex6.cpp: In function ‘int main()’:
+ex6.cpp:771:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  771 |     BigInt a(20938134);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:772:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  772 |     a = a ^ BigInt(22);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:776:31: error: no matching function for call to ‘BigInt::BigInt(int)’
+  776 |     a = a * BigInt(-1404455397);
+      |                               ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:777:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  777 |     a = a ^ BigInt(27);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:780:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  780 |     a = a * BigInt(1131121185);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:781:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  781 |     a = a + BigInt(2006970257);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:782:30: error: no matching function for call to ‘BigInt::BigInt(int)’
+  782 |     a = a - BigInt(-944170122);
+      |                              ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+ex6.cpp:785:22: error: no matching function for call to ‘BigInt::BigInt(int)’
+  785 |     a = a ^ BigInt(14);
+      |                      ^
+ex6.cpp:203:1: note: candidate: ‘BigInt::BigInt(BigInt&&)’
+  203 | BigInt::BigInt(BigInt &&b){
+      | ^~~~~~
+ex6.cpp:203:25: note:   no known conversion for argument 1 from ‘int’ to ‘BigInt&&’
+  203 | BigInt::BigInt(BigInt &&b){
+      |                ~~~~~~~~~^
+ex6.cpp:183:1: note: candidate: ‘BigInt::BigInt(int, bool)’
+  183 | BigInt::BigInt(int num, bool eh_num){
+      | ^~~~~~
+ex6.cpp:183:1: note:   candidate expects 2 arguments, 1 provided
+ex6.cpp:170:1: note: candidate: ‘BigInt::BigInt()’
+  170 | BigInt::BigInt(){
+      | ^~~~~~
+ex6.cpp:170:1: note:   candidate expects 0 arguments, 1 provided
+ex6.cpp:131:1: note: candidate: ‘BigInt::BigInt(std::string)’
+  131 | BigInt::BigInt(string numero) {
+      | ^~~~~~
+ex6.cpp:131:23: note:   no known conversion for argument 1 from ‘int’ to ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}
+  131 | BigInt::BigInt(string numero) {
+      |                ~~~~~~~^~~~~~
+
+Nota exercicio 6: 0.0
+Procurando exercício 7...
+Procurando exercício 8...
+Exercício 8...
+Compilando...
+g++ -O2 -Wno-unused-result  "ex8.cpp"  > comp.log 2>&1
+Teste 1: correto! +0.100
+Teste 2: correto! +0.100
+Teste 3: correto! +0.100
+Teste 4: correto! +0.100
+Teste 5: correto! +0.100
+Teste 6: correto! +0.100
+Teste 7: correto! +0.100
+Teste 8: correto! +0.100
+Teste 9: correto! +0.100
+Teste 10: correto! +0.100
+Teste 11: correto! +0.100
+Teste 12: correto! +0.100
+Teste 13: correto! +0.100
+Teste 14: correto! +0.100
+Teste 15: correto! +0.100
+Teste 16: correto! +0.100
+Teste 17: correto! +0.100
+Teste 18: correto! +0.100
+Teste 19: correto! +0.100
+Teste 20: correto! +0.100
+Nota exercicio 8: 2.0
+Nota total: 7.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 1.0, "ex4": 1.0, "ex5": 1.0, "ex6": 0.0, "ex7": 0.0, "ex8": 2.0}}
