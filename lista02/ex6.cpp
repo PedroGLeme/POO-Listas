@@ -97,21 +97,35 @@ class BigInt{
                 //cout<<"ENTREI EM "<< i<<endl;
 
             }
-            out<<endl;
+            
             return out;
         }
 };
 
- int main() {
-    BigInt a("999999999999999999999999999");
+int main() {
+    BigInt a(19204595);
+    a = a / (-844326198);
     std::cout << a << std::endl;
-    BigInt b(1);
-    std::cout << b << std::endl;
-    BigInt c = a+b;
-    std::cout << c << std::endl;
-    std::cout << a*2 << std::endl;
-    std::cout << c*2 << std::endl;
-    std::cout << -a*2+c*2 << std::endl;
+    a = a - BigInt(2036073398);
+    //cout<< "valor de AAAAAAA"<<a;
+    a = a * BigInt(1103762471);
+    //cout<< "CHEGUEI 2";
+    //cout<< a;
+    //cout<< "CHEGUEI 1";
+    a = a + BigInt(731720855);
+    //cout<< "CHEGUEI 2";
+    a = a * BigInt(1590423911);
+    a = a / (-152564981);
+    std::cout << a.abs() << std::endl;
+    a = a + BigInt(1187251693);
+    a = a / (2144851306);
+    a = a * BigInt(-921364237);
+    std::cout << a.abs() << std::endl;
+    a = a - BigInt(-1816749488);
+    a = a ^ BigInt(23);
+    a = a * BigInt(-1437087596);
+    std::cout << a << std::endl;
+    a = a ^ BigInt(14);
     return 0;
 }
 
@@ -129,7 +143,7 @@ BigInt::BigInt(string numero) {
         quantidade_partes = (numero.size() + 8) / 9;
     }
 
-    cout << "Quantidade de partes: " << quantidade_partes << endl;
+    //cout << "Quantidade de partes: " << quantidade_partes << endl;
 
     _partes = new int[quantidade_partes];
     _npartes = quantidade_partes;
@@ -249,8 +263,9 @@ BigInt BigInt::operator-(){
 }
 
 BigInt BigInt::operator/(int b){
-    cout<< "ooi";
-    return BigInt();
+    BigInt aux;
+    cout<< "VAZIO"<<endl;
+    return aux;
 }
 
 bool operator==(const BigInt &a, const BigInt &b){
@@ -280,10 +295,10 @@ bool operator>(const BigInt &a, const BigInt &b){
         // verifica se ambos sao positivos ou negativos, caso seja negativo, a, em modulo, tem que ser menor que b
         if(a.positivo()==true){
 
-            if(a._npartes<b._npartes){ return false;} // a<b 
-            else if(a._npartes>b._npartes){ return true;} // a>b
-
+            if(a._npartes<b._npartes){return false;} // a<b 
+            else if(a._npartes>b._npartes){return true;} // a>b
             else{ // precisa ser verificado parte por parte
+                //cout<< "CHEGYUEI AQ";
                 int i=0;
                 while(i<a._npartes){ // poderia ser b tb, pois sao iguais
                     if(a._partes[i] != b._partes[i]){ // caso seja diferente, algum dos 2 eh maior
@@ -322,7 +337,6 @@ BigInt operator+(const BigInt &a, const BigInt &b){
     int resultado_soma=0; // espaco para portar ate  2.147.483.647, ou seja, no pior caso suporta 999.999.999 x2
     int carry=0; // numero que sera trasnferido para proxima parte
     BigInt retorno_bigint;
-
     if((a.positivo() == true && b.positivo() == true) || (a.positivo() == false && b.positivo() == false)){ // ambos numeros recebidos são negativos ou positivos
         if(a._npartes > b._npartes){ // saber qual o parametro do while /// se tiver errado fazer direto
             retorno_bigint._partes = new int[a._npartes + 1]; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
@@ -375,8 +389,8 @@ BigInt operator+(const BigInt &a, const BigInt &b){
                 carry = resultado_soma / 1000000000; // como carry eh int, aproxima para o valor de baixo
 
                 retorno_bigint._partes[b_index+1] = resultado_soma % 1000000000;
-                cout<< "DEBBUG"<< "a+b com eles tamanho =< " <<retorno_bigint._partes[b_index+1]<<endl;
-                cout<<"FUI INSERIDO EM " << (b_index+1) << endl;
+                //cout<< "DEBBUG"<< "a+b com eles tamanho =< " <<retorno_bigint._partes[b_index+1]<<endl;
+                //cout<<"FUI INSERIDO EM " << (b_index+1) << endl;
             }
 
             // Caso em que o carry tem que ser inserido em um novo _parte
@@ -407,8 +421,8 @@ BigInt operator+(const BigInt &a, const BigInt &b){
                     a_index = a._npartes - 1 - i; 
                     b_index = b._npartes - 1 - i; 
 
-                    cout<< "B: "<< b._partes[b_index]<< " ";
-                    cout<< "A: "<< a._partes[a_index]<< " ";
+                    //cout<< "B: "<< b._partes[b_index]<< " ";
+                    //cout<< "A: "<< a._partes[a_index]<< " ";
                     // nao precisa ser considerado a subtracai de a pois ela nao existe
                     if(i >= a._npartes){ resultado_soma = b._partes[b_index] + carry; }  /// talvez nao tenha o igual aq
                     else{ resultado_soma = - ( a._partes[a_index] ) + b._partes[b_index] + carry; }
@@ -429,6 +443,7 @@ BigInt operator+(const BigInt &a, const BigInt &b){
                 
             }
             else{ // quando a >= b
+            //cout<< "CHEGUEI AQ AO MENOS";
                 retorno_bigint._partes = new int[a._npartes + 1]; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
             
                 // indice que inicia no fim do vetor para bom funcionamento do codigo
@@ -440,9 +455,11 @@ BigInt operator+(const BigInt &a, const BigInt &b){
                     a_index = a._npartes - 1 - i; 
                     b_index = b._npartes - 1 - i; 
 
-                    // nao precisa ser considerado a subtracai de b pois ela nao existe
-                    if(i >= b._npartes){ resultado_soma = - ( a._partes[a_index]) + carry; }  /// talvez nao tenha o igual aq
-                    else{ resultado_soma = b._partes[b_index] - ( a._partes[a_index] ) + carry; }
+                    //cout<< "B: "<< b._partes[b_index]<< " ";
+                    //cout<< "A: "<< a._partes[a_index]<< " ";
+                    // nao precisa ser considerado a subtracai de a pois ela nao existe
+                    if(i >= b._npartes){ resultado_soma = b._partes[b_index] + carry; }  /// talvez nao tenha o igual aq
+                    else{ resultado_soma = - ( a._partes[a_index] ) + b._partes[b_index] + carry; }
 
                     /// pensar em como fazer carry da subtracao
                     if(resultado_soma <0){ // carry tem que carregar valor negativo e tem-se que subtrair do valor que o carry vai retirar
@@ -450,34 +467,29 @@ BigInt operator+(const BigInt &a, const BigInt &b){
                         carry = -1; // carry subtrai na proxima operacao
                     }
                     else{
-                        carry=0;
+                        carry = 0;
                     }
 
-                    retorno_bigint._partes[ a_index +1] = resultado_soma;
+                    retorno_bigint._partes[b_index+1] = resultado_soma;
                 }
+                retorno_bigint._npartes= b._npartes;
+                
+                BigInt aux;
+                aux = b;
+                aux = aux.abs();
 
-                // Se temos carry negativo ou partes de a maior que a de be, entao, faz o complemento da resposta obtida
-                if((carry == -1) || (a._npartes>b._npartes)) {
-                    retorno_bigint._positivo = false;
-                    
-                    // faz operacao do complemento
-                    for(int i = 0; i < a._npartes; i++){
-                        retorno_bigint._partes[i] = 999999999 - retorno_bigint._partes[i];
-                    }
-                    
-                    retorno_bigint._partes[a._npartes - 1] += 1; /// entender do pq disso dar certo
-                } 
-                else{
-                    retorno_bigint._positivo = true;
+                if(aux > a){
+                    //cout<< "PORRA";
+                    retorno_bigint._positivo= true;
                 }
-
-                cout<< "TO AQ";
-                retorno_bigint._npartes= a._npartes;
+                else{ 
+                    //cout<< "CARALHGO";
+                    retorno_bigint._positivo = false;}
             }
         }  
         else{  // a - b
             if( b._npartes >= a._npartes){ /// talvez esteja errado
-                retorno_bigint._partes = new int[b._npartes + 1] {}; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
+                retorno_bigint._partes = new int[b._npartes + 1]; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
             
                 // indice que inicia no fim do vetor para bom funcionamento do codigo
                 int a_index;
@@ -488,46 +500,36 @@ BigInt operator+(const BigInt &a, const BigInt &b){
                     a_index = a._npartes - 1 - i; 
                     b_index = b._npartes - 1 - i; 
 
-                    cout<< "B: "<< b._partes[b_index]<< " ";
-                    cout<< "A: "<< a._partes[a_index]<< " ";
+                    //cout<< "B: "<< b._partes[b_index]<< " ";
+                    //cout<< "A: "<< a._partes[a_index]<< " ";
                     // nao precisa ser considerado a subtracai de a pois ela nao existe
-                    if(i >= a._npartes){ resultado_soma = -(b._partes[b_index]) + carry; }  /// talvez nao tenha o igual aq
-                    else{ resultado_soma = - ( b._partes[b_index] ) + a._partes[a_index] + carry; }
+                    if(i >= a._npartes){ resultado_soma = b._partes[b_index] + carry; }  /// talvez nao tenha o igual aq
+                    else{ resultado_soma = - ( a._partes[a_index] ) + b._partes[b_index] + carry; }
 
                     /// pensar em como fazer carry da subtracao
-                    if(resultado_soma <0 && b_index!=0){ // carry tem que carregar valor negativo e tem-se que subtrair do valor que o carry vai retirar
+                    if(resultado_soma <0){ // carry tem que carregar valor negativo e tem-se que subtrair do valor que o carry vai retirar
                         resultado_soma = 1000000000 + resultado_soma; // subtrai do valor que sera retirado do proximo _partes 
                         carry = -1; // carry subtrai na proxima operacao
                     }
-                    else if(b_index==0 && resultado_soma<0){
-                        retorno_bigint=false;
-                    }
                     else{
-                        carry =0;
+                        carry = 0;
                     }
 
-                    retorno_bigint._partes[ b_index+1] = abs(resultado_soma);
-                    cout<<"DEBBUG a - b:" << preenche_zeros(to_string(resultado_soma))<< endl;
-                    
+                    retorno_bigint._partes[b_index+1] = resultado_soma;
                 }
-
-                // Se temos carry negativo ou partes de a maior que a de be, entao, faz o complemento da resposta obtida
-                if((carry == -1) || (b._npartes>a._npartes)) {
-                    retorno_bigint._positivo = false;
-                    
-                    // faz operacao do complemento
-                    for(int i = 0; i < b._npartes; i++){
-                        retorno_bigint._partes[i] = 999999999 - retorno_bigint._partes[i];
-                    }
-                    
-                    retorno_bigint._partes[b._npartes - 1] += 1; /// entender do pq disso dar certo
-                    
-                } 
-                else{
-                    retorno_bigint._positivo = true;
-                }
-
                 retorno_bigint._npartes= b._npartes;
+                
+                BigInt aux;
+                aux = b;
+                aux = aux.abs();
+
+                if(aux > a){
+                    //cout<< "PORRA";
+                    retorno_bigint._positivo= false;
+                }
+                else{ 
+                    //cout<< "CARALHGO";
+                    retorno_bigint._positivo = true;}
             }
             else{ // quando a > b
                 retorno_bigint._partes = new int[a._npartes + 1]; // desloca número de partes necessárias para soma (+1 pois pode-se ter um carry para uma nova parte)
@@ -587,7 +589,7 @@ BigInt operator*(const BigInt &a, const BigInt &b){
     retorno_bigint._npartes = a._npartes + b._npartes; // considera o pior caso
     
     // guarda as multiplicacoes feitas em partes
-    BigInt *partes_soma = new BigInt[b._npartes];
+    BigInt *partes_soma = new BigInt[retorno_bigint._npartes];
 
     // comecar a multiplicacao
 
@@ -599,24 +601,24 @@ BigInt operator*(const BigInt &a, const BigInt &b){
     // carry primeiro considerando ordem do numero
     // carry terceiro define a posicao atual de insercao
     //int carry_primeiro, carry_segundo, carry_terceiro =0; // responsaveis por guardar em partes o valor de 10e19 ( carry primeiro eh o do meio )
-
+    int aux;
     int numero_ciclos=0;
     int varredura_a=0;
     int varredura_b=0;
-
+    //cout<< "################ COMECOU A MULTIPLICACAO"<< endl;;
     if(a._npartes>=b._npartes){
         //numero_ciclos= a._npartes;
         while(varredura_b< b._npartes){
 
             // escreve os zeros no final da string decorrente dp valor do b
-            int aux=0;
+            
+            aux=0;
             while(aux!=varredura_b){
+                //cout<< "VERIFICA ERRO"<<endl;
                 string_final= string_final + "000000000";
-                cout<< string_final<<endl;
+                //cout<< string_final<<endl;
                 aux++;
             }
-            
-
             while(varredura_a< a._npartes){
                 
                 // comecam do ultimo valor
@@ -626,12 +628,12 @@ BigInt operator*(const BigInt &a, const BigInt &b){
                 res_a= a._partes[a_index];
                 res_b= b._partes[b_index];
 
-                cout<< "NUMERO A "<< res_a << " NUMERO B "<< res_b << endl;
+                //cout<< "NUMERO A "<< res_a << " NUMERO B "<< res_b << endl;
                 resultado_mult = (res_a * res_b) + carry;
-                cout<< "RESULTADO MUL "<< resultado_mult<< endl;
+                //cout<< "RESULTADO MUL "<< resultado_mult<< endl;
 
                 carry = resultado_mult/1000000000; // como ele eh int, nao aproxima para cima e guarda valor correto casa exista carry
-                cout<< "CARRY DA DIV " << carry << endl;
+                //cout<< "CARRY DA DIV " << carry << endl;
                 numero_string = to_string( resultado_mult%1000000000 );
 
                 if(a_index!=0){ // caso nao seja o numero mais significativo, preenche com zeros
@@ -639,12 +641,12 @@ BigInt operator*(const BigInt &a, const BigInt &b){
                 } 
                 
                 string_final = numero_string + string_final; // contatena numero obtido
-                cout<< "DEBBBUF "<<string_final<<endl;
+                //cout<< "DEBBBUF "<<string_final<<endl;
                 varredura_a++;
             }
 
             if(carry!=0){ // ainda tem numero para ser inserido
-            cout<< "CARRY"<< carry<< endl;
+            //cout<< "CARRY"<< carry<< endl;
                 numero_string = to_string(carry);
                 string_final = numero_string + string_final; // contatena numero obtido
             }
@@ -653,23 +655,24 @@ BigInt operator*(const BigInt &a, const BigInt &b){
             varredura_a=0;
 
             // cria valor de bigint com string resultante
-            cout<<string_final<<" Armazenado em "<< b_index<<endl;
+            //cout<<string_final<<" Armazenado em "<< b_index<<endl;
             partes_soma[b_index] = BigInt(string_final);
             string_final.clear(); // limpa buffer da string
-            cout<< "termina um numero aq"<< endl;
+            //cout<< "termina um numero aq"<< endl;
         }
+        
         BigInt aux;
         // passa a limpo as partes da soma obtida
         aux = partes_soma[0];
         retorno_bigint = aux;
-        cout<< "Retorno BIG INT  "<< retorno_bigint;
-        cout<< "VALOR VERDADEIRO " << partes_soma[0];
+        //cout<< "Retorno BIG INT  "<< retorno_bigint;
+        //cout<< "VALOR VERDADEIRO " << partes_soma[0];
 
         for(int i=1; i < b._npartes; i++){ 
             aux = retorno_bigint + partes_soma[i];
             retorno_bigint = aux;
-            cout<< "Retorno Big INt  " <<retorno_bigint;
-            cout<< "VALOR soma       " << (partes_soma[i]) <<" " << i;
+            //cout<< "Retorno Big INt  " <<retorno_bigint;
+            //cout<< "VALOR soma       " << (partes_soma[i]) <<" " << i;
         }    // ja altera o valor de _npartes    
     }
     else{ // a<b
@@ -692,9 +695,9 @@ BigInt operator*(const BigInt &a, const BigInt &b){
                 res_a= a._partes[a_index];
                 res_b= b._partes[b_index];
 
-                cout<< "NUMERO A "<< res_a << " NUMERO B "<< res_b << endl;
+                //cout<< "NUMERO A "<< res_a << " NUMERO B "<< res_b << endl;
                 resultado_mult = (res_a * res_b) + carry;
-                cout<< "RESULTADO MUL "<< resultado_mult<< endl;
+                //cout<< "RESULTADO MUL "<< resultado_mult<< endl;
 
                 carry = resultado_mult/1000000000; // como ele eh int, nao aproxima para cima e guarda valor correto casa exista carry
                 numero_string = to_string( resultado_mult%1000000000 );
@@ -704,12 +707,12 @@ BigInt operator*(const BigInt &a, const BigInt &b){
                 } 
                 
                 string_final = numero_string + string_final; // contatena numero obtido
-                cout<< "DEBBBUF"<<string_final<<endl;
+                //cout<< "DEBBBUF"<<string_final<<endl;
                 varredura_b++;
             }
 
             if(carry!=0){ // ainda tem numero para ser inserido
-            cout<< "CARRY"<< carry<< endl;
+            //cout<< "CARRY"<< carry<< endl;
                 numero_string = to_string(carry);
                 string_final = numero_string + string_final; // contatena numero obtido
             }
@@ -718,7 +721,7 @@ BigInt operator*(const BigInt &a, const BigInt &b){
             varredura_b=0;
 
             // cria valor de bigint com string resultante
-            cout<<string_final<<" Armazenado em "<< a_index<<endl;
+            //cout<<string_final<<" Armazenado em "<< a_index<<endl;
             partes_soma[a_index] = BigInt(string_final);
             string_final.clear(); // limpa buffer da string
         }
@@ -727,13 +730,13 @@ BigInt operator*(const BigInt &a, const BigInt &b){
         // passa a limpo as partes da soma obtida
         aux = partes_soma[0];
         retorno_bigint = aux;
-        cout<< retorno_bigint;
-        cout<< partes_soma[0];
+        //cout<< retorno_bigint;
+        //cout<< partes_soma[0];
         for(int i=1; i < a._npartes; i++){ 
             aux = retorno_bigint + partes_soma[i];
             retorno_bigint = aux;
-            cout<< retorno_bigint;
-            cout<< partes_soma[i];
+            //cout<< retorno_bigint;
+            //cout<< partes_soma[i];
             
         } // ja altera o valor de _npartes
             
@@ -750,15 +753,24 @@ BigInt operator*(const BigInt &a, const BigInt &b){
 }
 
 BigInt operator^(const BigInt &a, const BigInt &b){
-    BigInt aux;
-    aux._positivo=true;
-    unsigned int expoente=0;    
-    for(int i=0; i< b._npartes; i++){
-        for( int j=0; j< ((b._partes[j])* ( 1000000000*expoente )) ; j++){
-            aux = aux * a; // operacao ja definida
+
+    // se a base for zero, ja retorna 1
+    // inicializa o valor que sera retornado
+    BigInt resultado("1");
+    if(b == BigInt("0")){ return BigInt("1"); } 
+    else{
+        // Variaveis auxiliares
+        BigInt expoente;
+        BigInt base;
+        base = a;
+        expoente = b;
+
+        for(int i = 0; i < expoente._npartes; i++){
+            for(int j=0; j < expoente._partes[j] ; j++){
+                resultado= resultado* base;
+            }    
         }
-        expoente+= 1000000000;
     }
 
-    return aux;
+    return resultado;
 }
