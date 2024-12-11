@@ -29,28 +29,29 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
 
     // aloca espaco dinamicamente
     while( aux <jogadores.size()){
-        matriz_cartas[aux] = new int[ ( (cartas.size()+4) / jogadores.size() )]; // tem mais 1 de espaco de sobra para evitar problemas
+        matriz_cartas[aux] = new int[ ( (cartas.size()+ jogadores.size()) / jogadores.size() )]; // tem mais 1 de espaco de sobra para evitar problemas
         aux++;
     }
-
+    
     // coloca em todos os espacos lixo conhecido caso nao preencha o espaco alocado
     for (int i = 0; i< jogadores.size(); i++){
         for (int j = 0; j< ( (cartas.size()+4) / jogadores.size() ); j++){
             matriz_cartas[i][j] = -1;  
         }
     }
-
-
+    int qnt_cartas = cartas.size();
     aux=0;
     int aux_jogador=0; // diz qual eh o jogador
     while( ! (cartas.empty()) ){
         matriz_cartas[aux_jogador][aux] = cartas.top();
-       
+        //printf("%d ", matriz_cartas[aux_jogador][aux]);
         cartas.pop();
 
         aux_jogador = (aux_jogador + 1) % jogadores.size();
         if (aux_jogador == 0) aux++;
     }
+
+    printMatriz(matriz_cartas, jogadores.size(),( (qnt_cartas+ jogadores.size()) / jogadores.size() ));
 
     int soma_atual=0;
     int soma_menor=9999;
@@ -58,27 +59,28 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
     aux=0; // conta cartas
     aux_jogador=0; // contador de jogador
     stack<int> jogador_menor; // guarda jogador com menor valor de baralho
-
-    while(aux_jogador< jogadores.size()){ // encontra jogador com menor soma de cartas
-        while(matriz_cartas[aux_jogador][aux]!= -1){
-            soma_atual= soma_atual + matriz_cartas[aux_jogador][aux];
+    
+    while(aux_jogador < jogadores.size()){ // encontra jogador com menor soma de cartas
+        soma_atual = 0; 
+        while(matriz_cartas[aux_jogador][aux] != -1 && aux < ((qnt_cartas + 4) / jogadores.size())){
+            soma_atual += matriz_cartas[aux_jogador][aux];
             aux++;
         }
-        //printf("soma do %d: %d", aux_jogador, soma_atual);
-        if( soma_atual<soma_menor){
+        printf("Soma do jogador %d: %d\n", aux_jogador, soma_atual);
+
+        if(soma_atual < soma_menor){
             soma_menor = soma_atual;
-            while( !jogador_menor.empty()){
+            while(!jogador_menor.empty()){
                 jogador_menor.pop();
             }
-            jogador_menor.push(aux_jogador); // numero da posicao
+            jogador_menor.push(aux_jogador); // guarda a posição do jogador
         }
         else if(soma_atual == soma_menor){
             jogador_menor.push(aux_jogador);
         }
-
+        
         aux_jogador++;
-        aux=0;
-        soma_atual=0;
+        aux = 0; 
     }
     
     if(jogador_menor.size()==1){ // so tem um com menor numero
@@ -111,17 +113,92 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
     }
 };
 
-int main() {
-    // INICIALIZAC ̧AO DA PILHA  ̃
-    std::stack<int> cartas;
-    for(int e=1; e<=5; e++)
-    cartas.push(e);
-    // INICIALIZAC ̧AO DA FILA  ̃
-    std::queue<std::string> jogadores;
-    jogadores.push("andre" );
-    jogadores.push("bruno" );
-    jogadores.push("carla" );
-    // TESTE DE FATO
-    std::cout << jogo(cartas, jogadores) << std::endl;
+ int main() {
+    std::stack<int> c;
+    std::queue<std::string> j;
+    c.push(4);
+    c.push(2);
+    c.push(12);
+    c.push(3);
+    c.push(15);
+    c.push(9);
+    c.push(2);
+    c.push(2);
+    c.push(14);
+    c.push(2);
+    c.push(7);
+    c.push(12);
+    c.push(3);
+    c.push(2);
+    c.push(2);
+    c.push(6);
+    c.push(6);
+    c.push(14);
+    c.push(5);
+    c.push(13);
+    c.push(6);
+    c.push(3);
+    c.push(2);
+    c.push(15);
+    c.push(15);
+    c.push(4);
+    c.push(3);
+    c.push(14);
+    c.push(13);
+    c.push(9);
+    c.push(11);
+    c.push(4);
+    c.push(5);
+    c.push(11);
+    c.push(11);
+    c.push(8);
+    c.push(10);
+    c.push(7);
+    c.push(1);
+    c.push(7);
+    c.push(15);
+    c.push(10);
+    c.push(9);
+    c.push(1);
+    c.push(2);
+    c.push(1);
+    c.push(2);
+    c.push(14);
+    c.push(4);
+    c.push(13);
+    c.push(4);
+    c.push(2);
+    c.push(12);
+    c.push(12);
+    c.push(15);
+    c.push(11);
+    c.push(5);
+    c.push(4);
+    c.push(12);
+    c.push(13);
+    c.push(14);
+    c.push(9);
+    c.push(11);
+    c.push(10);
+    c.push(1);
+    c.push(1);
+    c.push(8);
+    c.push(4);
+    c.push(8);
+    c.push(6);
+    c.push(12);
+    c.push(14);
+    c.push(6);
+    j.push("zoe"); // 60
+    j.push("anthony"); // 56
+    j.push("pedro");  //74
+    j.push("davi"); //63
+    j.push("ravy"); // 57
+    j.push("gabrielly"); // 59
+    j.push("ester"); // 36
+    j.push("eduarda"); // 40
+    j.push("sr."); // 61
+    j.push("srta."); // 54
+    std::cout << jogo(c, j) << std::endl;
     return 0;
 }
