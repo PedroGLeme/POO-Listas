@@ -51,7 +51,7 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
         if (aux_jogador == 0) aux++;
     }
 
-    //printMatriz(matriz_cartas, jogadores.size(),( (qnt_cartas+ jogadores.size()) / jogadores.size() ));
+    printMatriz(matriz_cartas, jogadores.size(),( (qnt_cartas+ jogadores.size()) / jogadores.size() ));
 
     int soma_atual=0;
     int soma_menor=9999;
@@ -62,15 +62,15 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
     
     while(aux_jogador < jogadores.size()){ // encontra jogador com menor soma de cartas
         soma_atual = 0; 
-        while(matriz_cartas[aux_jogador][aux] != -1 && aux < ((qnt_cartas + 4) / jogadores.size())){
+        while(matriz_cartas[aux_jogador][aux] != -1 && aux < ((qnt_cartas + jogadores.size()) / jogadores.size())){
             soma_atual += matriz_cartas[aux_jogador][aux];
             aux++;
         }
-        //printf("Soma do jogador %d: %d\n", aux_jogador, soma_atual);
+        printf("Soma do jogador %d: %d\n", aux_jogador, soma_atual);
 
         if(soma_atual < soma_menor){
             soma_menor = soma_atual;
-            //printf("SOMA MENOR: %d\n", soma_atual);
+            printf("SOMA MENOR: %d\n", soma_atual);
             while(!jogador_menor.empty()){
                 jogador_menor.pop();
             }
@@ -130,76 +130,49 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
 int main() {
     std::stack<int> c;
     std::queue<std::string> j;
-    c.push(5);
-    c.push(3);
-    c.push(6);
-    c.push(8);
     c.push(4);
+    c.push(7);
+    c.push(13);
+    c.push(1);
     c.push(11);
     c.push(14);
-    c.push(13);
-    c.push(9);
-    c.push(4);
-    c.push(4);
-    c.push(14);
-    c.push(15);
+    c.push(10);
+    c.push(10);
+    c.push(11);
+    c.push(3);
     c.push(8);
     c.push(1);
-    c.push(14);
+    c.push(8);
+    c.push(8);
+    c.push(2);
+    c.push(9);
+    c.push(8);
+    c.push(2);
     c.push(10);
-    c.push(14);
-    c.push(7);
-    c.push(14);
+    c.push(12);
+    c.push(8);
+    c.push(9);
+    c.push(6);
+    c.push(10);
     c.push(4);
-    c.push(7);
-    c.push(5);
-    c.push(12);
-    c.push(7);
-    c.push(1);
-    c.push(15);
+    c.push(11);
+    c.push(2);
+    c.push(10);
+    c.push(2);
     c.push(14);
-    c.push(13);
-    c.push(15);
-    c.push(13);
-    c.push(6);
-    c.push(3);
-    c.push(15);
+    c.push(7);
     c.push(9);
-    c.push(7);
-    c.push(6);
-    c.push(11);
-    c.push(15);
-    c.push(11);
-    c.push(14);
-    c.push(9);
-    c.push(10);
-    c.push(11);
-    c.push(3);
-    c.push(7);
-    c.push(10);
-    c.push(12);
-    c.push(10);
-    c.push(14);
-    c.push(5);
-    c.push(10);
-    c.push(15);
-    c.push(14);
-    c.push(7);
-    j.push("fernando");
-    j.push("gabriela");
-    j.push("bianca");
-    j.push("lucas");
-    j.push("maria");
-    j.push("ian");
-    j.push("rebeca");
-    j.push("matheus");
-    j.push("bernardo");
-    j.push("augusto");
-    j.push("camila");
-    j.push("lavínia");
+    c.push(2);
     j.push("srta.");
-    j.push("helena");
-    j.push("arthur");
+    j.push("maria");
+    j.push("liz");
+    j.push("sophie");
+    j.push("levi");
+    j.push("aylla");
+    j.push("dra.");
+    j.push("rael");
+    j.push("pedro");
+    j.push("emilly");
     std::cout << jogo(c, j) << std::endl;
     return 0;
 }
