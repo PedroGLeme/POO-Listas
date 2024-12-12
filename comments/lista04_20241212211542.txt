@@ -1,0 +1,201 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-12 18:16:49.269088-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1 deu errado!
+#include<iostream>
+int main() {
+    std::vector<std::string> v;
+    int n;
+    std::string aux;
+    while(std::cin >> aux)
+        v.push_back(aux);
+    ordena_strings(v);
+    for(auto s : v)
+        std::cout << s << " ";
+    std::cout << std::endl;
+    return 0;
+}
+
+O resultado para
+zzzzzzzzzzzzzzzz test testando testados teste
+deveria ser
+test teste testando testados zzzzzzzzzzzzzzzz
+mas deu
+zzzzzzzzzzzzzzzz testando testados teste test 
+
+Teste 2: correto! +0.050
+Teste 3 deu errado!
+#include<iostream>
+int main() {
+    std::vector<std::string> v;
+    int n;
+    std::string aux;
+    while(std::cin >> aux)
+        v.push_back(aux);
+    ordena_strings(v);
+    for(auto s : v)
+        std::cout << s << " ";
+    std::cout << std::endl;
+    return 0;
+}
+
+O resultado para
+aa b
+deveria ser
+b aa
+mas deu
+aa b 
+
+Teste 4: correto! +0.050
+Teste 5 deu errado!
+None
+O resultado para
+esse aperiam sit earum consectetur beatae tempore aut facere ipsam excepturi vero est incidunt ipsa veniam dolores laudantium totam illum voluptatum error totam odit dolorem facere pariatur autem magni aliquam dignissimos aut minus placeat dolor repellat veritatis tempore repellendus illum exercitationem ullam reprehenderit odit aperiam sapiente accusamus vitae consequatur nulla aspernatur maiores nulla pariatur eius magni voluptates odio est excepturi recusandae minus cupiditate totam officia nisi facere sint occaecati repudiandae dignissimos incidunt aperiam excepturi assumenda occaecati officiis eaque ipsum facere est quasi vero beatae vero exercitationem impedit deserunt aperiam dicta velit fugit occaecati sequi sed placeat accusantium voluptatem porro recusandae mollitia odit minus facilis veniam blanditiis exercitationem est maxime enim ea quas recusandae odit consequuntur animi suscipit aliquam sunt laborum veritatis saepe dolore unde quos laudantium recusandae sunt quis iste quam vel officia et cumque incidunt distinctio sequi temporibus numquam eius est adipisci dolores vitae ad odit amet modi repellendus quidem voluptate possimus similique consequuntur eius eaque nemo itaque libero commodi laudantium natus corporis asperiores accusamus hic animi culpa ratione earum impedit eum suscipit dignissimos optio vitae adipisci asperiores repellat nemo animi numquam consequuntur ducimus nobis minima ullam ipsum deserunt eius architecto laboriosam delectus dolor minus sequi repellat facere similique culpa fugit libero magnam aliquam dolore temporibus laborum occaecati maiores itaque quasi laboriosam deserunt illum ipsa minima nesciunt temporibus tempore veniam sit ipsam porro voluptatem occaecati tempora reiciendis voluptatum aspernatur aliquid dicta cumque minus distinctio maxime suscipit itaque ea debitis necessitatibus unde iusto magnam harum ad nihil aspernatur soluta aspernatur dolore dolorem tempore quisquam iusto fugiat molestias illo tempora ad nobis ducimus iste ex explicabo quis dolorum iure amet voluptates quo enim placeat corrupti excepturi laboriosam consequuntur ad tempore minus illum consectetur veritatis laborum architecto magnam laborum et optio aut officia occaecati magnam temporibus optio inventore minima dolores et perferendis dolorum error harum unde excepturi pariatur unde fugiat dolore perferendis libero optio illum voluptatibus sequi quibusdam quas praesentium eveniet quo natus ab quia suscipit aut incidunt nostrum dolore cumque totam maxime possimus distinctio ut vel molestias asperiores reprehenderit tempore facere natus impedit aliquid quo quod repudiandae doloremque id nesciunt quidem veritatis asperiores similique vero sapiente corporis voluptates nisi voluptates omnis nihil id eius maiores repudiandae consequuntur commodi mollitia pariatur hic earum voluptatibus quae officia quam nisi voluptate placeat in assumenda molestiae excepturi corporis molestias perspiciatis possimus velit quasi dicta nisi in quae commodi qui sequi commodi perspiciatis voluptatibus culpa vitae quo culpa magni vitae nihil repellat cupiditate iusto alias voluptates dolore officiis tenetur molestias nobis voluptatem voluptates quod error sequi hic nam accusamus molestias cum corporis deserunt numquam impedit numquam nisi nemo occaecati voluptatum magni officiis inventore aliquid eaque in nam dolorum aspernatur nihil ipsa error quisquam explicabo harum non aperiam accusantium beatae officia praesentium illum dolores est minus distinctio provident perspiciatis temporibus expedita labore vitae necessitatibus dolores ducimus fuga nemo exercitationem animi harum dolorem ad molestias nam consequuntur voluptatum expedita quia illo atque enim labore repudiandae earum odio veniam earum eaque quia quia mollitia sint eius dignissimos quaerat occaecati ducimus velit quo repellat consequuntur placeat suscipit illum itaque tempore expedita illo ullam eveniet et esse eligendi sapiente quo ipsa doloribus minus illo quidem excepturi similique sed itaque minima tempora quo cupiditate laboriosam quas laboriosam provident ipsam aliquam labore quae adipisci doloribus labore aut necessitatibus voluptatibus nostrum cum blanditiis fuga sapiente quidem cupiditate voluptatibus debitis non earum sequi rem eos nihil aspernatur minus possimus officia iusto eligendi molestias facere cumque ipsa facilis assumenda quam optio recusandae ipsa necessitatibus debitis aliquid id eum dignissimos ratione in iste sed voluptas officia doloribus asperiores dignissimos dolorum facilis dolorum quaerat minima tempore iure dicta ipsum magnam odit architecto facilis voluptatum officiis iusto adipisci quia ipsam sit corporis excepturi praesentium quam harum corporis beatae totam atque qui asperiores soluta totam adipisci quidem nostrum nulla consectetur ab blanditiis vel accusamus facere maiores ratione laudantium accusantium voluptate enim eveniet alias quidem deserunt aliquam et voluptas qui dolore hic corrupti cumque nihil aliquam et ex enim natus provident temporibus itaque natus enim quam iure nulla laudantium ratione deleniti consequatur corrupti molestiae aut in quod earum vitae itaque hic hic sequi iste recusandae soluta autem natus ad at magni voluptatum quis commodi nihil reiciendis a inventore expedita architecto architecto enim sed eos et reiciendis illo facilis consequuntur dicta voluptatum deserunt itaque rem minus doloremque fugiat quibusdam alias dignissimos libero architecto nam voluptatum quasi explicabo tempore modi qui impedit eaque quos voluptas aspernatur hic rerum autem blanditiis laboriosam modi aperiam velit maiores vitae fuga iste animi dignissimos soluta perspiciatis id porro voluptas veniam saepe culpa voluptatem numquam sint doloremque qui
+deveria ser
+a ut in in in in in id id id id ex ex et et et et et et et ea ea at ad ad ad ad ad ad ab ab vel vel vel sit sit sit sed sed sed sed rem rem quo quo quo quo quo quo quo qui qui qui qui qui non non nam nam nam nam hic hic hic hic hic hic hic eum eum est est est est est est eos eos cum cum aut aut aut aut aut aut vero vero vero vero unde unde unde unde sunt sunt sint sint sint quos quos quod quod quod quis quis quis quia quia quia quia quia quas quas quas quam quam quam quam quam quae quae quae odit odit odit odit odit odit odio odio nisi nisi nisi nisi nisi nemo nemo nemo nemo modi modi modi iure iure iure iste iste iste iste iste ipsa ipsa ipsa ipsa ipsa ipsa illo illo illo illo illo fuga fuga fuga esse esse enim enim enim enim enim enim enim eius eius eius eius eius eius amet amet vitae vitae vitae vitae vitae vitae vitae vitae velit velit velit velit ullam ullam ullam totam totam totam totam totam totam sequi sequi sequi sequi sequi sequi sequi sequi saepe saepe rerum quasi quasi quasi quasi porro porro porro optio optio optio optio optio omnis nulla nulla nulla nulla nobis nobis nobis nihil nihil nihil nihil nihil nihil nihil natus natus natus natus natus natus minus minus minus minus minus minus minus minus minus minus magni magni magni magni magni iusto iusto iusto iusto iusto ipsum ipsum ipsum ipsam ipsam ipsam ipsam illum illum illum illum illum illum illum harum harum harum harum harum fugit fugit error error error error earum earum earum earum earum earum earum eaque eaque eaque eaque eaque dolor dolor dicta dicta dicta dicta dicta culpa culpa culpa culpa culpa autem autem autem atque atque animi animi animi animi animi alias alias alias veniam veniam veniam veniam veniam soluta soluta soluta soluta quidem quidem quidem quidem quidem quidem minima minima minima minima minima maxime maxime maxime magnam magnam magnam magnam magnam libero libero libero libero labore labore labore labore itaque itaque itaque itaque itaque itaque itaque itaque fugiat fugiat fugiat facere facere facere facere facere facere facere facere dolore dolore dolore dolore dolore dolore dolore cumque cumque cumque cumque cumque beatae beatae beatae beatae tenetur tempore tempore tempore tempore tempore tempore tempore tempore tempore tempora tempora tempora ratione ratione ratione ratione quaerat quaerat placeat placeat placeat placeat placeat officia officia officia officia officia officia officia numquam numquam numquam numquam numquam nostrum nostrum nostrum maiores maiores maiores maiores maiores laborum laborum laborum laborum impedit impedit impedit impedit impedit facilis facilis facilis facilis facilis eveniet eveniet eveniet ducimus ducimus ducimus ducimus dolorum dolorum dolorum dolorum dolorum dolores dolores dolores dolores dolores dolorem dolorem dolorem debitis debitis debitis commodi commodi commodi commodi commodi aperiam aperiam aperiam aperiam aperiam aperiam aliquid aliquid aliquid aliquid aliquam aliquam aliquam aliquam aliquam aliquam voluptas voluptas voluptas voluptas suscipit suscipit suscipit suscipit suscipit sapiente sapiente sapiente sapiente repellat repellat repellat repellat repellat quisquam quisquam possimus possimus possimus possimus pariatur pariatur pariatur pariatur officiis officiis officiis officiis nesciunt nesciunt mollitia mollitia mollitia incidunt incidunt incidunt incidunt expedita expedita expedita expedita eligendi eligendi deserunt deserunt deserunt deserunt deserunt deserunt deleniti delectus corrupti corrupti corrupti corporis corporis corporis corporis corporis corporis adipisci adipisci adipisci adipisci adipisci voluptate voluptate voluptate veritatis veritatis veritatis veritatis similique similique similique similique quibusdam quibusdam provident provident provident occaecati occaecati occaecati occaecati occaecati occaecati occaecati occaecati molestias molestias molestias molestias molestias molestias molestias molestiae molestiae inventore inventore inventore explicabo explicabo explicabo excepturi excepturi excepturi excepturi excepturi excepturi excepturi excepturi doloribus doloribus doloribus assumenda assumenda assumenda accusamus accusamus accusamus accusamus voluptatum voluptatum voluptatum voluptatum voluptatum voluptatum voluptatum voluptatum voluptates voluptates voluptates voluptates voluptates voluptates voluptatem voluptatem voluptatem voluptatem temporibus temporibus temporibus temporibus temporibus temporibus reiciendis reiciendis reiciendis recusandae recusandae recusandae recusandae recusandae recusandae laudantium laudantium laudantium laudantium laudantium laboriosam laboriosam laboriosam laboriosam laboriosam laboriosam doloremque doloremque doloremque distinctio distinctio distinctio distinctio cupiditate cupiditate cupiditate cupiditate blanditiis blanditiis blanditiis blanditiis aspernatur aspernatur aspernatur aspernatur aspernatur aspernatur aspernatur asperiores asperiores asperiores asperiores asperiores asperiores architecto architecto architecto architecto architecto architecto repudiandae repudiandae repudiandae repudiandae repellendus repellendus praesentium praesentium praesentium perferendis perferendis dignissimos dignissimos dignissimos dignissimos dignissimos dignissimos dignissimos dignissimos consequatur consequatur consectetur consectetur consectetur accusantium accusantium accusantium voluptatibus voluptatibus voluptatibus voluptatibus voluptatibus perspiciatis perspiciatis perspiciatis perspiciatis consequuntur consequuntur consequuntur consequuntur consequuntur consequuntur consequuntur consequuntur reprehenderit reprehenderit necessitatibus necessitatibus necessitatibus necessitatibus exercitationem exercitationem exercitationem exercitationem
+mas deu
+necessitatibus necessitatibus necessitatibus necessitatibus exercitationem exercitationem exercitationem exercitationem reprehenderit reprehenderit voluptatibus voluptatibus voluptatibus voluptatibus voluptatibus perspiciatis perspiciatis perspiciatis perspiciatis consequuntur consequuntur consequuntur consequuntur consequuntur consequuntur consequuntur consequuntur repudiandae repudiandae repudiandae repudiandae repellendus repellendus praesentium praesentium praesentium perferendis perferendis dignissimos dignissimos dignissimos dignissimos dignissimos dignissimos dignissimos dignissimos consequatur consequatur consectetur consectetur consectetur accusantium accusantium accusantium voluptatum voluptatum voluptatum voluptatum voluptatum voluptatum voluptatum voluptatum voluptates voluptates voluptates voluptates voluptates voluptates voluptatem voluptatem voluptatem voluptatem temporibus temporibus temporibus temporibus temporibus temporibus reiciendis reiciendis reiciendis recusandae recusandae recusandae recusandae recusandae recusandae laudantium laudantium laudantium laudantium laudantium laboriosam laboriosam laboriosam laboriosam laboriosam laboriosam doloremque doloremque doloremque distinctio distinctio distinctio distinctio cupiditate cupiditate cupiditate cupiditate blanditiis blanditiis blanditiis blanditiis aspernatur aspernatur aspernatur aspernatur aspernatur aspernatur aspernatur asperiores asperiores asperiores asperiores asperiores asperiores architecto architecto architecto architecto architecto architecto voluptate voluptate voluptate veritatis veritatis veritatis veritatis similique similique similique similique quibusdam quibusdam provident provident provident occaecati occaecati occaecati occaecati occaecati occaecati occaecati occaecati molestias molestias molestias molestias molestias molestias molestias molestiae molestiae inventore inventore inventore explicabo explicabo explicabo excepturi excepturi excepturi excepturi excepturi excepturi excepturi excepturi doloribus doloribus doloribus assumenda assumenda assumenda accusamus accusamus accusamus accusamus voluptas voluptas voluptas voluptas suscipit suscipit suscipit suscipit suscipit sapiente sapiente sapiente sapiente repellat repellat repellat repellat repellat quisquam quisquam possimus possimus possimus possimus pariatur pariatur pariatur pariatur officiis officiis officiis officiis nesciunt nesciunt mollitia mollitia mollitia incidunt incidunt incidunt incidunt expedita expedita expedita expedita eligendi eligendi deserunt deserunt deserunt deserunt deserunt deserunt deleniti delectus corrupti corrupti corrupti corporis corporis corporis corporis corporis corporis adipisci adipisci adipisci adipisci adipisci tenetur tempore tempore tempore tempore tempore tempore tempore tempore tempore tempora tempora tempora ratione ratione ratione ratione quaerat quaerat placeat placeat placeat placeat placeat officia officia officia officia officia officia officia numquam numquam numquam numquam numquam nostrum nostrum nostrum maiores maiores maiores maiores maiores laborum laborum laborum laborum impedit impedit impedit impedit impedit facilis facilis facilis facilis facilis eveniet eveniet eveniet ducimus ducimus ducimus ducimus dolorum dolorum dolorum dolorum dolorum dolores dolores dolores dolores dolores dolorem dolorem dolorem debitis debitis debitis commodi commodi commodi commodi commodi aperiam aperiam aperiam aperiam aperiam aperiam aliquid aliquid aliquid aliquid aliquam aliquam aliquam aliquam aliquam aliquam veniam veniam veniam veniam veniam soluta soluta soluta soluta quidem quidem quidem quidem quidem quidem minima minima minima minima minima maxime maxime maxime magnam magnam magnam magnam magnam libero libero libero libero labore labore labore labore itaque itaque itaque itaque itaque itaque itaque itaque fugiat fugiat fugiat facere facere facere facere facere facere facere facere dolore dolore dolore dolore dolore dolore dolore cumque cumque cumque cumque cumque beatae beatae beatae beatae vitae vitae vitae vitae vitae vitae vitae vitae velit velit velit velit ullam ullam ullam totam totam totam totam totam totam sequi sequi sequi sequi sequi sequi sequi sequi saepe saepe rerum quasi quasi quasi quasi porro porro porro optio optio optio optio optio omnis nulla nulla nulla nulla nobis nobis nobis nihil nihil nihil nihil nihil nihil nihil natus natus natus natus natus natus minus minus minus minus minus minus minus minus minus minus magni magni magni magni magni iusto iusto iusto iusto iusto ipsum ipsum ipsum ipsam ipsam ipsam ipsam illum illum illum illum illum illum illum harum harum harum harum harum fugit fugit error error error error earum earum earum earum earum earum earum eaque eaque eaque eaque eaque dolor dolor dicta dicta dicta dicta dicta culpa culpa culpa culpa culpa autem autem autem atque atque animi animi animi animi animi alias alias alias vero vero vero vero unde unde unde unde sunt sunt sint sint sint quos quos quod quod quod quis quis quis quia quia quia quia quia quas quas quas quam quam quam quam quam quae quae quae odit odit odit odit odit odit odio odio nisi nisi nisi nisi nisi nemo nemo nemo nemo modi modi modi iure iure iure iste iste iste iste iste ipsa ipsa ipsa ipsa ipsa ipsa illo illo illo illo illo fuga fuga fuga esse esse enim enim enim enim enim enim enim eius eius eius eius eius eius amet amet vel vel vel sit sit sit sed sed sed sed rem rem quo quo quo quo quo quo quo qui qui qui qui qui non non nam nam nam nam hic hic hic hic hic hic hic eum eum est est est est est est eos eos cum cum aut aut aut aut aut aut ut in in in in in id id id id ex ex et et et et et et et ea ea at ad ad ad ad ad ad ab ab a 
+
+Teste 6 deu errado!
+None
+O resultado para
+officia quisquam aliquam incidunt eaque blanditiis fuga sit incidunt reiciendis libero sunt quos nam sequi velit minima harum amet ratione amet vitae corporis exercitationem repellat deleniti atque at in accusamus minus quod rerum quasi perferendis perspiciatis beatae voluptates eius enim optio sed beatae dolorem tenetur nulla nulla magnam veritatis corrupti molestiae saepe veritatis id rerum hic beatae temporibus quidem quasi sapiente sapiente quam possimus quas similique ab cumque non saepe quidem at nemo dignissimos autem possimus aliquid ex quo earum nesciunt commodi consequuntur sint commodi distinctio occaecati temporibus repudiandae voluptatum placeat ut ab beatae aliquam velit sed iusto odio velit similique facere voluptatem fugiat veniam voluptatem neque maiores nihil ad amet
+deveria ser
+ut in id ex at at ad ab ab sit sed sed quo non nam hic sunt sint quos quod quas quam odio nemo fuga enim eius amet amet amet vitae velit velit velit sequi saepe saepe rerum rerum quasi quasi optio nulla nulla nihil neque minus iusto harum earum eaque autem atque veniam quidem quidem minima magnam libero fugiat facere cumque beatae beatae beatae beatae tenetur ratione placeat officia maiores dolorem commodi commodi aliquid aliquam aliquam sapiente sapiente repellat quisquam possimus possimus nesciunt incidunt incidunt deleniti corrupti corporis veritatis veritatis similique similique occaecati molestiae accusamus voluptatum voluptates voluptatem voluptatem temporibus temporibus reiciendis distinctio blanditiis repudiandae perferendis dignissimos perspiciatis consequuntur exercitationem
+mas deu
+exercitationem perspiciatis consequuntur repudiandae perferendis dignissimos voluptatum voluptates voluptatem voluptatem temporibus temporibus reiciendis distinctio blanditiis veritatis veritatis similique similique occaecati molestiae accusamus sapiente sapiente repellat quisquam possimus possimus nesciunt incidunt incidunt deleniti corrupti corporis tenetur ratione placeat officia maiores dolorem commodi commodi aliquid aliquam aliquam veniam quidem quidem minima magnam libero fugiat facere cumque beatae beatae beatae beatae vitae velit velit velit sequi saepe saepe rerum rerum quasi quasi optio nulla nulla nihil neque minus iusto harum earum eaque autem atque sunt sint quos quod quas quam odio nemo fuga enim eius amet amet amet sit sed sed quo non nam hic ut in id ex at at ad ab ab 
+
+Teste 7 deu errado!
+None
+O resultado para
+tempore rerum natus debitis omnis blanditiis odio numquam asperiores nihil aliquam illo labore voluptas animi quia adipisci fugit voluptatem eius nobis praesentium quas enim modi dolor debitis dolorem culpa voluptatibus minima deleniti distinctio aliquam exercitationem blanditiis corrupti officiis a quibusdam aliquid voluptate totam neque excepturi hic incidunt quo labore enim reprehenderit odio ab quia non unde neque eligendi autem labore repellat optio aliquid placeat quibusdam molestiae possimus enim soluta illum ipsa at iste eligendi eligendi iusto ad aliquid optio est ipsa sapiente quia tenetur quasi voluptates nisi ipsum omnis perspiciatis aut qui ut quis corporis rem explicabo aliquam voluptatem earum eaque dolor adipisci dolor magni illum reprehenderit ipsa reprehenderit non quis porro repudiandae ad in fugiat nihil numquam adipisci iure facilis mollitia ab vitae dolorum animi nihil iusto dicta molestias earum ab quisquam voluptatem corporis repellendus excepturi mollitia sunt earum ullam ducimus sit cumque quod consequuntur saepe dolorem vitae fugiat sapiente repellendus veritatis labore nam nemo officiis odit et recusandae maiores consequuntur mollitia nulla dolorem harum minus voluptatibus dolores aperiam vel soluta eum ea consequuntur eaque illo adipisci soluta quibusdam nisi eaque velit saepe pariatur natus laborum cum quia maxime debitis voluptatum a nostrum debitis autem rem voluptate nisi necessitatibus earum perferendis eius in similique numquam in ut officia aspernatur sed deleniti ipsa nulla exercitationem sapiente consequatur sunt facilis odit explicabo cumque omnis error eveniet non aliquid modi nobis magni officia non sint perspiciatis excepturi nesciunt non dolor nesciunt voluptate laboriosam aspernatur nihil animi illo a praesentium voluptatum suscipit rem assumenda perspiciatis animi nisi tempora accusamus earum illo ipsum soluta sed soluta delectus aperiam labore fugit earum aspernatur commodi eaque aspernatur perspiciatis voluptatum iure autem iure
+deveria ser
+a a a ut ut in in in et ea at ad ad ab ab ab vel sit sed sed rem rem rem quo qui non non non non non nam hic eum est cum aut unde sunt sunt sint quod quis quis quia quia quia quia quas odit odit odio odio nisi nisi nisi nisi nemo modi modi iure iure iure iste ipsa ipsa ipsa ipsa illo illo illo illo enim enim enim eius eius vitae vitae velit ullam totam saepe saepe rerum quasi porro optio optio omnis omnis omnis nulla nulla nobis nobis nihil nihil nihil nihil neque neque natus natus minus magni magni iusto iusto ipsum ipsum illum illum harum fugit fugit error earum earum earum earum earum earum eaque eaque eaque eaque dolor dolor dolor dolor dicta culpa autem autem autem animi animi animi animi soluta soluta soluta soluta soluta minima maxime labore labore labore labore labore fugiat fugiat cumque cumque tenetur tempore tempora placeat officia officia numquam numquam numquam nostrum maiores laborum facilis facilis eveniet ducimus dolorum dolores dolorem dolorem dolorem debitis debitis debitis debitis commodi aperiam aperiam aliquid aliquid aliquid aliquid aliquam aliquam aliquam voluptas suscipit sapiente sapiente sapiente repellat quisquam possimus pariatur officiis officiis nesciunt nesciunt mollitia mollitia mollitia incidunt eligendi eligendi eligendi deleniti deleniti delectus corrupti corporis corporis adipisci adipisci adipisci adipisci voluptate voluptate voluptate veritatis similique quibusdam quibusdam quibusdam molestias molestiae explicabo explicabo excepturi excepturi excepturi assumenda accusamus voluptatum voluptatum voluptatum voluptates voluptatem voluptatem voluptatem recusandae laboriosam distinctio blanditiis blanditiis aspernatur aspernatur aspernatur aspernatur asperiores repudiandae repellendus repellendus praesentium praesentium perferendis consequatur voluptatibus voluptatibus perspiciatis perspiciatis perspiciatis perspiciatis consequuntur consequuntur consequuntur reprehenderit reprehenderit reprehenderit necessitatibus exercitationem exercitationem
+mas deu
+necessitatibus exercitationem exercitationem reprehenderit reprehenderit reprehenderit voluptatibus voluptatibus perspiciatis perspiciatis perspiciatis perspiciatis consequuntur consequuntur consequuntur repudiandae repellendus repellendus praesentium praesentium perferendis consequatur voluptatum voluptatum voluptatum voluptates voluptatem voluptatem voluptatem recusandae laboriosam distinctio blanditiis blanditiis aspernatur aspernatur aspernatur aspernatur asperiores voluptate voluptate voluptate veritatis similique quibusdam quibusdam quibusdam molestias molestiae explicabo explicabo excepturi excepturi excepturi assumenda accusamus voluptas suscipit sapiente sapiente sapiente repellat quisquam possimus pariatur officiis officiis nesciunt nesciunt mollitia mollitia mollitia incidunt eligendi eligendi eligendi deleniti deleniti delectus corrupti corporis corporis adipisci adipisci adipisci adipisci tenetur tempore tempora placeat officia officia numquam numquam numquam nostrum maiores laborum facilis facilis eveniet ducimus dolorum dolores dolorem dolorem dolorem debitis debitis debitis debitis commodi aperiam aperiam aliquid aliquid aliquid aliquid aliquam aliquam aliquam soluta soluta soluta soluta soluta minima maxime labore labore labore labore labore fugiat fugiat cumque cumque vitae vitae velit ullam totam saepe saepe rerum quasi porro optio optio omnis omnis omnis nulla nulla nobis nobis nihil nihil nihil nihil neque neque natus natus minus magni magni iusto iusto ipsum ipsum illum illum harum fugit fugit error earum earum earum earum earum earum eaque eaque eaque eaque dolor dolor dolor dolor dicta culpa autem autem autem animi animi animi animi unde sunt sunt sint quod quis quis quia quia quia quia quas odit odit odio odio nisi nisi nisi nisi nemo modi modi iure iure iure iste ipsa ipsa ipsa ipsa illo illo illo illo enim enim enim eius eius vel sit sed sed rem rem rem quo qui non non non non non nam hic eum est cum aut ut ut in in in et ea at ad ad ab ab ab a a a 
+
+Teste 8 deu errado!
+None
+O resultado para
+doloribus sequi dicta eligendi hic vero quam maiores voluptatum adipisci temporibus nam provident nihil at cupiditate fugiat sit repellat iste voluptatem animi placeat officia reiciendis voluptas autem officia tempore dolor animi ex sit iusto eveniet quod ab tempore illum cum cupiditate ipsa voluptate temporibus modi rem sint itaque cumque deserunt odit reprehenderit dolorem deleniti dolorum neque ad ad distinctio iure dolorum suscipit porro minus deleniti laborum eius fugiat reprehenderit odit illo magni odio reiciendis facilis molestias omnis temporibus laboriosam itaque a sint harum inventore hic error aperiam iste doloremque laudantium sapiente quas magnam consectetur tempore possimus doloribus voluptatem aut laudantium quis iste odit culpa illo facilis ducimus provident dolor laudantium asperiores accusantium quos ipsum possimus optio deleniti fugiat facilis sunt eos
+deveria ser
+a ex at ad ad ab sit sit rem nam hic hic eos cum aut vero sunt sint sint quos quod quis quas quam odit odit odit odio modi iure iste iste iste ipsa illo illo eius sequi porro optio omnis nihil neque minus magni iusto ipsum illum harum error dolor dolor dicta culpa autem animi animi magnam itaque itaque fugiat fugiat fugiat cumque tempore tempore tempore placeat officia officia maiores laborum facilis facilis facilis eveniet ducimus dolorum dolorum dolorem aperiam voluptas suscipit sapiente repellat possimus possimus eligendi deserunt deleniti deleniti deleniti adipisci voluptate provident provident molestias inventore doloribus doloribus voluptatum voluptatem voluptatem temporibus temporibus temporibus reiciendis reiciendis laudantium laudantium laudantium laboriosam doloremque distinctio cupiditate cupiditate asperiores consectetur accusantium reprehenderit reprehenderit
+mas deu
+reprehenderit reprehenderit consectetur accusantium voluptatum voluptatem voluptatem temporibus temporibus temporibus reiciendis reiciendis laudantium laudantium laudantium laboriosam doloremque distinctio cupiditate cupiditate asperiores voluptate provident provident molestias inventore doloribus doloribus voluptas suscipit sapiente repellat possimus possimus eligendi deserunt deleniti deleniti deleniti adipisci tempore tempore tempore placeat officia officia maiores laborum facilis facilis facilis eveniet ducimus dolorum dolorum dolorem aperiam magnam itaque itaque fugiat fugiat fugiat cumque sequi porro optio omnis nihil neque minus magni iusto ipsum illum harum error dolor dolor dicta culpa autem animi animi vero sunt sint sint quos quod quis quas quam odit odit odit odio modi iure iste iste iste ipsa illo illo eius sit sit rem nam hic hic eos cum aut ex at ad ad ab a 
+
+Teste 9 deu errado!
+None
+O resultado para
+nemo nobis id tempora veniam omnis sequi vitae quasi dolor doloribus soluta aut repudiandae accusantium adipisci necessitatibus odio atque nihil sequi amet nulla unde nam eaque dignissimos ipsa ipsum odit sapiente libero vel cum reiciendis ex ex neque minus totam tempora blanditiis vero a placeat provident tempore laudantium ea illum fuga modi eum laborum illum odio ducimus facere beatae deleniti voluptatem quibusdam fugiat nostrum alias placeat cum atque maxime recusandae vel fuga incidunt iure praesentium cumque mollitia voluptates eaque magnam temporibus debitis mollitia facere dicta officia sed repudiandae nam placeat nihil mollitia laborum repudiandae cum quam veniam nisi harum earum iste explicabo harum numquam magnam libero dignissimos voluptates dolore aperiam esse cupiditate voluptatum reprehenderit fugit autem quidem pariatur perspiciatis sed saepe quod aliquam voluptatem repudiandae dolore sunt itaque sed illo quisquam harum error nulla consequatur numquam neque illum maxime neque fugiat dolore magni consectetur amet cum voluptatem accusantium pariatur magnam expedita officiis quo quis pariatur quos minus delectus dolorem labore magnam officia voluptas delectus reiciendis occaecati temporibus distinctio beatae at odit nobis cupiditate perspiciatis ex nam incidunt voluptatem iure atque quo assumenda odit labore accusamus dolore deleniti non neque tempore qui laboriosam fuga itaque distinctio sit cumque ipsa deserunt maxime quam excepturi vitae id consequuntur a voluptatum sapiente saepe laboriosam cum totam accusamus inventore laboriosam explicabo nobis inventore quas vel unde architecto corporis ipsa odio placeat amet sint consequatur cumque a sunt accusamus tenetur recusandae ut eligendi distinctio nihil dolorum cupiditate eum assumenda hic maxime consequatur inventore iusto minus quaerat molestias illo id aliquid quo rerum assumenda eaque quaerat ad architecto quisquam facilis culpa quidem aperiam suscipit aliquid sunt repellendus soluta cum illum similique laborum saepe consectetur id odit eos maiores odit suscipit eligendi occaecati culpa eum explicabo suscipit voluptatibus laboriosam distinctio aut quasi exercitationem eos eius
+deveria ser
+a a a ut id id id id ex ex ex ea at ad vel vel vel sit sed sed sed quo quo quo qui non nam nam nam hic eum eum eum eos eos cum cum cum cum cum cum aut aut vero unde unde sunt sunt sunt sint quos quod quis quas quam quam odit odit odit odit odit odio odio odio nisi nemo modi iure iure iste ipsa ipsa ipsa illo illo fuga fuga fuga esse eius amet amet amet vitae vitae totam totam sequi sequi saepe saepe saepe rerum quasi quasi omnis nulla nulla nobis nobis nobis nihil nihil nihil neque neque neque neque minus minus minus magni iusto ipsum illum illum illum illum harum harum harum fugit error earum eaque eaque eaque dolor dicta culpa culpa autem atque atque atque alias veniam veniam soluta soluta quidem quidem maxime maxime maxime maxime magnam magnam magnam magnam libero libero labore labore itaque itaque fugiat fugiat facere facere dolore dolore dolore dolore cumque cumque cumque beatae beatae tenetur tempore tempore tempora tempora quaerat quaerat placeat placeat placeat placeat officia officia numquam numquam nostrum maiores laborum laborum laborum facilis ducimus dolorum dolorem debitis aperiam aperiam aliquid aliquid aliquam voluptas suscipit suscipit suscipit sapiente sapiente quisquam quisquam pariatur pariatur pariatur officiis mollitia mollitia mollitia incidunt incidunt expedita eligendi eligendi deserunt deleniti deleniti delectus delectus corporis adipisci similique quibusdam provident occaecati occaecati molestias inventore inventore inventore explicabo explicabo explicabo excepturi doloribus assumenda assumenda assumenda accusamus accusamus accusamus voluptatum voluptatum voluptates voluptates voluptatem voluptatem voluptatem voluptatem temporibus temporibus reiciendis reiciendis recusandae recusandae laudantium laboriosam laboriosam laboriosam laboriosam distinctio distinctio distinctio distinctio cupiditate cupiditate cupiditate blanditiis architecto architecto repudiandae repudiandae repudiandae repudiandae repellendus praesentium dignissimos dignissimos consequatur consequatur consequatur consectetur consectetur accusantium accusantium voluptatibus perspiciatis perspiciatis consequuntur reprehenderit necessitatibus exercitationem
+mas deu
+necessitatibus exercitationem reprehenderit voluptatibus perspiciatis perspiciatis consequuntur repudiandae repudiandae repudiandae repudiandae repellendus praesentium dignissimos dignissimos consequatur consequatur consequatur consectetur consectetur accusantium accusantium voluptatum voluptatum voluptates voluptates voluptatem voluptatem voluptatem voluptatem temporibus temporibus reiciendis reiciendis recusandae recusandae laudantium laboriosam laboriosam laboriosam laboriosam distinctio distinctio distinctio distinctio cupiditate cupiditate cupiditate blanditiis architecto architecto similique quibusdam provident occaecati occaecati molestias inventore inventore inventore explicabo explicabo explicabo excepturi doloribus assumenda assumenda assumenda accusamus accusamus accusamus voluptas suscipit suscipit suscipit sapiente sapiente quisquam quisquam pariatur pariatur pariatur officiis mollitia mollitia mollitia incidunt incidunt expedita eligendi eligendi deserunt deleniti deleniti delectus delectus corporis adipisci tenetur tempore tempore tempora tempora quaerat quaerat placeat placeat placeat placeat officia officia numquam numquam nostrum maiores laborum laborum laborum facilis ducimus dolorum dolorem debitis aperiam aperiam aliquid aliquid aliquam veniam veniam soluta soluta quidem quidem maxime maxime maxime maxime magnam magnam magnam magnam libero libero labore labore itaque itaque fugiat fugiat facere facere dolore dolore dolore dolore cumque cumque cumque beatae beatae vitae vitae totam totam sequi sequi saepe saepe saepe rerum quasi quasi omnis nulla nulla nobis nobis nobis nihil nihil nihil neque neque neque neque minus minus minus magni iusto ipsum illum illum illum illum harum harum harum fugit error earum eaque eaque eaque dolor dicta culpa culpa autem atque atque atque alias vero unde unde sunt sunt sunt sint quos quod quis quas quam quam odit odit odit odit odit odio odio odio nisi nemo modi iure iure iste ipsa ipsa ipsa illo illo fuga fuga fuga esse eius amet amet amet vel vel vel sit sed sed sed quo quo quo qui non nam nam nam hic eum eum eum eos eos cum cum cum cum cum cum aut aut ut id id id id ex ex ex ea at ad a a a 
+
+Teste 10 deu errado!
+None
+O resultado para
+amet repudiandae illum atque sed incidunt unde accusamus eligendi earum illum nobis libero nihil ut est modi repellendus fuga impedit expedita sint provident alias nam officia quos natus eos ratione omnis odit eaque nulla suscipit tempora quo voluptas dolores totam adipisci vitae
+deveria ser
+ut sed quo nam est eos unde sint quos odit modi fuga amet vitae totam omnis nulla nobis nihil natus illum illum earum eaque atque alias libero tempora ratione officia impedit dolores voluptas suscipit incidunt expedita eligendi adipisci provident accusamus repudiandae repellendus
+mas deu
+repudiandae repellendus provident accusamus voluptas suscipit incidunt expedita eligendi adipisci tempora ratione officia impedit dolores libero vitae totam omnis nulla nobis nihil natus illum illum earum eaque atque alias unde sint quos odit modi fuga amet sed quo nam est eos ut 
+
+Teste 11 deu errado!
+None
+Teste 12 deu errado!
+None
+Teste 13 deu errado!
+None
+Teste 14 deu errado!
+None
+Teste 15 deu errado!
+None
+Teste 16 deu errado!
+None
+Teste 17 deu errado!
+None
+Teste 18 deu errado!
+None
+Teste 19 deu errado!
+None
+Teste 20 deu errado!
+None
+Nota exercicio 4: 0.1
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 2.10
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.0, "ex4": 0.1, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
