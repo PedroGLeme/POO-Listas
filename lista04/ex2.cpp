@@ -51,7 +51,7 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
         if (aux_jogador == 0) aux++;
     }
 
-    printMatriz(matriz_cartas, jogadores.size(),( (qnt_cartas+ jogadores.size()) / jogadores.size() ));
+    //printMatriz(matriz_cartas, jogadores.size(),( (qnt_cartas+ jogadores.size()) / jogadores.size() ));
 
     int soma_atual=0;
     int soma_menor=9999;
@@ -66,11 +66,11 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
             soma_atual += matriz_cartas[aux_jogador][aux];
             aux++;
         }
-        printf("Soma do jogador %d: %d\n", aux_jogador, soma_atual);
+        //printf("Soma do jogador %d: %d\n", aux_jogador, soma_atual);
 
         if(soma_atual < soma_menor){
             soma_menor = soma_atual;
-            printf("SOMA MENOR: %d\n", soma_atual);
+            //printf("SOMA MENOR: %d\n", soma_atual);
             while(!jogador_menor.empty()){
                 jogador_menor.pop();
             }
