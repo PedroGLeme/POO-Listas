@@ -5,15 +5,6 @@
 
 using namespace std;
 
-void printMatriz(int** matriz, int linhas, int colunas) {
-    for (int i = 0; i < linhas; i++) {
-        for (int j = 0; j < colunas; j++) {
-            std::cout << matriz[i][j] << " ";
-        }
-        std::cout << std::endl;
-    }
-}
-
 
 /*
 que recebe uma pilha de cartas contendo numeros naturais e distribui continuamente para a fila de
@@ -50,8 +41,6 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
         aux_jogador = (aux_jogador + 1) % jogadores.size();
         if (aux_jogador == 0) aux++;
     }
-
-    //printMatriz(matriz_cartas, jogadores.size(),( (qnt_cartas+ jogadores.size()) / jogadores.size() ));
 
     int soma_atual=0;
     int soma_menor=9999;
