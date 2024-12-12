@@ -58,7 +58,7 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
 
     aux=0; // conta cartas
     aux_jogador=0; // contador de jogador
-    stack<int> jogador_menor; // guarda jogador com menor valor de baralho
+    queue<int> jogador_menor; // guarda jogador com menor valor de baralho
     
     while(aux_jogador < jogadores.size()){ // encontra jogador com menor soma de cartas
         soma_atual = 0; 
@@ -70,6 +70,7 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
 
         if(soma_atual < soma_menor){
             soma_menor = soma_atual;
+            //printf("SOMA MENOR: %d\n", soma_atual);
             while(!jogador_menor.empty()){
                 jogador_menor.pop();
             }
@@ -84,7 +85,7 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
     }
     
     if(jogador_menor.size()==1){ // so tem um com menor numero
-        int posicao = jogador_menor.top();
+        int posicao = jogador_menor.front();
         while(posicao){
             jogadores.pop();
             posicao--;
@@ -92,113 +93,113 @@ std::string jogo(std::stack<int> cartas, std::queue<std::string> jogadores){
         return jogadores.front();
     }
     else{ // mais de uma verificacao
-        string jogador_menor = jogadores.front();
-        jogadores.pop();
-        string jogador_atual = jogadores.front();
-        jogadores.pop();
-        
-        while(jogadores.size()){
-            if( jogador_atual< jogador_menor){
-                jogador_menor = jogador_atual;
-            }
-
-            jogador_atual = jogadores.front();
+        int contador=0;
+        int valor_posicao = jogador_menor.front();
+        jogador_menor.pop();
+        while(contador!=valor_posicao){
             jogadores.pop();
+            contador++;
         }
-        if( jogador_atual< jogador_menor){
-                jogador_menor = jogador_atual;
+        string jogador_alfabeto = jogadores.front();
+
+        valor_posicao = jogador_menor.front();
+        while(contador!=valor_posicao){
+            jogadores.pop();
+            contador++;
+        }
+        string jogador_atual = jogadores.front();
+        
+        while(!jogador_menor.size()){
+            jogador_menor.pop();
+            jogadores.pop();
+            if( jogador_atual< jogador_alfabeto){
+                jogador_alfabeto = jogador_atual;
+            }
+            jogador_atual = jogadores.front();
         }
 
-        return jogador_menor;
+        if( jogador_atual< jogador_alfabeto){
+                jogador_alfabeto = jogador_atual;
+        }
+        
+
+        return jogador_alfabeto;
     }
 };
 
- int main() {
+int main() {
     std::stack<int> c;
     std::queue<std::string> j;
-    c.push(4);
-    c.push(2);
-    c.push(12);
-    c.push(3);
-    c.push(15);
-    c.push(9);
-    c.push(2);
-    c.push(2);
-    c.push(14);
-    c.push(2);
-    c.push(7);
-    c.push(12);
-    c.push(3);
-    c.push(2);
-    c.push(2);
-    c.push(6);
-    c.push(6);
-    c.push(14);
     c.push(5);
-    c.push(13);
+    c.push(3);
     c.push(6);
-    c.push(3);
-    c.push(2);
-    c.push(15);
-    c.push(15);
-    c.push(4);
-    c.push(3);
-    c.push(14);
-    c.push(13);
-    c.push(9);
-    c.push(11);
-    c.push(4);
-    c.push(5);
-    c.push(11);
-    c.push(11);
-    c.push(8);
-    c.push(10);
-    c.push(7);
-    c.push(1);
-    c.push(7);
-    c.push(15);
-    c.push(10);
-    c.push(9);
-    c.push(1);
-    c.push(2);
-    c.push(1);
-    c.push(2);
-    c.push(14);
-    c.push(4);
-    c.push(13);
-    c.push(4);
-    c.push(2);
-    c.push(12);
-    c.push(12);
-    c.push(15);
-    c.push(11);
-    c.push(5);
-    c.push(4);
-    c.push(12);
-    c.push(13);
-    c.push(14);
-    c.push(9);
-    c.push(11);
-    c.push(10);
-    c.push(1);
-    c.push(1);
     c.push(8);
     c.push(4);
-    c.push(8);
-    c.push(6);
-    c.push(12);
+    c.push(11);
     c.push(14);
+    c.push(13);
+    c.push(9);
+    c.push(4);
+    c.push(4);
+    c.push(14);
+    c.push(15);
+    c.push(8);
+    c.push(1);
+    c.push(14);
+    c.push(10);
+    c.push(14);
+    c.push(7);
+    c.push(14);
+    c.push(4);
+    c.push(7);
+    c.push(5);
+    c.push(12);
+    c.push(7);
+    c.push(1);
+    c.push(15);
+    c.push(14);
+    c.push(13);
+    c.push(15);
+    c.push(13);
     c.push(6);
-    j.push("zoe"); // 60
-    j.push("anthony"); // 56
-    j.push("pedro");  //74
-    j.push("davi"); //63
-    j.push("ravy"); // 57
-    j.push("gabrielly"); // 59
-    j.push("ester"); // 36
-    j.push("eduarda"); // 40
-    j.push("sr."); // 61
-    j.push("srta."); // 54
+    c.push(3);
+    c.push(15);
+    c.push(9);
+    c.push(7);
+    c.push(6);
+    c.push(11);
+    c.push(15);
+    c.push(11);
+    c.push(14);
+    c.push(9);
+    c.push(10);
+    c.push(11);
+    c.push(3);
+    c.push(7);
+    c.push(10);
+    c.push(12);
+    c.push(10);
+    c.push(14);
+    c.push(5);
+    c.push(10);
+    c.push(15);
+    c.push(14);
+    c.push(7);
+    j.push("fernando");
+    j.push("gabriela");
+    j.push("bianca");
+    j.push("lucas");
+    j.push("maria");
+    j.push("ian");
+    j.push("rebeca");
+    j.push("matheus");
+    j.push("bernardo");
+    j.push("augusto");
+    j.push("camila");
+    j.push("lavínia");
+    j.push("srta.");
+    j.push("helena");
+    j.push("arthur");
     std::cout << jogo(c, j) << std::endl;
     return 0;
 }
