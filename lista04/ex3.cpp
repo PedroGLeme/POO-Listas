@@ -99,10 +99,13 @@ int main(){
     add[0]= 'a';
     add[1]= 'd';
     add[2]= 'd';
+    add[3]= '\0';
+
     pop[0] = 'p';
     pop[1] = 'o';
     pop[2] = 'p';
-
+    pop[3] = '\0';
+    
     while(scanf("%s %d", cmd, &numero)!= -1){
         if(meu_strcmp(cmd,add)){vet_add.push_back(numero);}
         else if(meu_strcmp(cmd, pop)){vet_pop.push_back(numero);}
