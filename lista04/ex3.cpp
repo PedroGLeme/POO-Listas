@@ -60,12 +60,16 @@ bool eh_prioridade(vector<int> in, vector<int> out){
     
     int k = in.size()-1;
 
+    // encontra o primeiro índice cvalido
+    while (k>= 0 && in[k]!= out[0]){k--;}
+
+    if (k < 0) {return false; }// Não tem valor valido
     //printf("K: %d\n", k);
     //printf("in: %d", out.size());
 
     int j=0;
     for(j = 0; j<out.size(); j++){
-        if(in[k] != out[j]){
+        if(in[k] != out[j] || k<0){
             return false;
         } 
         k--;
@@ -91,6 +95,7 @@ int main(){
     pop[3] = '\0';
     
     while(scanf("%s %d", cmd, &numero) != -1){
+        if(numero==-1){break;}
         if(meu_strcmp(cmd,add)){vet_add.push_back(numero);}
         else if(meu_strcmp(cmd, pop)){vet_pop.push_back(numero);}
         else exit(-1);
