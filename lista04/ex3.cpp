@@ -5,13 +5,6 @@
 
 using namespace std;
 
-void printa_vetor(const std::vector<int>& vetor) {
-    for (int elemento : vetor) {
-        std::cout << elemento << " ";
-    }
-    std::cout << std::endl;
-}
-
 // usado como inspiracao https://www.geeksforgeeks.org/sorting-a-vector-in-c/
 void meu_sort(vector<int>& vetor) {
     for(int i = 0; i < vetor.size() - 1; i++){
@@ -27,21 +20,14 @@ void meu_sort(vector<int>& vetor) {
 }
  
 // funcao que compara duas entradas de string para ver se sao iguais
-bool meu_strcmp( char* str1,  char* str2) {
+bool meu_strcmp(char* str1, char* str2){
     int i = 0;
     while(str1[i] != '\0' && str2[i] != '\0'){ // enquanto nao chegou no final de ambas as strings
-        if (str1[i] != str2[i]) {
-            return false;
-        }
+        if (str1[i] != str2[i]){return false;}
         i++;
     }
-    if(str1[i] == '\0' && str2[i] == '\0'){
-        return true;
-    }
-    else{
-        return false;
-    }
-    
+    if(str1[i] == '\0' && str2[i] == '\0'){return true;} // caso ambas tenham chegado no  final juntas
+    else{return false;}
 }
 
 bool eh_stack(vector<int> in, vector<int> out){
@@ -71,7 +57,6 @@ bool eh_queue(vector<int> in, vector<int> out){
 bool eh_prioridade(vector<int> in, vector<int> out){
     
     meu_sort(in);
-    //printa_vetor(in);
     
     int k = in.size()-1;
 
