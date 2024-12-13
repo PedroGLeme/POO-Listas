@@ -1,9 +1,28 @@
 #include <iostream>
 #include <vector>
-#include <cstring>
 #include <algorithm>
+#include <stdio.h>
+#include <iomanip>
 
 using namespace std;
+ 
+// funcao que compara duas entradas de string para ver se sao iguais
+bool meu_strcmp( char* str1,  char* str2) {
+    int i = 0;
+    while(str1[i] != '\0' && str2[i] != '\0'){ // enquanto nao chegou no final de ambas as strings
+        if (str1[i] != str2[i]) {
+            return false;
+        }
+        i++;
+    }
+    if(str1[i] == '\0' && str2[i] == '\0'){
+        return true;
+    }
+    else{
+        return false;
+    }
+    
+}
 
 bool eh_stack(vector<int> in, vector<int> out){
     if(in.size() != out.size()){ // caso tenham tamanhos diferentes, ja retorna falso
@@ -64,8 +83,8 @@ int main(){
     vector<int> vet_add, vet_pop;
 
     while(scanf("%s %d", cmd, &numero)!= -1){
-        if(strcmp(cmd, "add") == 0){vet_add.push_back(numero);}
-        else if(strcmp(cmd, "pop") == 0){vet_pop.push_back(numero);}
+        if(meu_strcmp(cmd,"add")){vet_add.push_back(numero);}
+        else if(meu_strcmp(cmd, "pop")){vet_pop.push_back(numero);}
         else exit(-1);
     }
 
