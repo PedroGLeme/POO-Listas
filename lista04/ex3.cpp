@@ -75,8 +75,8 @@ bool eh_prioridade(vector<int> in, vector<int> out){
     
     int k = in.size()-1;
 
-    printf("K: %d\n", k);
-    printf("in: %d", out.size());
+    //printf("K: %d\n", k);
+    //printf("in: %d", out.size());
 
     int j=0;
     for(j = 0; j<out.size(); j++){
