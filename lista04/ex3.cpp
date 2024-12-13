@@ -94,10 +94,18 @@ bool eh_prioridade(vector<int> in, vector<int> out){
 int main(){
     char cmd[5]; int numero;
     vector<int> vet_add, vet_pop;
+    char add[5];
+    char pop[5];
+    add[0]= 'a';
+    add[1]= 'd';
+    add[2]= 'd';
+    pop[0] = 'p';
+    pop[1] = 'o';
+    pop[2] = 'p';
 
     while(scanf("%s %d", cmd, &numero)!= -1){
-        if(meu_strcmp(cmd,"add")){vet_add.push_back(numero);}
-        else if(meu_strcmp(cmd, "pop")){vet_pop.push_back(numero);}
+        if(meu_strcmp(cmd,add)){vet_add.push_back(numero);}
+        else if(meu_strcmp(cmd, pop)){vet_pop.push_back(numero);}
         else exit(-1);
     }
 
