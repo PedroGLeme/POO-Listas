@@ -1,0 +1,509 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-13 18:30:58.451241-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1 deu errado!
+None
+O resultado para
+add -44
+add -619
+pop -619
+pop -44
+add 938
+pop 938
+add 551
+add -363
+pop -363
+add 801
+pop 801
+pop 551
+add -260
+pop -260
+add 269
+pop 269
+add 267
+pop 267
+add -738
+pop -738
+add -44
+pop -44
+
+deveria ser
+stack
+mas deu
+none
+
+Teste 2 deu errado!
+None
+O resultado para
+add -967
+add -788
+pop -788
+add -925
+pop -925
+add 952
+pop 952
+add -238
+add 952
+pop 952
+add 637
+pop 637
+pop -238
+pop -967
+add 666
+pop 666
+add -238
+pop -238
+add -925
+add -788
+pop -788
+add 638
+pop 638
+add -82
+pop -82
+pop -925
+add 972
+pop 972
+add 637
+add 144
+pop 637
+add -311
+pop 144
+add -570
+pop -311
+add 952
+pop 952
+pop -570
+add 50
+add -311
+add 144
+pop 144
+add -788
+add -885
+add 265
+add 972
+pop 972
+add 603
+add 952
+pop 952
+pop 603
+add 856
+add -238
+add -967
+add 637
+pop 856
+pop 637
+add 856
+add 972
+add 603
+add 952
+
+deveria ser
+priority
+mas deu
+none
+
+Teste 3 deu errado!
+None
+O resultado para
+add 738
+add 715
+add 198
+pop 198
+pop 715
+pop 738
+add -748
+pop -748
+add 139
+pop 139
+add -561
+pop -561
+add 715
+pop 715
+add -947
+pop -947
+add -972
+add -673
+pop -673
+pop -972
+add -757
+add 948
+add -812
+add -673
+pop -673
+pop -812
+pop 948
+pop -757
+add -757
+add -911
+add 877
+add 517
+pop 517
+add 757
+add -542
+pop -542
+add 92
+pop 92
+pop 757
+pop 877
+add -823
+pop -823
+pop -911
+add -535
+pop -535
+pop -757
+add -871
+pop -871
+add 310
+pop 310
+add -831
+add 992
+add -194
+pop -194
+pop 992
+add -657
+add 92
+pop 92
+pop -657
+add 297
+add 42
+add -542
+add 983
+add -533
+add 346
+pop 346
+add -104
+pop -104
+add -192
+pop -192
+add 956
+pop 956
+add -379
+pop -379
+pop -533
+add -538
+add -634
+pop -634
+add 288
+add -960
+pop -960
+add -367
+pop -367
+pop 288
+pop -538
+pop 983
+add -155
+add 537
+add -757
+pop -757
+pop 537
+
+deveria ser
+stack
+mas deu
+none
+
+Teste 4: correto! +0.050
+Teste 5 deu errado!
+None
+O resultado para
+add 155
+add -326
+add -608
+add 142
+add -537
+pop 155
+pop 142
+add 562
+add 826
+add -963
+add -671
+pop 826
+pop 562
+add -286
+add 169
+pop 169
+add 657
+pop 657
+add 876
+add -902
+pop 876
+pop -286
+pop -326
+add -445
+pop -445
+add -454
+pop -454
+add 767
+pop 767
+add -510
+add -913
+add 76
+pop 76
+pop -510
+add -602
+pop -537
+pop -602
+pop -608
+add -389
+add -766
+pop -389
+pop -671
+pop -766
+add -643
+pop -643
+add 234
+add -500
+add 81
+pop 234
+add 971
+add 3
+add -339
+pop 971
+pop 81
+pop 3
+pop -339
+add 578
+pop 578
+add -803
+add -343
+pop -343
+add 280
+pop 280
+add 809
+add 963
+pop 963
+add -720
+pop 809
+pop -500
+add -877
+pop -720
+add 974
+add 855
+add -337
+pop 974
+pop 855
+add 110
+add 703
+add -406
+pop 703
+pop 110
+add -539
+add 516
+pop 516
+add 20
+add -605
+
+deveria ser
+priority
+mas deu
+none
+
+Teste 6 deu errado!
+None
+O resultado para
+add 108
+add 438
+add 418
+pop 438
+pop 418
+pop 108
+add -667
+pop -667
+add 933
+add 920
+add 141
+add -672
+add -787
+add -612
+add 382
+add -190
+pop 933
+pop 920
+add -632
+pop 382
+pop 141
+add 291
+add 597
+add 99
+pop 597
+add -996
+
+deveria ser
+priority
+mas deu
+none
+
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13 deu errado!
+None
+Teste 14: correto! +0.050
+Teste 15 deu errado!
+None
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18 deu errado!
+None
+Teste 19: correto! +0.050
+Teste 20 deu errado!
+None
+Nota exercicio 3: 0.5
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Procurando exercício 7...
+Exercício 7...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex7.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 7: 1.0
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 5.50
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.5, "ex4": 1.0, "ex5": 1.0, "ex6": 0.0, "ex7": 1.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
