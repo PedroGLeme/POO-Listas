@@ -1,0 +1,1117 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-12 22:37:24.196328-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7 deu errado!
+O resultado para
+#include<stdio.h>
+int main() {
+    std::stack<int> c;
+    std::queue<std::string> j;
+    c.push(11);
+    c.push(13);
+    c.push(6);
+    c.push(2);
+    c.push(8);
+    c.push(1);
+    c.push(7);
+    c.push(5);
+    c.push(15);
+    c.push(7);
+    c.push(2);
+    j.push("kamilly");
+    j.push("andré");
+    j.push("letícia");
+    j.push("dr.");
+    j.push("luiz");
+    j.push("pedro");
+    j.push("fernando");
+    j.push("isabel");
+    j.push("bryan");
+    j.push("sr.");
+    j.push("nicolas");
+    j.push("enzo");
+    j.push("mariah");
+    j.push("raul");
+    j.push("benjamin");
+    std::cout << jogo(c, j) << std::endl;
+    return 0;
+}
+
+deveria ser
+benjamin
+mas deu
+enzo
+
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+None
+Teste 1 deu errado!
+add -860
+pop -860
+add 544
+pop 544
+add -64
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 2 deu errado!
+add -266
+pop -266
+add 896
+pop 896
+add -983
+pop -983
+add -877
+pop -877
+add 54
+pop 54
+add 588
+pop 588
+add 896
+add 862
+pop 896
+pop 862
+add -258
+pop -258
+add -936
+pop -936
+add 556
+add 587
+add 746
+pop 556
+pop 587
+pop 746
+add 503
+pop 503
+add 896
+add 770
+pop 896
+pop 770
+add -684
+pop -684
+add -404
+add 163
+pop -404
+add 874
+pop 163
+add 666
+pop 874
+add -267
+add -399
+add 567
+add 460
+add 731
+add 957
+add -149
+add -282
+pop 666
+pop -267
+pop -399
+pop 567
+add 296
+add -1000
+pop 460
+add -983
+add 324
+add -937
+pop 731
+add 125
+add 836
+pop 957
+pop -149
+pop -282
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 3 deu errado!
+add -341
+pop -341
+add 513
+add 627
+pop 627
+add 802
+add 908
+pop 908
+add -25
+pop 802
+pop 513
+pop -25
+add 690
+add -598
+add 737
+pop 737
+pop 690
+pop -598
+add 855
+add 685
+add -119
+pop 855
+add 821
+add 788
+pop 821
+pop 788
+add 291
+add 714
+pop 714
+add -891
+pop 685
+add -385
+pop 291
+pop -119
+add 537
+add -481
+add -510
+add 600
+pop 600
+add 668
+add -34
+add -55
+pop 668
+add 977
+add -236
+add -61
+add -158
+add -560
+add 782
+pop 977
+add 817
+add 557
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 4 deu errado!
+add -121
+add 645
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 5 deu errado!
+add 60575
+pop 60575
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 6 deu errado!
+add 169
+pop 169
+add -870
+pop -870
+add -475
+pop -475
+add 401
+add 105
+pop 401
+add 710
+add 523
+add 322
+add -260
+pop 322
+add -874
+pop -260
+pop 710
+pop 523
+add -117
+add -686
+add -35
+pop -686
+pop -874
+add 354
+pop -35
+add -655
+add 557
+pop -655
+pop -117
+add 228
+pop 557
+add -791
+add -826
+pop 105
+add -277
+pop 354
+pop -826
+add 347
+add -32
+add 260
+add -413
+add 354
+pop -32
+add -682
+add -219
+pop 228
+add 263
+pop -682
+add 265
+pop -277
+pop -413
+add -605
+add 942
+pop 354
+pop 347
+add -51
+pop 265
+add -726
+pop -51
+pop 263
+add 656
+add -655
+add -708
+pop -605
+add -257
+add -629
+pop -655
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 7 deu errado!
+add 202
+add -161
+add -159
+pop -159
+add -573
+add 274
+add 549
+pop 549
+add 705
+pop 705
+pop 274
+add 605
+add 374
+add 620
+add 529
+pop 529
+pop 620
+add 393
+add -149
+pop -149
+add 485
+add -383
+add -868
+pop -868
+pop -383
+add 981
+add 390
+pop 390
+add 323
+add -473
+add 167
+add -281
+add 507
+pop 507
+add -359
+pop -359
+add -195
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 8 deu errado!
+add 398
+pop 398
+add 483
+pop 483
+add -797
+add 334
+pop -797
+pop 334
+add 602
+pop 602
+add 157
+pop 157
+add -977
+pop -977
+add 625
+add -715
+add 640
+add -414
+add 634
+add -607
+add 674
+pop -715
+pop -607
+add 593
+add -22
+add 114
+pop -414
+add -312
+add -588
+add -577
+pop -588
+pop -577
+pop -312
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 9 deu errado!
+add 1
+add 2
+add 3
+pop 3
+pop 2
+pop 1
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 10 deu errado!
+add -90
+add -81
+add -70
+add -65
+add -61
+add -57
+add -57
+add -56
+add -52
+add -47
+add -47
+add -46
+add -44
+add -41
+add -39
+add -39
+add -38
+add -31
+add -31
+add -28
+add -28
+add -16
+add -15
+add -13
+add -12
+add -11
+add -11
+add -11
+add -9
+add -2
+add 6
+add 10
+add 26
+add 26
+add 29
+add 29
+add 34
+add 34
+add 46
+add 52
+add 52
+add 53
+add 56
+add 58
+add 68
+add 72
+add 75
+add 79
+add 83
+add 92
+pop 92
+pop 83
+pop 79
+pop 75
+pop 72
+pop 68
+pop 58
+pop 56
+pop 53
+pop 52
+pop 52
+pop 46
+pop 34
+pop 34
+pop 29
+pop 29
+pop 26
+pop 26
+pop 10
+pop 6
+pop -2
+pop -9
+pop -11
+pop -11
+pop -11
+pop -12
+pop -13
+pop -15
+pop -16
+pop -28
+pop -28
+pop -31
+pop -31
+pop -38
+pop -39
+pop -39
+pop -41
+pop -44
+pop -46
+pop -47
+pop -47
+pop -52
+pop -56
+pop -57
+pop -57
+pop -61
+pop -65
+pop -70
+pop -81
+pop -90
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 11 deu errado!
+add 276
+add -994
+pop -994
+add -865
+pop -865
+add 80
+add -276
+add 251
+add 520
+pop -276
+add -337
+pop -337
+pop 80
+add -582
+add 800
+add 609
+add 640
+pop -582
+add -319
+add 297
+add 887
+pop -319
+add 627
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 12 deu errado!
+add 2
+add 3
+add 1
+pop 3
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 13 deu errado!
+add -51
+add -84
+add -7
+add 96
+add 18
+add 41
+add -100
+add 1
+add -88
+add -27
+add -87
+add -74
+add -81
+add -4
+add -48
+add -47
+add -90
+add -81
+add -14
+add -82
+add -92
+add -36
+add -14
+add -52
+add -67
+add 87
+add 96
+add 6
+add 25
+add -51
+add 24
+add -44
+add -29
+add -28
+add -81
+add -68
+add -11
+add -75
+add -39
+add -25
+add -20
+add 80
+add 8
+add -33
+add -79
+add 33
+add -56
+add 36
+add 64
+add 47
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 14 deu errado!
+add -914
+add -470
+add -455
+add -271
+add -347
+add -532
+add 737
+pop 737
+pop -532
+pop -347
+pop -271
+pop -455
+pop -470
+add -376
+add -633
+add -742
+add -646
+add 220
+pop 220
+add 123
+pop 123
+pop -646
+add 189
+add -314
+pop -314
+add 583
+pop 583
+add 809
+add 750
+add -148
+add 676
+pop 676
+pop -148
+add -98
+pop -98
+pop 750
+pop 809
+add 408
+add 703
+add 48
+pop 48
+add -719
+add -162
+pop -162
+pop -719
+add -914
+pop -914
+add 629
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 15 deu errado!
+add 84
+pop 84
+add -974
+add 47
+add -525
+add -420
+add -732
+pop -974
+add 51
+pop -732
+add -640
+add 426
+add 525
+pop -640
+add 439
+pop -525
+pop -420
+pop 47
+add -681
+add 506
+add 561
+add -624
+pop -681
+pop -624
+add -495
+pop -495
+pop 51
+add -387
+add 579
+add 318
+pop -387
+pop 318
+pop 426
+pop 439
+pop 506
+add 701
+add -38
+add -890
+pop -890
+pop -38
+pop 525
+pop 561
+add -226
+pop -226
+pop 579
+pop 701
+add 922
+add -884
+add 984
+add -681
+add 51
+pop -884
+add 963
+add -741
+pop -741
+add 854
+add 317
+add 82
+add 379
+add 680
+pop -681
+add -639
+pop -639
+add 939
+pop 51
+pop 82
+add -624
+pop -624
+add 582
+pop 317
+pop 379
+add 848
+add -27
+add 579
+add -112
+add -387
+pop -387
+pop -112
+add -464
+pop -464
+pop -27
+pop 579
+pop 582
+add 912
+add -783
+pop -783
+pop 680
+add 439
+pop 439
+pop 848
+add -585
+pop -585
+add -954
+add -867
+add -414
+pop -954
+pop -867
+add 345
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 16 deu errado!
+add -871
+add -480
+pop -480
+add 731
+pop 731
+add 43
+add -184
+add -22
+pop -22
+add 291
+add -999
+pop -999
+add 97
+add 840
+pop 840
+add 151
+add 783
+add -441
+pop -441
+pop 783
+pop 151
+add 958
+pop 958
+add 472
+pop 472
+add -223
+pop -223
+pop 97
+pop 291
+add -354
+pop -354
+add -540
+add -88
+add -488
+pop -488
+add -626
+pop -626
+pop -88
+add 203
+add 177
+pop 177
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 17 deu errado!
+add 177
+add 298
+add 630
+pop 177
+add 997
+pop 298
+add -856
+add -159
+pop -856
+pop -159
+pop 630
+pop 997
+add 534
+add 340
+pop 340
+add -332
+pop -332
+pop 534
+add -53
+pop -53
+add 952
+add 34
+add 335
+pop 34
+add 325
+add -102
+add -276
+add 674
+pop -276
+pop -102
+pop 325
+pop 335
+pop 674
+pop 952
+add -769
+pop -769
+add -368
+pop -368
+add 744
+add -370
+pop -370
+add -143
+pop -143
+pop 744
+add 649
+add -314
+add 278
+pop -314
+add -227
+pop -227
+add 291
+add 738
+add 446
+add 772
+pop 278
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 18 deu errado!
+add -567
+pop -567
+add 471
+add 907
+pop 471
+pop 907
+add -530
+add -212
+add 651
+add 96
+pop -212
+add 145
+pop 651
+pop 145
+pop -530
+add -212
+add 337
+add -123
+add 969
+add 218
+add 959
+pop 218
+pop 337
+pop 959
+pop 96
+add -72
+add -372
+pop -123
+pop -212
+add -461
+pop -461
+pop -72
+add -438
+add -904
+pop -904
+pop -372
+pop -438
+pop 969
+add 880
+pop 880
+add 176
+pop 176
+add 145
+pop 145
+add 667
+add -346
+pop -346
+add -941
+add 181
+add 382
+add -4
+pop -941
+add -451
+add -326
+add 154
+add 682
+pop -451
+add 203
+add -512
+add -14
+add 49
+pop 203
+add -687
+pop -326
+add 747
+add 119
+add -496
+pop 154
+pop 382
+add -926
+pop -512
+pop 747
+add -345
+pop 682
+add 688
+pop -14
+add 236
+pop -687
+pop 119
+add 322
+add -675
+pop -4
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 19 deu errado!
+add -883
+pop -883
+add -66
+add 102
+add -39
+add 346
+add -907
+pop -66
+pop 102
+add -346
+pop -39
+pop 346
+add -416
+add -572
+pop -907
+pop -346
+add 817
+
+Tempo limite (5 s) excedido
+None
+None
+Teste 20 deu errado!
+add -942
+pop -942
+add 225
+pop 225
+add -513
+add -988
+add -776
+pop -988
+pop -776
+add -857
+add -494
+pop -857
+add 171
+add -174
+pop -513
+add 710
+pop -494
+pop -174
+add -874
+pop -874
+pop 171
+pop 710
+add -79
+add -172
+pop -172
+pop -79
+add 660
+add 818
+pop 660
+add -654
+pop -654
+add -969
+add -479
+pop -969
+add 634
+add 20
+pop -479
+pop 20
+add -342
+pop -342
+pop 634
+add -270
+pop -270
+add 491
+add 792
+pop 491
+add 401
+add -268
+add -582
+add -38
+add 150
+add 733
+add -433
+add 917
+pop -582
+pop -433
+add 20
+add -268
+pop -268
+add -168
+add -579
+add -991
+pop -991
+pop -579
+pop -268
+pop -168
+add 408
+add 555
+pop -38
+add -623
+pop -623
+pop 20
+pop 150
+pop 401
+pop 408
+pop 555
+add -731
+add 543
+pop -731
+pop 543
+pop 733
+add -209
+pop -209
+
+Tempo limite (5 s) excedido
+None
+Nota exercicio 3: 0.0
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 3.00
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.0, "ex4": 1.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
