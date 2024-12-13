@@ -3,11 +3,11 @@
 
 using namespace std;
 
-string retira(string texto, char c) {
+string retira(string texto,char c){
     string str_ret; // string auxiliar
 
-    for(auto aux = texto.begin(); aux != texto.end(); aux++){
-        if(*aux != c){str_ret.push_back(*aux); }// coloca  char lido no final da string
+    for(auto aux= texto.begin();aux!= texto.end(); aux++){
+        if(*aux!= c){str_ret.push_back(*aux); }// coloca  char lido no final da string
     }
     return str_ret;
 }
