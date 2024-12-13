@@ -1,0 +1,306 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-12 21:38:18.962804-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3 deu errado!
+None
+O resultado para
+add -649
+add -397
+pop -397
+add -540
+pop -540
+pop -649
+add 765
+add -581
+add -191
+add 991
+pop 991
+pop -191
+pop -581
+pop 765
+add -534
+pop -534
+add -460
+add 15
+pop 15
+pop -460
+add -968
+add 664
+pop 664
+add -721
+add -888
+pop -888
+add -825
+add -361
+add -541
+add -280
+add -217
+pop -217
+add 342
+pop 342
+pop -280
+add 633
+pop 633
+pop -541
+pop -361
+pop -825
+add -994
+add 381
+pop 381
+pop -994
+add 184
+add -662
+pop -662
+pop 184
+add 478
+add -885
+add 277
+add -890
+add -693
+add 450
+add 894
+pop 894
+add -28
+pop -28
+pop 450
+pop -693
+add 674
+add 15
+pop 15
+pop 674
+add 224
+pop 224
+add -696
+add 323
+pop 323
+pop -696
+add 999
+add -264
+pop -264
+add -895
+add -343
+add 673
+add -196
+pop -196
+pop 673
+
+deveria ser
+stack
+mas deu
+none
+
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6 deu errado!
+None
+O resultado para
+add 71
+add 53
+add 57
+add 27
+add -57
+add -35
+add 60
+add 4
+add -72
+add 84
+add -83
+add 86
+add 15
+add 63
+add -45
+add 36
+add -91
+add 75
+add 17
+add -81
+add -31
+add -36
+add -79
+add 15
+add 8
+add 23
+add -84
+add -86
+add -73
+add 56
+add 85
+add 90
+add -49
+add -88
+add -29
+add 19
+add -96
+add 82
+add -76
+add -66
+add 6
+add -47
+add 86
+add -72
+add -95
+add 84
+add -10
+add 24
+add 70
+add 62
+
+deveria ser
+both
+mas deu
+none
+
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10 deu errado!
+None
+O resultado para
+add 431
+pop 431
+add -654
+pop -654
+add 70
+add -199
+add -974
+pop -974
+pop -199
+add 428
+pop 428
+pop 70
+add -44
+pop -44
+add 665
+pop 665
+add -8
+add 128
+pop 128
+
+deveria ser
+stack
+mas deu
+none
+
+Teste 11 deu errado!
+None
+Teste 12 deu errado!
+None
+Teste 13 deu errado!
+None
+Teste 14 deu errado!
+None
+Teste 15 deu errado!
+None
+Teste 16: correto! +0.050
+Teste 17 deu errado!
+None
+Teste 18 deu errado!
+None
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 3: 0.5
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Procurando exercício 6...
+Procurando exercício 7...
+Procurando exercício 8...
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 3.50
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.5, "ex4": 1.0, "ex5": 0.0, "ex6": 0.0, "ex7": 0.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
