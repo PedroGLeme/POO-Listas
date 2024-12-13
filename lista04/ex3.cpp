@@ -81,5 +81,8 @@ int main(){
         if(eh_stack(vet_add, vet_pop)|| eh_queue(vet_add, vet_pop)){printf("both\n");}
         else{printf("priority\n");}
     }
-    
+    else{
+        printf("none\n");
+    }
+    return 0;
 }       
