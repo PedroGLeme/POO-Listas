@@ -1,10 +1,23 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <stdio.h>
 #include <iomanip>
 
 using namespace std;
+
+// usado como inspiracao https://www.geeksforgeeks.org/sorting-a-vector-in-c/
+void meu_sort(vector<int>& vetor) {
+    for(int i = 0; i < vetor.size() - 1; i++){
+        for(int j = 0; j < vetor.size() - i - 1; j++){
+            if (vetor[j]>vetor[j + 1]){
+                // troca os elementos
+                int temp = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = temp;
+            }
+        }
+    }
+}
  
 // funcao que compara duas entradas de string para ver se sao iguais
 bool meu_strcmp( char* str1,  char* str2) {
@@ -61,7 +74,7 @@ bool eh_prioridade(vector<int> in, vector<int> out){
         return false;
     }
 
-    sort(in.begin(), in.end()); // caso a entrada esteja em ordem crescente, coincide com a ordem de prioridade
+    meu_sort(in);
 
     int k = in.size()-1;
     int j=0;
