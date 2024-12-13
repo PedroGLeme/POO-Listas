@@ -71,7 +71,7 @@ bool eh_queue(vector<int> in, vector<int> out){
 bool eh_prioridade(vector<int> in, vector<int> out){
     
     meu_sort(in);
-    printa_vetor(in);
+    //printa_vetor(in);
     
     int k = in.size()-1;
 
@@ -104,12 +104,12 @@ int main(){
     pop[1] = 'o';
     pop[2] = 'p';
     pop[3] = '\0';
-    scanf("%s %d", cmd, &numero);
-    while(numero !=-1){
+    
+    while(scanf("%s %d", cmd, &numero) != -1){
         if(meu_strcmp(cmd,add)){vet_add.push_back(numero);}
         else if(meu_strcmp(cmd, pop)){vet_pop.push_back(numero);}
         else exit(-1);
-        scanf("%s %d", cmd, &numero);
+        
     }
 
     if(eh_stack(vet_add, vet_pop)){
