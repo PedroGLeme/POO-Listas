@@ -5,6 +5,13 @@
 
 using namespace std;
 
+void printa_vetor(const std::vector<int>& vetor) {
+    for (int elemento : vetor) {
+        std::cout << elemento << " ";
+    }
+    std::cout << std::endl;
+}
+
 // usado como inspiracao https://www.geeksforgeeks.org/sorting-a-vector-in-c/
 void meu_sort(vector<int>& vetor) {
     for(int i = 0; i < vetor.size() - 1; i++){
@@ -38,15 +45,10 @@ bool meu_strcmp( char* str1,  char* str2) {
 }
 
 bool eh_stack(vector<int> in, vector<int> out){
-    if(in.size() != out.size()){ // caso tenham tamanhos diferentes, ja retorna falso
-        return false;
-    } 
+
     int k = in.size()-1;
     int j=0;
     for(j = 0; j<out.size(); j++){
-        if(k>=0){
-            return true; //chegou no final
-        }
         if(in[k] != out[j]){
             return false;
         } 
@@ -57,9 +59,6 @@ bool eh_stack(vector<int> in, vector<int> out){
 }
 
 bool eh_queue(vector<int> in, vector<int> out){
-    if(in.size()!=out.size()){
-        return false;
-    }
 
     for(int k=0; k< out.size(); k++){
         if(in[k]!=out[k]){
@@ -70,24 +69,24 @@ bool eh_queue(vector<int> in, vector<int> out){
 }
 
 bool eh_prioridade(vector<int> in, vector<int> out){
-    if(in.size()!=out.size()){
-        return false;
-    }
-
+    
     meu_sort(in);
-
+    printa_vetor(in);
+    
     int k = in.size()-1;
+
+    printf("K: %d\n", k);
+    printf("in: %d", out.size());
+
     int j=0;
     for(j = 0; j<out.size(); j++){
-        if(k>=0){
-            return true; //chegou no final
-        }
         if(in[k] != out[j]){
             return false;
         } 
         k--;
+        //printf("SAI POR AQ");
     }
-
+    //printf("SAI POR AQ");
     return true;
 }
 
@@ -105,11 +104,12 @@ int main(){
     pop[1] = 'o';
     pop[2] = 'p';
     pop[3] = '\0';
-    
-    while(scanf("%s %d", cmd, &numero)!= -1){
+    scanf("%s %d", cmd, &numero);
+    while(numero !=-1){
         if(meu_strcmp(cmd,add)){vet_add.push_back(numero);}
         else if(meu_strcmp(cmd, pop)){vet_pop.push_back(numero);}
         else exit(-1);
+        scanf("%s %d", cmd, &numero);
     }
 
     if(eh_stack(vet_add, vet_pop)){
