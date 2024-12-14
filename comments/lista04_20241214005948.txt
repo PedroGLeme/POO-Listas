@@ -1,0 +1,984 @@
+Versão do G++:
+g++ (Debian 12.2.0-14) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Varificando data de envio...
+AGORA: 2024-12-13 22:00:45.609955-03:00
+PRAZO MÁXIMO: 2024-12-17 23:59:59-03:06
+Testando sua solucao...
+Procurando exercício 1...
+Exercício 1...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex1.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 1: 1.0
+Procurando exercício 2...
+Exercício 2...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex2.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 2: 1.0
+Procurando exercício 3...
+Exercício 3...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex3.cpp" 
+Teste 1 deu errado!
+None
+O resultado para
+add -727
+add 443
+pop 443
+add 32
+add -688
+add 222
+pop 222
+pop -688
+add 632
+pop 632
+add -540
+add -778
+pop -778
+add -461
+add -630
+pop -630
+pop -461
+add -165
+add -948
+add -226
+pop -226
+pop -948
+add 411
+add -979
+pop -979
+pop 411
+add 265
+pop 265
+add -27
+add 503
+add -321
+add -223
+add 580
+pop 580
+add -415
+pop -415
+add 595
+add -669
+pop -669
+pop 595
+pop -223
+add -459
+pop -459
+pop -321
+add -7
+pop -7
+add 665
+pop 665
+pop 503
+add 636
+
+deveria ser
+stack
+mas deu
+none
+
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10 deu errado!
+None
+O resultado para
+add -770
+pop -770
+add 291
+add 93
+add -995
+pop 291
+pop 93
+add -770
+add -987
+add -511
+add -734
+add 800
+add 867
+add -437
+add -785
+add -939
+add -79
+
+deveria ser
+both
+mas deu
+queue
+
+Teste 11: correto! +0.050
+Teste 12 deu errado!
+None
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18 deu errado!
+None
+Teste 19 deu errado!
+None
+Teste 20: correto! +0.050
+Nota exercicio 3: 0.8
+Procurando exercício 4...
+Exercício 4...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex4.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 4: 1.0
+Procurando exercício 5...
+Exercício 5...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex5.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 5: 1.0
+Procurando exercício 6...
+Exercício 6...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex6.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 6: 1.0
+Procurando exercício 7...
+Exercício 7...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex7.cpp" 
+Teste 1: correto! +0.050
+Teste 2: correto! +0.050
+Teste 3: correto! +0.050
+Teste 4: correto! +0.050
+Teste 5: correto! +0.050
+Teste 6: correto! +0.050
+Teste 7: correto! +0.050
+Teste 8: correto! +0.050
+Teste 9: correto! +0.050
+Teste 10: correto! +0.050
+Teste 11: correto! +0.050
+Teste 12: correto! +0.050
+Teste 13: correto! +0.050
+Teste 14: correto! +0.050
+Teste 15: correto! +0.050
+Teste 16: correto! +0.050
+Teste 17: correto! +0.050
+Teste 18: correto! +0.050
+Teste 19: correto! +0.050
+Teste 20: correto! +0.050
+Nota exercicio 7: 1.0
+Procurando exercício 8...
+Exercício 8...
+Criando testes aleatórios...
+Testes Criados!
+Compilando...
+g++ -O2 -Wno-unused-result  "ex8.cpp" 
+Teste 1 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+3 3
+1 2 3
+4 5 6
+7 8 9
+deveria ser
+1 2 3
+7 8 9
+4 5 6
+mas deu
+3
+1 2 3 
+7 8 9 
+4 5 6 
+
+Teste 2 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+6 9
+7 -4 8 -5 -8 5 -10 -4 -7
+2 -10 -3 6 -1 9 -5 -7 -4
+5 -1 1 5 5 -5 10 7 -10
+-10 2 9 -3 2 3 2 3 9
+8 -5 6 1 5 4 -1 3 9
+-10 1 10 -3 9 -1 -5 1 0
+deveria ser
+5 -1 1 5 5 -5 10 7 -10
+-10 1 10 -3 9 -1 -5 1 0
+8 -5 6 1 5 4 -1 3 9
+-10 2 9 -3 2 3 2 3 9
+2 -10 -3 6 -1 9 -5 -7 -4
+7 -4 8 -5 -8 5 -10 -4 -7
+mas deu
+9
+5 -1 1 5 5 -5 10 7 -10 
+-10 1 10 -3 9 -1 -5 1 0 
+8 -5 6 1 5 4 -1 3 9 
+-10 2 9 -3 2 3 2 3 9 
+2 -10 -3 6 -1 9 -5 -7 -4 
+7 -4 8 -5 -8 5 -10 -4 -7 
+
+Teste 3 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+9 8
+3 7 -6 -2 6 -6 5 -4
+-7 9 5 0 -2 -1 1 8
+-9 7 0 7 6 3 -7 4
+-4 -5 1 8 -10 -8 -5 2
+4 -10 -4 8 -9 -7 10 0
+-9 -10 -8 2 3 10 10 5
+0 -3 5 4 -7 10 10 -2
+9 8 0 -3 8 -5 -4 -4
+-6 -9 6 7 -9 10 -2 -10
+deveria ser
+-9 7 0 7 6 3 -7 4
+-7 9 5 0 -2 -1 1 8
+-9 -10 -8 2 3 10 10 5
+-6 -9 6 7 -9 10 -2 -10
+-4 -5 1 8 -10 -8 -5 2
+0 -3 5 4 -7 10 10 -2
+3 7 -6 -2 6 -6 5 -4
+9 8 0 -3 8 -5 -4 -4
+4 -10 -4 8 -9 -7 10 0
+mas deu
+8
+-9 7 0 7 6 3 -7 4 
+-7 9 5 0 -2 -1 1 8 
+-9 -10 -8 2 3 10 10 5 
+-6 -9 6 7 -9 10 -2 -10 
+-4 -5 1 8 -10 -8 -5 2 
+0 -3 5 4 -7 10 10 -2 
+3 7 -6 -2 6 -6 5 -4 
+9 8 0 -3 8 -5 -4 -4 
+4 -10 -4 8 -9 -7 10 0 
+
+Teste 4 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+5 9
+5 0 -10 1 -5 -3 8 -5 5
+2 -9 -8 -2 5 3 -2 -1 -5
+9 0 -2 -10 6 6 -3 1 -3
+6 8 -4 4 -8 -1 4 2 -8
+-6 -6 9 10 6 8 -9 4 -1
+deveria ser
+5 0 -10 1 -5 -3 8 -5 5
+2 -9 -8 -2 5 3 -2 -1 -5
+9 0 -2 -10 6 6 -3 1 -3
+-6 -6 9 10 6 8 -9 4 -1
+6 8 -4 4 -8 -1 4 2 -8
+mas deu
+9
+5 0 -10 1 -5 -3 8 -5 5 
+2 -9 -8 -2 5 3 -2 -1 -5 
+9 0 -2 -10 6 6 -3 1 -3 
+-6 -6 9 10 6 8 -9 4 -1 
+6 8 -4 4 -8 -1 4 2 -8 
+
+Teste 5 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+10 3
+4 -7 2
+4 0 7
+7 6 -3
+-7 0 9
+-10 -1 7
+8 9 -4
+-5 -4 0
+1 -9 -10
+-9 6 -1
+-6 1 -2
+deveria ser
+-10 -1 7
+-9 6 -1
+-7 0 9
+1 -9 -10
+7 6 -3
+-6 1 -2
+-5 -4 0
+4 -7 2
+4 0 7
+8 9 -4
+mas deu
+3
+-10 -1 7 
+-9 6 -1 
+-7 0 9 
+1 -9 -10 
+7 6 -3 
+-6 1 -2 
+-5 -4 0 
+4 -7 2 
+4 0 7 
+8 9 -4 
+
+Teste 6 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+5 7
+3 3 3 -2 -3 -9 -5
+-10 7 -2 -6 4 5 6
+-6 -10 -6 4 -4 -9 3
+7 0 5 6 0 7 10
+5 10 2 -4 -3 0 6
+deveria ser
+3 3 3 -2 -3 -9 -5
+7 0 5 6 0 7 10
+-10 7 -2 -6 4 5 6
+-6 -10 -6 4 -4 -9 3
+5 10 2 -4 -3 0 6
+mas deu
+7
+3 3 3 -2 -3 -9 -5 
+7 0 5 6 0 7 10 
+-10 7 -2 -6 4 5 6 
+-6 -10 -6 4 -4 -9 3 
+5 10 2 -4 -3 0 6 
+
+Teste 7 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+8 8
+0 0 3 -4 -5 -8 -7 -9
+-3 -8 5 7 -10 -4 3 -9
+7 -9 3 -6 -2 -3 -6 9
+1 2 -8 10 -8 2 -5 -2
+-4 -3 3 3 4 -5 7 0
+-2 2 -4 1 9 -3 7 -7
+1 9 -7 7 3 -6 -9 -1
+8 -1 1 3 4 3 -6 7
+deveria ser
+1 9 -7 7 3 -6 -9 -1
+-4 -3 3 3 4 -5 7 0
+-3 -8 5 7 -10 -4 3 -9
+-2 2 -4 1 9 -3 7 -7
+7 -9 3 -6 -2 -3 -6 9
+8 -1 1 3 4 3 -6 7
+0 0 3 -4 -5 -8 -7 -9
+1 2 -8 10 -8 2 -5 -2
+mas deu
+8
+1 9 -7 7 3 -6 -9 -1 
+-4 -3 3 3 4 -5 7 0 
+-3 -8 5 7 -10 -4 3 -9 
+-2 2 -4 1 9 -3 7 -7 
+7 -9 3 -6 -2 -3 -6 9 
+8 -1 1 3 4 3 -6 7 
+0 0 3 -4 -5 -8 -7 -9 
+1 2 -8 10 -8 2 -5 -2 
+
+Teste 8 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+5 7
+-5 -10 -3 7 -5 -5 1
+-2 -7 7 8 -10 -8 -6
+3 -8 -8 10 7 8 -8
+-3 2 -2 -6 8 9 7
+-1 10 -5 -5 2 9 9
+deveria ser
+-5 -10 -3 7 -5 -5 1
+-1 10 -5 -5 2 9 9
+-3 2 -2 -6 8 9 7
+-2 -7 7 8 -10 -8 -6
+3 -8 -8 10 7 8 -8
+mas deu
+7
+-5 -10 -3 7 -5 -5 1 
+-1 10 -5 -5 2 9 9 
+-3 2 -2 -6 8 9 7 
+-2 -7 7 8 -10 -8 -6 
+3 -8 -8 10 7 8 -8 
+
+Teste 9 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+8 7
+7 6 1 4 7 -7 -6
+-4 -10 -2 7 -3 -6 0
+-2 7 -5 5 -1 -8 3
+7 -4 5 5 -10 -2 6
+2 9 -1 -10 7 4 10
+-2 -5 -8 -10 -3 -6 -4
+-4 2 7 -5 -2 5 -7
+4 -10 3 4 -1 7 -3
+deveria ser
+-2 7 -5 5 -1 -8 3
+-4 2 7 -5 -2 5 -7
+4 -10 3 4 -1 7 -3
+7 6 1 4 7 -7 -6
+2 9 -1 -10 7 4 10
+7 -4 5 5 -10 -2 6
+-4 -10 -2 7 -3 -6 0
+-2 -5 -8 -10 -3 -6 -4
+mas deu
+7
+-2 7 -5 5 -1 -8 3 
+-4 2 7 -5 -2 5 -7 
+4 -10 3 4 -1 7 -3 
+7 6 1 4 7 -7 -6 
+2 9 -1 -10 7 4 10 
+7 -4 5 5 -10 -2 6 
+-4 -10 -2 7 -3 -6 0 
+-2 -5 -8 -10 -3 -6 -4 
+
+Teste 10 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+O resultado para
+10 5
+6 -3 3 6 -4
+3 -6 -5 10 -9
+6 -9 -5 -3 -1
+-10 -2 -8 -1 -7
+-10 5 -6 -7 0
+-6 -7 3 -5 1
+6 8 -1 -6 1
+-9 -9 -7 -7 9
+-8 -2 5 7 -6
+-4 -1 7 -8 9
+deveria ser
+-9 -9 -7 -7 9
+-6 -7 3 -5 1
+6 -9 -5 -3 -1
+-4 -1 7 -8 9
+3 -6 -5 10 -9
+-10 -2 -8 -1 -7
+-10 5 -6 -7 0
+-8 -2 5 7 -6
+6 -3 3 6 -4
+6 8 -1 -6 1
+mas deu
+5
+-9 -9 -7 -7 9 
+-6 -7 3 -5 1 
+6 -9 -5 -3 -1 
+-4 -1 7 -8 9 
+3 -6 -5 10 -9 
+-10 -2 -8 -1 -7 
+-10 5 -6 -7 0 
+-8 -2 5 7 -6 
+6 -3 3 6 -4 
+6 8 -1 -6 1 
+
+Teste 11 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 12 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 13 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 14 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 15 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 16 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 17 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 18 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 19 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Teste 20 deu errado!
+#include<iostream>
+int main() {
+    int nl, nc, val;
+    std::cin >> nl >> nc;
+    Matriz m;
+    for(int i=0; i<nl; i++) {
+        m.push_back(std::vector<int>());
+        for(int j=0; j<nc; j++) {
+            std::cin >> val;
+            m[i].push_back(val);
+        }
+    }
+    ordena_par(m);
+    for(int i=0; i<nl; i++) {
+        for(int j=0; j<nc; j++)
+            std::cout << m[i][j] << " ";
+        std::cout << std::endl;
+    }
+    return 0;
+}
+Nota exercicio 8: 0.0
+Procurando exercício 9...
+Procurando exercício 10...
+Procurando exercício 11...
+Nota total: 6.80
+{"scores": {"ex1": 1.0, "ex2": 1.0, "ex3": 0.8, "ex4": 1.0, "ex5": 1.0, "ex6": 1.0, "ex7": 1.0, "ex8": 0.0, "ex9": 0.0, "ex10": 0.0, "ex11": 0.0}}
