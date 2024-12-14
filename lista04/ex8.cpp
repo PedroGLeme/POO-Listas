@@ -46,8 +46,8 @@ void ordena_par(Matriz& M){
 
         sort(retorno_aux.begin(), retorno_aux.end(), comparar_linhas);
 
-        for(const auto& linha : retorno_aux) {
-            matriz_aux.push_back(linha); 
+        for (auto linha = retorno_aux.begin(); linha != retorno_aux.end(); ++linha){
+            matriz_aux.push_back(*linha); 
         }
 
         retorno_aux.clear();
