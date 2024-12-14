@@ -4,29 +4,28 @@
 
 using namespace std;
 
-vector<double> notas(string& s){
+vector<double> notas(const string& s){
     vector<double> notas_ret;
-    string num_contaten;
-    double nota_inser;
-
-    for (int i = 0; i < s.size(); ++i) {
-        char char_lido = s[i];
-        //printf("DEBBUG: %d", i);
-        if(isdigit(char_lido) || char_lido == '.'){ num_contaten += char_lido;} // contatena o numero ou '.' lido
-        else{
-            if( !(num_contaten.empty()) ){
-                nota_inser = stod(num_contaten); // passa de string para double
-                notas_ret.push_back(nota_inser);
-                num_contaten.clear(); // limpa para nova contatenacao e insercao
-            }
+    int i = 0;
+    while (i < s.size()){
+        while (i < s.size() && s[i] != ','){ i++;}// acha a primeira virgula
+        i++; // pula a virgula
+        // le o numero
+        string numero;
+        while (i< s.size() && s[i]!= ','){ // ate chegar no fim da string dada ou ate a virgula
+            numero += s[i]; // contatena o numero
+            i++;
         }
+        // transforma streing em double
+        if (!(numero.empty())){ notas_ret.push_back(stod(numero)); }
+        i++; // pula a virgula do numero
     }
 
     return notas_ret;
 }
-
-int main() {
-    std::string s = "Andre,10,Smaira,5" ;
+ int main() {
+    std::string s;
+    std::getline(std::cin, s);
     for(double n : notas(s))
         std::cout << n << std::endl;
     return 0;
