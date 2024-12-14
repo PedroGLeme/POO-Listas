@@ -24,7 +24,7 @@ class Pessoa{
 
             // como ehh conhecido a ordem de insercao:
             _nome= match[1].str();
-            _idade= std::stoi(match[2].str());
+            _idade= stoi(match[2].str());
             _cidade= match[3].str();
             __UF= match[4].str();
             _pais= match[5].str();
