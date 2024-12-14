@@ -31,7 +31,7 @@ void ordena_par(Matriz& M){
     Matriz matriz_aux;
     
     int numero_max_par = M[0].size(); 
-    printf("%d\n", numero_max_par);
+    //printf("%d\n", numero_max_par);
     int numero_par = 0;
     int qtd_par = 0;
     int aux_inicio = 0;
