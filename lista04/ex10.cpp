@@ -4,19 +4,23 @@
 
 using namespace std;
 
-vector<int> divisao_partes(const string& versao){ // ignora o . e compara char de numero como um todo
+vector<int> divisao_partes(string& versao){ // ignora o . e compara char de numero como um todo
     vector<int> partes;
-    string str_contatenada= "";
+    string str_contatenada="";
     
     for(int i= 0; i< versao.size(); ++i){
-        char c_num = versao[i];
+        char c_num= versao[i];
         if(c_num== '.'){
             partes.push_back(stoi(str_contatenada));
             str_contatenada = "";
         }
         else{ str_contatenada += c_num;} // contatena ate chegar em um '.'
     }
-    
+
+    if(!str_contatenada.empty()){ // por alguma razao isso funciona, eh pq sobra numero que nao foi colocado (??)
+        partes.push_back(stoi(str_contatenada));
+    }
+
     return partes;
 }
 
@@ -27,7 +31,8 @@ bool compara_versoes(string& v1, string& v2){
     int i= 0;
     while( (i< divisoes_1.size()) && (i< divisoes_2.size()) ){ // verifica se da swap
         // printf("DEBBUG: %d", i);
-        if(divisoes_1[i]< divisoes_2[i]){return true;}
+        //printf("DEBBUG: DIV1: %d DIV2: %d\n\n", divisoes_1[i], divisoes_2[i]);
+        if(divisoes_1[i]< divisoes_2[i]){ return true;} // tentar inverter depois
         if(divisoes_1[i]> divisoes_2[i]){ return false;}
         ++i;
     }
@@ -49,17 +54,27 @@ void ordena_versoes(vector<string>& versoes){
     for(i = 0; i < versoes.size(); ++i){
         for(j = 0; j < versoes.size() - 1; ++j){
 
-            if( !( compara_versoes(versoes[j], versoes[j + 1]) )){ /// verificar depois se eh negativo mesmo
+            if( !( compara_versoes(versoes[j], versoes[j + 1]) )){
                 swap(versoes[j], versoes[j + 1]);
                 //printf("TROQUEI\n");
             }
             //printf("NAO TROQUEI em %d", j); 
         }
+        j=0;
+        //printf("tamanho: %d", versoes.size());
     }
 }
 
 int main() {
-    std::vector<std::string> vs = {"1.2.3" , "1.2" , "1.2.0" , "3.0" , "0" };
+    std::string v;
+    std::vector<std::string> vs;
+    while(std::cin >> v){
+        if(v == "-"){
+            break;
+        }
+        vs.push_back(v);
+    }
+        
     ordena_versoes(vs);
     for(auto v : vs)
         std::cout << v << std::endl;
