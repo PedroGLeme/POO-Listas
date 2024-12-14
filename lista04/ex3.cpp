@@ -20,6 +20,7 @@ void meu_sort(vector<int>& vetor) {
 }
  
 // funcao que compara duas entradas de string para ver se sao iguais
+// https://aticleworld.com/strcmp-in-c/
 bool meu_strcmp(char* str1, char* str2){
     int i = 0;
     while(str1[i] != '\0' && str2[i] != '\0'){ // enquanto nao chegou no final de ambas as strings
